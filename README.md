@@ -106,7 +106,9 @@ systemctl restart flaga.service
 - [stronę 7 etapu Szturmu na AWS](https://zajecia-programowania-xd.pl/szturm_na_aws/7)
 - [discord'a 7 etapu Szturmu na AWS](https://discord.gg/NjKvJeYZtB)
 
-#### Etap 8: Flaga.
+
+
+## Etap 8: Flaga.
 Ostatnie co zostało, to edycja flagi. Twoja flaga aby przejść dalej musi spełniać 3 kryteria
 - być widoczna w sieci, czyli działać - to mamy
 - jest na niej "xD" - to też już mamy
