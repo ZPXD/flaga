@@ -1,0 +1,12 @@
+[Unit]
+After=network.target
+
+[Service]
+User=root
+Group=www-data
+WorkingDirectory=/var/www/flaga
+Environment="PATH=/var/www/flaga/flagaenv/bin"
+ExecStart=/var/www/flaga/flagaenv/bin/gunicorn --workers 3 --bind unix:flaga.sock -m 007 app:app
+
+[Install]
+WantedBy=multi-user.target
