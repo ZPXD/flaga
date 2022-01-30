@@ -1,14 +1,14 @@
 Witaj
 
-Jesteś na GitHubie i czytasz właśnie plik README.md które znajduje się wewnątrz repozytorium Flaga 7 i 8 etapu Szturmu na AWS:
+Jesteś na **GitHub**'ie i czytasz właśnie plik **README.md** który znajduje się wewnątrz **repozytorium Flaga** z 7 i 8 etapu Szturmu na AWS.
 
-#### Teraz w 6 krokach:
+#### W tym etapie w 6 krokach:
 - wejdziesz na serwer
 - przygotujesz go
 - pobierzesz repozytorium z flagą,
 - utworzysz nowe środowisko programistyczne
 - w którym uruchomisz i udostępnisz w sieci stronę www napisaną w pythonie
-- i jeżeli wszystko zadziała, przejdziesz do etapu 8 i powiesisz flagę
+- i jeżeli wszystko zadziała, przejdziesz do etapu 8 i powiesisz flagę. Zaczynajmy!
 
 #### 1. Start. Wejdź na serwer.
 Aby zacżąć włącz terminal (lub powershell) i połącz się ze swoim serwerem. Jeżeli nie wiesz jak to powróć do etapu 5:
@@ -20,7 +20,6 @@ Od teraz, gdyby coś poszło nie tak, zawsze możesz zrestartować serwer i zacz
 
 #### Dodatkowy krok w AWS. (Jedynie dla serwerów na AWS)
 Ustawiamy uprawnienia root ("administratora"). Skopiuj poniższe komendy i wklej do terminala.
-
 ```
 sudo passwd   # <----- To dla AWS tylkooo! Podaj hasło i zapisz. Wpisz jeszcze poniższe i podaj hasło.
 su -          # <----- Od teraz będziesz jako 'root'.
@@ -38,19 +37,15 @@ apt upgrade
 W trakcie instalacji gdy proces się zatrzymuje z zapytaniem "Do you want to continue? [Y/n]" na końcu, napisz "Y" aby przejść dalej.
 
 PS: w plikach README.md kod umieszcza się w takiej ramce jak poniżej.
-
 ```
 pwd
 ```
-Nie musisz ręcznie go przepisywać. Możesz łatwo skopiować, najedź myszką w prawym rogu a pokaże się przycisk - kliknij i masz skopiowany tekst.
-
-Teraz możesz wkleić kod, w zależności czy jesteś w powershellu czy w terminalu:
+Nie musisz ręcznie go przepisywać. Możesz łatwo skopiować, najedź myszką w prawym rogu a pokaże się przycisk - kliknij i masz skopiowany tekst. Teraz możesz wkleić kod, w zależności czy jesteś w powershellu czy w terminalu:
 - **terminal:** (linux, mac) klikając jednocześnie ctrl+shift+v
 - **powershell:** (windows) klikając prawym przyciskiem myszy.
 
 #### 3. Git.
 Instalujemy git'a, pobieramy repozytorium i rozkładamy manatki.
-
 ```
 apt install git
 cd /var/www
@@ -59,7 +54,6 @@ cd flaga
 python3 xD.py # <---- z dużej litery xD.py a nie xd.py z małej litery.
 ```
 PS: Tak jak się domyślasz, terminal nie czyta niczego po znaku "#" zobacz samemu, wpisz:
-
 ```
 ls # sdfgsdfgsdgsgjpodgksg
 ```
@@ -81,8 +75,7 @@ export FLASK_APP=app.py       # I zapisz zmienną FLASK_APP równą app.py (nazw
 Teraz zobacz, skopiuj wszystkie 3 i spróbuj wkleić w terminalu używając **ctrl+shif+v** lub jeżeli korzystasz z powershell to kliknij lewym po na terminal po skopiowaniu tekstu. Po ostatniej komendzie naciśnij enter.
 
 #### Instalacja wymaganych bibliotek.
-Użyjemy do tego pip3 - to narzędzie którym pobieramy w pythonie potrzebne biblioteki. We fladze używamy dodatkowo pliku requirements.txt, który jest niczym innym jak listą nazw i wersji bibliotek które będą.
-
+Użyjemy do tego **pip3** - to narzędzie którym pobieramy w pythonie potrzebne biblioteki. We fladze używamy dodatkowo pliku **requirements.txt**, który jest niczym innym jak listą nazw i wersji bibliotek które będą.
 ```
 pip3 install -r requirements.txt
 ```
@@ -110,8 +103,8 @@ systemctl restart flaga.service
 ```
 
 #### Zobacz czy strona działa. Działa? Wyślij komuś, pochwal się i powróć na:
-stronę www Szturm na AWS.
-discord Szturm na AWS
+- [stronę 7 etapu Szturmu na AWS](https://zajecia-programowania-xd.pl/szturm_na_aws/7)
+- [discord'a 7 etapu Szturmu na AWS](https://discord.gg/NjKvJeYZtB)
 
 #### Etap 8: Flaga.
 Ostatnie co zostało, to edycja flagi. Twoja flaga aby przejść dalej musi spełniać 3 kryteria
@@ -138,8 +131,8 @@ exit
 A strona nadal będzie stała w internecie.
 
 #### Jeżeli postawiłeś stronę www, flagę i edytowałeś ją to przeszedłeś ten etap i idź dalej:
-- stronę www Szturm na AWS.
-- discord Szturm na AWS
+- [stronę 8 etapu Szturmu na AWS](https://zajecia-programowania-xd.pl/szturm_na_aws/8)
+- [discord'a 8 etapu Szturmu na AWS](https://discord.gg/S5bN7TCAYq)
 
 #### Flagi: 
 
