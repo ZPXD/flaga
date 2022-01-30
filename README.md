@@ -72,7 +72,7 @@ python3 -m venv flagaenv      # Stwórz środowisko flagenv używając venv.
 source flagaenv/bin/activate  # Aktywuj środowisko flagaenv
 export FLASK_APP=app.py       # I zapisz zmienną FLASK_APP równą app.py (nazwie programu strony www) 
 ```
-Teraz zobacz, skopiuj wszystkie 3 i spróbuj wkleić w terminalu używając **ctrl+shif+v** lub jeżeli korzystasz z powershell to kliknij lewym po na terminal po skopiowaniu tekstu. Po ostatniej komendzie naciśnij enter.
+Teraz skopiuj wszystkie 3 linie i spróbuj je wkleić w terminalu. Po ostatniej komendzie naciśnij enter.
 
 #### Instalacja wymaganych bibliotek.
 Użyjemy do tego **pip3** - to narzędzie którym pobieramy w pythonie potrzebne biblioteki. We fladze używamy dodatkowo pliku **requirements.txt**, który jest niczym innym jak listą nazw i wersji bibliotek które będą.
