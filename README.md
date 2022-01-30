@@ -36,7 +36,7 @@ apt upgrade
 ```
 W trakcie instalacji gdy proces się zatrzymuje z zapytaniem "Do you want to continue? [Y/n]" na końcu, napisz "Y" aby przejść dalej.
 
-PS: w plikach README.md kod umieszcza się w takiej ramce jak poniżej.
+PS: w plikach **README.md** kod umieszcza się w takiej ramce jak poniżej.
 ```
 pwd
 ```
