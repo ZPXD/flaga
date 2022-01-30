@@ -42,11 +42,7 @@ PS: w plikach README.md kod umieszcza się w takiej ramce jak poniżej.
 ```
 pwd
 ```
-Nie musisz ręcznie go przepisywać. Możesz łatwo skopiować, najedź myszką w prawym rogu pokaże się przycisk: alt text
-
-Kliknij i skopiowane:
-
-alt text
+Nie musisz ręcznie go przepisywać. Możesz łatwo skopiować, najedź myszką w prawym rogu a pokaże się przycisk - kliknij i masz skopiowany tekst.
 
 Teraz możesz wkleić kod, w zależności czy jesteś w powershellu czy w terminalu:
 - **terminal:** (linux, mac) klikając jednocześnie ctrl+shift+v
