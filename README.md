@@ -49,7 +49,7 @@ Instalujemy git'a, pobieramy repozytorium i rozkładamy manatki.
 ```
 apt install git
 cd /var/www
-git clone https://github.com/lukasz-test/flaga.git # <--- wklej dokładnie tą linię do terminala
+git clone https://github.com/ZPXD/flaga.git # <--- wklej dokładnie tą linię do terminala
 cd flaga
 python3 xD.py # <---- z dużej litery xD.py a nie xd.py z małej litery.
 ```
