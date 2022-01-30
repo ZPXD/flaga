@@ -1,2 +1,119 @@
-# flaga
-Flaga
+Witaj
+
+Jesteś na GitHubie i czytasz właśnie plik README.md które znajduje się wewnątrz repozytorium Flaga 7 i 8 etapu Szturmu na AWS:
+
+Teraz w 6 krokach:
+
+wejdziesz na serwer
+przygotujesz go
+pobierzesz repozytorium z flagą,
+utworzysz nowe środowisko programistyczne
+w którym uruchomisz i udostępnisz w sieci stronę www napisaną w pythonie
+i jeżeli wszystko zadziała, przejdziesz do etapu 8 i powiesisz flagę
+1. Start. Wejdź na serwer.
+Aby zacżąć włącz terminal (lub powershell) i połącz się ze swoim serwerem. Jeżeli nie wiesz jak to powróć do etapu 5:
+http://bityl.pl/6X3gF
+Resetowanie serwera
+Od teraz, gdyby coś poszło nie tak, zawsze możesz zrestartować serwer i zacząć od nowa:
+
+http://bityl.pl/Bmvwu
+Dodatkowy krok w AWS. (Jedynie dla serwerów na AWS)
+Ustawiamy uprawnienia root ("administratora"). Skopiuj poniższe komendy i wklej do terminala.
+
+sudo passwd   # <----- To dla AWS tylkooo! Podaj hasło i zapisz. Wpisz jeszcze poniższe i podaj hasło.
+su -          # <----- Od teraz będziesz jako 'root'.
+Poza tym na AWS trzeba stworzyć folder, gdzie będziemy trzymać Twoją stronę z flagą: mkdir i nazwa folderu: /var/www
+
+mkdir /var/www     # <---- Czyli stwórz katalog var wewnątrz którego znajduje się pusty katalog www. Stwórz: /var/www
+2. Uaktualniamy paczki (packages).
+apt update
+apt upgrade
+W trakcie instalacji gdy proces się zatrzymuje z zapytaniem "Do you want to continue? [Y/n]" na końcu, napisz "Y" aby przejść dalej.
+
+PS: w plikach README.md kod umieszcza się w takiej ramce jak poniżej.
+
+pwd
+Nie musisz ręcznie go przepisywać. Możesz łatwo skopiować, najedź myszką w prawym rogu pokaże się przycisk: alt text
+
+Kliknij i skopiowane:
+
+alt text
+
+Teraz możesz wkleić kod, w zależności czy jesteś w powershellu czy w terminalu:
+
+terminal: (linux, mac) klikając jednocześnie ctrl+shift+v
+powershell: (windows) klikając prawym przyciskiem myszy.
+3. Git.
+Instalujemy git'a, pobieramy repozytorium i rozkładamy manatki.
+
+apt install git
+cd /var/www
+git clone https://github.com/lukasz-test/flaga.git # <--- wklej dokładnie tą linię do terminala
+cd flaga
+python3 xD.py # <---- z dużej litery xD.py a nie xd.py z małej litery.
+PS: Tak jak się domyślasz, terminal nie czyta niczego po znaku "#" zobacz samemu, wpisz:
+
+ls # sdfgsdfgsdgsgjpodgksg
+4. Wewnątrz środowiska (env).
+Wszystkie polecenia wykonywane w tym kroku są wykonywane w folderze /var/www/flaga .
+
+Upewnij się w jakim folderze jesteś, napisz:
+
+pwd
+Teraz, zobacz ale jeszcze nie wpisuj poniższych 3 komend:
+
+python3 -m venv flagaenv      # Stwórz środowisko flagenv używając venv.
+source flagaenv/bin/activate  # Aktywuj środowisko flagaenv
+export FLASK_APP=app.py       # I zapisz zmienną FLASK_APP równą app.py (nazwie programu strony www) 
+Teraz zobacz, komendy możesz wrzucać po 3 jednocześnie.
+
+python3 -m venv flagaenv
+source flagaenv/bin/activate
+export FLASK_APP=app.py
+Skopiuj wszystkie 3 i spróbuj wkleić w terminalu używając ctrl+shif+v lub jeżeli korzystasz z powershell to kliknij lewym po na terminal po skopiowaniu tekstu. Po ostatniej komendzie naciśnij enter.
+
+Instalacja wymaganych bibliotek.
+Użyjemy do tego pip3 - to narzędzie którym pobieramy w pythonie potrzebne biblioteki. We fladze używamy dodatkowo pliku requirements.txt, który jest niczym innym jak listą nazw i wersji bibliotek które będą.
+
+pip3 install -r requirements.txt
+Następnie podaj swoją domenę.
+Napisz:
+
+nano settings.ini
+po spacji wpisz nazwę swojej domeny np (bez "www") wg wzoru:
+
+domena = nazwa_domeny.pl
+Aby zapisać wciśnij ctrl+s Aby zamknąć wciśnij ctrl+x
+
+Uruchom skrypt przygotowujący hosting na serwerze (1 raz).
+python3 xd.py
+Restart nginxa i serwisów.
+systemctl daemon-reload
+systemctl restart nginx
+systemctl restart flaga.service
+Zobacz czy strona działa. Działa? Wyślij komuś, pochwal się i powróć na:
+stronę www Szturm na AWS.
+discord Szturm na AWS
+Etap 8: Flaga.
+Ostatnie co zostało, to edycja flagi. Twoja flaga aby przejść dalej musi spełniać 3 kryteria
+
+być widoczna w sieci, czyli działać - to mamy
+jest na niej "xD" - to też już mamy
+oraz jest coś napisane poza "xDDD" - to mamy do zrobienia.
+Będąc dalej na serwerze, w folderze /var/www/flaga edytuj zawartość pliku xd.txt. Można dodać tam coś od siebie. Jak skończysz, zrestartuj odrazu nginxa.
+
+cd /var/www/flaga
+nano xd.txt
+
+systemctl daemon-reload
+systemctl restart nginx
+systemctl restart flaga.service
+Gotowe?
+Możesz opuścić Terminal pisząć
+
+exit
+A strona nadal będzie stała w internecie.
+
+Jeżeli postawiłeś stronę www, flagę i edytowałeś ją to przeszedłeś ten etap i idź dalej:
+stronę www Szturm na AWS.
+discord Szturm na AWS
