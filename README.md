@@ -102,9 +102,9 @@ systemctl restart nginx
 systemctl restart flaga.service
 ```
 
-#### Zobacz czy strona działa. Działa? Wyślij komuś, pochwal się i powróć na:
-- [stronę 7 etapu Szturmu na AWS](https://zajecia-programowania-xd.pl/szturm_na_aws/7)
-- [discord'a 7 etapu Szturmu na AWS](https://discord.gg/NjKvJeYZtB)
+#### Zobacz czy strona działa. Działa? Wyślij komuś, pochwal się i powróć do:
+- [strona 7 etapu Szturmu na AWS](https://zajecia-programowania-xd.pl/szturm_na_aws/7)
+- [discord 7 etapu Szturmu na AWS](https://discord.gg/NjKvJeYZtB)
 
 
 
@@ -133,8 +133,8 @@ exit
 A strona nadal będzie stała w internecie.
 
 #### Jeżeli postawiłeś stronę www, flagę i edytowałeś ją to przeszedłeś ten etap i idź dalej:
-- [stronę 8 etapu Szturmu na AWS](https://zajecia-programowania-xd.pl/szturm_na_aws/8)
-- [discord'a 8 etapu Szturmu na AWS](https://discord.gg/S5bN7TCAYq)
+- [strona 8 etapu Szturmu na AWS](https://zajecia-programowania-xd.pl/szturm_na_aws/8)
+- [discord 8 etapu Szturmu na AWS](https://discord.gg/S5bN7TCAYq)
 
 #### Flagi: 
 
