@@ -18,7 +18,7 @@ Aby zacżąć włącz terminal (lub powershell) i połącz się ze swoim serwere
 Od teraz, gdyby coś poszło nie tak, zawsze możesz zrestartować serwer i zacząć od nowa:
 - http://bityl.pl/Bmvwu
 
-#### Dodatkowy krok jedynie dla serwerów na AWS. 
+#### Krok jedynie dla serwerów na AWS:
 Dla serwerów postawionych na AWS najpierw dodatkowo ustawiamy uprawnienia root ("administratora"). Skopiuj poniższe komendy i wklej do terminala.
 ```
 sudo passwd   # <----- To dla AWS tylkooo! Podaj hasło i zapisz. Wpisz jeszcze poniższe i podaj hasło.
