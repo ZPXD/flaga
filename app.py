@@ -7,6 +7,10 @@ def index():
     text = open('xd.txt').read()
     return render_template("index.html", text=text)
 
+@app.route('/xd')
+def xd():
+    return render_template("xd.html")
+
 @app.route('/kubus_puchatek')
 def kubus_puchatek():
     return render_template("kubus_puchatek.html")
