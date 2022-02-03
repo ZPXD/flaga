@@ -109,15 +109,25 @@ systemctl restart flaga.service
 
 
 ## Etap 8: Flaga.
+
+Urządź się tu :) Będąc dalej na serwerze, w folderze /var/www/flaga edytuj zawartość pliku xd.txt. Dodaj tam coś od siebie.
+```
+cd /var/www/flaga
+nano xd.txt
+```
+
 Ostatnie co zostało, to edycja flagi. Twoja flaga aby przejść dalej musi spełniać 3 kryteria
 - być widoczna w sieci, czyli działać - to mamy
 - jest na niej "xD" - to też już mamy
 - oraz jest coś napisane poza "xDDD" - to mamy do zrobienia.
-Będąc dalej na serwerze, w folderze /var/www/flaga edytuj zawartość pliku xd.txt. Można dodać tam coś od siebie. Jak skończysz, zrestartuj odrazu nginxa.
-```
-cd /var/www/flaga
-nano xd.txt
 
+Bedąc dalej w folderze /var/www/flaga edytuj plik flaga_xd.txt
+```
+nano flaga_xd.txt
+```
+
+Przeładuj:
+```
 systemctl daemon-reload
 systemctl restart nginx
 systemctl restart flaga.service
