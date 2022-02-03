@@ -9,7 +9,7 @@ def index():
 
 @app.route('/xd')
 def xd():
-    text = open('xd.txt').read()
+    text = open('flaga_xd.txt').read()
     return render_template("xd.html", text=text)
 
 @app.route('/kubus_puchatek')
