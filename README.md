@@ -114,14 +114,19 @@ Urządź się tu :) Będąc dalej na serwerze, w folderze /var/www/flaga edytuj 
 ```
 cd /var/www/flaga
 nano xd.txt
+
+systemctl daemon-reload
+systemctl restart nginx
+systemctl restart flaga.service
 ```
+Zobacz na stronie www czy działa :)
 
 Ostatnie co zostało, to edycja flagi. Twoja flaga aby przejść dalej musi spełniać 3 kryteria
 - być widoczna w sieci, czyli działać - to mamy
 - jest na niej "xD" - to też już mamy
 - oraz jest coś napisane poza "xDDD" - to mamy do zrobienia.
 
-Bedąc dalej w folderze /var/www/flaga edytuj plik flaga_xd.txt
+Bedąc dalej w folderze /var/www/flaga edytuj plik flaga_xd.txt. "xDDD" + coś od siebie. Dzięki temu będzie można sprawdzić czy ukończyłeś ten etap.
 ```
 nano flaga_xd.txt
 ```
@@ -132,6 +137,9 @@ systemctl daemon-reload
 systemctl restart nginx
 systemctl restart flaga.service
 ```
+
+Zobacz na stronie www czy działa :) - dodaj do swojego adresu "/xd" czyli jak masz domenę "kubus-puchatek.pl" to wpisz "kubus-puchatek.pl/xd".
+
 
 #### Gotowe?
 Możesz opuścić Terminal pisząć
