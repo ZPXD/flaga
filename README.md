@@ -256,7 +256,7 @@ Aby pobrać klucz na komputer wejdź do folderu xD w terminalu i edytuj w poniż
 - NAZWA_KLUCZA - taka jaką stworzyłeś.
 Komenda dla VPS Ubuntu w Home:
 ```
-scp root@NUMER_IP:/home/NAZWA_UŻYTKOWNIKA/.ssh/NAZWA_KLUCZA NAZWA_KLUCZA
+scp root@NUMER_IP:/home/NAZWA_UŻYTKOWNIKA/NAZWA_KLUCZA NAZWA_KLUCZA
 ```
 Komenda dla AWS EC2 Ubuntu (tu jest jeszcze jedna zmienna):
 - NAZWA_KLUCZA_PEM - ten klucz który dostałeś tworząc serwer.
