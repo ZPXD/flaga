@@ -494,21 +494,31 @@ nano xd.txt
 
 Zobacz na stronie www czy działa :)
 
-Ostatnie co zostało, to edycja flagi. Twoja flaga aby przejść dalej musi spełniać 3 kryteria
-- być widoczna w sieci, czyli działać - to mamy
-- jest na niej "xD" - to też już mamy
-- oraz jest coś napisane poza "xDDD" - to mamy do zrobienia.
-
 
 #### Stwórz nową zakładkę wymaganą do przejścia szturmu!
-Bedąc dalej w folderze /var/www/flaga edytuj plik flaga_xd.txt. "xDDD" + coś od siebie. Dzięki temu będzie można sprawdzić czy ukończyłeś ten etap.
+
+Ostatnie co zostało, to edycja zakładki /xd flagi. Twoja flaga aby przejść dalej musi spełniać 3 kryteria. 
+- być widoczna w sieci, czyli działać - to mamy
+- w zakładce xd jest na niej "xD" - to też już mamy
+- w zakladce xd jest na niej coś napisane poza "xDDD" - to mamy do zrobienia.
+
+Wejdź w przeglądarce na adres swojej strony www i dopisz **/xd** - to Twoja zakładka /xd.
+
+Bedąc dalej w folderze /var/www/flaga edytuj plik templates/xd.txt. Zobacz, jest tam w 12 linii "xDDD". Zostaw xD (z dowolną ilością "D") i: dodaj coś od siebie. Dzięki temu będzie można sprawdzić czy ukończyłeś ten etap. Zrób to tak:
 ```
 nano /templates/xd.html
 ```
-
+To plik html. Dodaj coś w 12 linii pomiędzy znakami ">" a "</h1>".
+```
+<h1 style="text-align:center">xDDD TUTAJ OD SIEBIE DOPISZ :) </h1>
+```
 Przeładuj:
 ```
 sudo systemctl restart flaga.service
+```
+lub
+```
+sudo python3 skrypty_pomocnicze/reload.py
 ```
 
 #### Zobacz czy zakładka działa :)
