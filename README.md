@@ -308,6 +308,7 @@ Postaw stronę www tak, abyśmy widzieli ją w sieci.
 - Restart nginxa i serwisów.
 - Moja strona działa!
 
+#### Tryb TURBO:
 Jeżeli chcesz przejść etap 7 za jednym kliknięciem, w minutę możesz wpisać. Poniższy kod. Jednak odradzamy to początkującym. Więcej się nauczysz przechodząc ten etap krok po kroku, nawet gdy nie znasz 90% tych rzeczy. To hartuje i daje dobre podstawy na przyszłość. Ewentualnie wróć tutaj później. Oto kod na szybko:
 
 Ustaw nazwę aplikacji i MODYFIKUJ nazwę domeny.:
@@ -316,24 +317,15 @@ export FLASK_APP=app.py
 domena=TUTAJ_WPISZ.pl
 echo 'Moja domena to:' $domena
 ```
-Domena się nie zgadza? Popraw powyższe. Zgadza? Skopiuj całość i wklej w terminalu. Na końcu dodaj 1 enter.
+Domena się nie zgadza? Popraw powyższe. Zgadza? Skopiuj całość i wklej w terminalu. Na końcu dodaj 1 enter. Teraz pobieramy to repo na Twój serwer i instalujemy wszystko automatycznie. Kliknij poniższe i rołóż ręce. Chwila moment i gotowe.
 ```
 mkdir /var/www 2>1
-cd /var
-sudo chmod -R www-data:www-data /var/www
-cd www
-sudo apt install git
-git clone https://github.com/ZPXD/flaga.git
-cd flaga                         
-sudo python3 xD.py               # Skrypt pobiera i instaluje wymagane paczki.
-python3 -m venv flagaenv         # Stwórz środowisko flagenv używając venv.
-source flagaenv/bin/activate     # Aktywuj środowisko flagaenv
-export FLASK_APP=app.py          # I zapisz zmienną FLASK_APP równą app.py (nazwie programu strony www) 
-ls # sdfgsdfgsdgsgjpodgksg       # wylistuje foldery i pliki w folderze w którym jesteś.
-pwd                              # pokaże ścieżkę folderu w którym jesteś.
-pip3 install -r requirements.txt # zainstaluj biblioteki pythona spisane w requirements.txt
-sudo python3 xd.py $domena       # skrypt przygotowuje pliki serwerowe
+sudo chmod -R www-data:www-data /var/www'
+sudo apt install git'
+git clone https://github.com/ZPXD/flaga.git /var/www'
+sudo python3 /var/www/flaga/pomocnicze_skrypty/etap_7_w_minute.py $domena
 ```
+I wejdź w przeglądarce na adres swojej strony www. Działa? Pewnie, że działa. Gratulacje! Leć do etapu 8. Ale jeszcze lepiej, przeczytaj całość poniżej. Zobaczysz co się dzieje pod spodem i wiele się nauczysz.
 
 ### 1. Miejsce na stronę: Folder /var/www 
 
