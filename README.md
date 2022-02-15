@@ -308,7 +308,8 @@ Postaw stronę www tak, abyśmy widzieli ją w sieci.
 - Restart nginxa i serwisów.
 - Moja strona działa!
 
-#### Tryb TURBO:
+#### Etap 7: Tryb turbo (pomiń aby więcej się nauczyć):
+
 Jeżeli chcesz przejść etap 7 za jednym kliknięciem, w minutę możesz wpisać. Poniższy kod. Jednak odradzamy to początkującym. Więcej się nauczysz przechodząc ten etap krok po kroku, nawet gdy nie znasz 90% tych rzeczy. To hartuje i daje dobre podstawy na przyszłość. Ewentualnie wróć tutaj później. Oto kod na szybko:
 
 Ustaw nazwę aplikacji i MODYFIKUJ nazwę domeny.:
@@ -326,6 +327,11 @@ git clone https://github.com/ZPXD/flaga.git /var/www'
 sudo python3 /var/www/flaga/pomocnicze_skrypty/etap_7_w_minute.py $domena
 ```
 I wejdź w przeglądarce na adres swojej strony www. Działa? Pewnie, że działa. Gratulacje! Leć do etapu 8. Ale jeszcze lepiej, przeczytaj całość poniżej. Zobaczysz co się dzieje pod spodem i wiele się nauczysz.
+
+#### Etap 7 - Tryb klasyczny.
+
+Chcesz dowiedzieć się trochę co się dzieje pod maską, samemu to poczuć i przeklikać? Świetny wybór, czegoś się nauczysz albo chociaż nabierzesz obycia i doświadczenia. Do dzieła:
+
 
 ### 1. Miejsce na stronę: Folder /var/www 
 
