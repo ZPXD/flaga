@@ -325,12 +325,8 @@ export FLASK_APP=app.py          # I zapisz zmienną FLASK_APP równą app.py (n
 ls # sdfgsdfgsdgsgjpodgksg       # wylistuje foldery i pliki w folderze w którym jesteś.
 pwd                              # pokaże ścieżkę folderu w którym jesteś.
 pip3 install -r requirements.txt # zainstaluj biblioteki pythona spisane w requirements.txt
-nano settings.ini    
+
 ```
-ls
-nano settings.ini
-pwd
-pwd
 
 ### 1. Miejsce na stronę: Folder /var/www 
 
@@ -406,7 +402,7 @@ Użyjemy do tego **pip3** - to narzędzie którym pobieramy w pythonie potrzebne
 pip3 install -r requirements.txt
 ```
 
-#### Następnie podaj swoją domenę.
+#### 6. Dodanie domeny.
 Napisz:
 ```
 nano settings.ini
@@ -417,22 +413,53 @@ domena = nazwa_domeny.pl
 ```
 Aby zapisać wciśnij ctrl+s Aby zamknąć wciśnij ctrl+x
 
-#### Stworzenie plików z informacjami dla serwera aby wystawił stronę (nginx i gunicorn).
-Uruchom skrypt przygotowujący hosting na serwerze (1 raz).
+PS: możesz też zrobić to definiując zmienną w bashu np:
 ```
-sudo python3 xd.py
+domena=nazwa_domeny.pl
+echo $domena
 ```
 
-#### Restart nginxa i serwisów.
+#### 7. Stworzenie plików z informacjami dla serwera aby wystawił stronę (nginx i gunicorn).
+Uruchom skrypt przygotowujący hosting na serwerze (1 raz).
+```
+sudo python3 xd.py 
+```
+lub, jeżeli zdefiniowałeś zmienną, napisz:
+```
+sudo python3 xd.py $domena
+```
+
+#### Restart nginxa i serwisów. To zadziało się automatycznie. Nie musisz tego robić.
+
+To przyda Ci się za każdym razem, gdy po modyfikacji plików html lub programu app.py będziesz chciał zobaczyć zmiany na stronie.
 ```
 sudo systemctl daemon-reload
 sudo systemctl restart nginx
 sudo systemctl restart flaga.service
 ```
+lub, jeżeli chcesz, napisałem skrypt który to robi za Ciebie.
+```
+sudo python3 reload.py
 
-#### Moja strona działa!
+#### Gdyby coś poszło nie tak w kroku 6 i 7
+Użyj tej komendy a cofniesz się do początku kroku 6.
 
-Wejdź na adres Twoje strony w wyszukiwarkę. Zobacz czy strona działa. Nie? Pogłówkuj trochę i/lub napisz na pomoc. Działa? Wyślij komuś, pochwal się i powróć do:
+Jeżeli modyfikowałeś zmienną domena:
+```
+python3 usun_pliki_konfiguracyjne.py $domena
+```
+Jeżeli modyfikowałeś plik settings.ini, albo to i to, to użyj:
+```
+python3 usun_pliki_konfiguracyjne.py $domena
+```
+
+#### 8. Zobacz czy strona działa!
+
+Wejdź na adres Twoje strony w wyszukiwarkę. Zobacz czy strona działa. Nie? Pogłówkuj trochę i/lub napisz na pomoc. 
+
+Działa? Wyślij komuś, pochwal się komuś.
+
+Powróć do:
 - [strona 7 etapu Szturmu na AWS](https://zajecia-programowania-xd.pl/szturm_na_aws/7)
 - [discord 7 etapu Szturmu na AWS](https://discord.gg/NjKvJeYZtB)
 
