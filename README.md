@@ -458,7 +458,7 @@ echo $domena
 #### 7. Stworzenie plików z informacjami dla serwera aby wystawił stronę (nginx i gunicorn).
 Uruchom skrypt przygotowujący hosting na serwerze (1 raz).
 ```
-sudo python3 xd.py 
+sudo python3 pomocnicze_skrypty/xd.py 
 ```
 lub, jeżeli zdefiniowałeś zmienną, napisz:
 ```
