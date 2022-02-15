@@ -175,11 +175,11 @@ PS: w trakcie różnych instalacji gdy proces się zatrzymuje z zapytaniem "Do y
 
 #### Zaktualizuj paczki:
 ```
-apt apt update 
+apt update 
 ```
 Nie działa. A spróbuj z sudo:
 ```
-sudo apt apt update 
+sudo apt update 
 ```
 Działa. Podnieś wersję paczek:
 ```
