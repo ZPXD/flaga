@@ -349,7 +349,7 @@ mkdir /var/www
 ```
 Jeżeli ten katalog już istnieje (będzie błąd) - jest ok - idź dalej.
 ```
-sudo chmod -R www-data:www-data /var/www
+sudo chown -R www-data:www-data /var/www
 sudo apt install git
 git clone https://github.com/ZPXD/flaga.git /var/www
 sudo python3 /var/www/flaga/pomocnicze_skrypty/etap_7_w_minute.py $domena
@@ -370,7 +370,7 @@ cd /var
 ```
 W środku znajduje się katalog www. Tam będziemy trzymać strony. Nadaj mu uprawnienia które pozwolą potem na dostęp do plików danych. I wejdź do środka.
 ```
-sudo chmod -R www-data:www-data /var/www
+sudo chown -R www-data:www-data /var/www
 sudo chmod -R 775 /var/www
 cd /www
 ```
