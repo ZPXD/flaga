@@ -86,7 +86,7 @@ Teraz jesteś jako root.
 Użytkownik to to jako kto jesteś na serwerze. Zwykli użytkownicy mają inne uprawnienia niż root. Nie mogą robić pewnych rzeczy i wchodzić w pewne miejsca.
 
 Napisz w terminalu poniższy kod zamieńiając XXX na nazwę jaką chcesz mieć jako użytkownik Twojego serwera.
-Nazwa nie może zawierać spacji i specjalnych znaków poza _ i - oraz rozpoczynać się od cyfr.
+Nazwa nie może zawierać spacji i specjalnych znaków.
 ```
 NEW_USER=XXXX
 ```
