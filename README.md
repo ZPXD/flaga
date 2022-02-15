@@ -1,6 +1,6 @@
 Witaj
 
-Jesteś na **GitHub**'ie i czytasz właśnie plik **README.md** który znajduje się wewnątrz **repozytorium Flaga** z opisem 5, 7 i 8 etapu Szturmu na AWS.
+Jesteś na **GitHub**'ie i czytasz właśnie plik **README.md** który znajduje się wewnątrz **repozytorium** Flaga z instrukcjami 5, 7 i 8 etapu Szturmu na AWS.
 
 #### Z pomocą tego skryptu:
 - wejdziesz na zdobyty serwer
