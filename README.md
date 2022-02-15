@@ -327,40 +327,11 @@ Postaw stronę www tak, abyśmy widzieli ją w sieci.
 - miejsce na stronę: folder /var/www
 - git
 - Instalacja paczek systemowych wymaganych do postawienia strony.
-- 4. Wewnątrz środowiska (env).
+- Wewnątrz środowiska (env).
 - Instalacja wymaganych bibliotek.
 - Stworzenie plików z informacjami dla serwera aby wystawił stronę (nginx i gunicorn).
 - Restart nginxa i serwisów.
 - Moja strona działa!
-
-
-
-Ustaw nazwę aplikacji i MODYFIKUJ nazwę domeny.:
-```
-export FLASK_APP=app.py
-domena=TUTAJ_WPISZ.pl
-echo 'Moja domena to:' $domena
-```
-
-Domena się nie zgadza? Popraw powyższe. Zgadza? Chodźmy dalej.
-
-Zainstalujmy git.
-```
-sudo apt install git
-```
-
-### Etap 7 - Tryb szybki.
-
-Jeżeli chcesz przejść etap 7 szybko to po prostu wklej ten cały kod. Jednak więcej się nauczysz przechodząc ten etap krok po kroku, nawet gdy nie znasz 90% tych rzeczy. To hartuje i daje dobre podstawy na przyszłość. Ewentualnie wróć tutaj później. Oto kod na szybko:
-
-```
-chmod +x ./turbo
-```
-I wejdź w przeglądarce na adres swojej strony www. Działa? Pewnie, że działa. Gratulacje! Leć do etapu 8. Ale jeszcze lepiej, przeczytaj całość poniżej. Zobaczysz co się dzieje pod spodem i wiele się nauczysz.
-
-#### Etap 7 - Tryb klasyczny.
-
-Chcesz dowiedzieć się trochę co się dzieje pod maską, samemu to poczuć i przeklikać? Świetny wybór, czegoś się nauczysz albo chociaż nabierzesz obycia i doświadczenia. Do dzieła:
 
 
 ### 1. Miejsce na stronę: Folder /var/www 
@@ -391,7 +362,7 @@ I pobieramy (to) repozytorium i rozkładamy manatki.
 git clone https://github.com/ZPXD/flaga.git
 ```
 
-#### Wejdź do flagi.
+I wejdź do flagi.
 ```
 cd flaga
 ```
@@ -401,6 +372,32 @@ PS: Zawsze możesz sprawdzić w którym folderze jesteś, pisząc:
 ```
 pwd
 ```
+
+### 3. Domena.
+
+Ustaw nazwę aplikacji i MODYFIKUJ nazwę domeny.:
+```
+export FLASK_APP=app.py
+domena=TUTAJ_WPISZ.pl
+echo 'Moja domena to:' $domena
+```
+
+Domena się nie zgadza? Popraw powyższe. Zgadza? Chodźmy dalej.
+
+
+### Wybór a. Etap 7 - Tryb szybki.
+
+Jeżeli chcesz przejść etap 7 szybko to po prostu wklej ten cały kod. Jednak więcej się nauczysz przechodząc ten etap krok po kroku, nawet gdy nie znasz 90% tych rzeczy. To hartuje i daje dobre podstawy na przyszłość. Ewentualnie wróć tutaj później. Oto kod na szybko:
+
+```
+chmod +x ./pomocnicze_skrypty/turbo.sh
+source ./pomocnicze_skrypty/turbo.sh
+```
+I wejdź w przeglądarce na adres swojej strony www. Działa? Pewnie, że działa. Gratulacje! Leć do etapu 8. Ale jeszcze lepiej, przeczytaj całość poniżej. Zobaczysz co się dzieje pod spodem i wiele się nauczysz.
+
+#### Wybór b. Etap 7 - Tryb klasyczny.
+
+Chcesz dowiedzieć się trochę co się dzieje pod maską, samemu to poczuć i przeklikać? Świetny wybór, czegoś się nauczysz albo chociaż nabierzesz obycia i doświadczenia. Do dzieła.
 
 #### Instalacja paczek systemowych wymaganych do postawienia strony.
 
