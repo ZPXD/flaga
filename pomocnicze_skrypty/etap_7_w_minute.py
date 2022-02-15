@@ -3,11 +3,6 @@ import os
 import sys
 
 def etap_7_w_minute(domena):
-    os.system('sudo mkdir /var/www')
-    os.system('sudo chown -R www-data:www-data /var/www')
-    os.system('sudo chmod -R 775 /var/www')
-    os.system('sudo apt install git')
-    os.system('git clone https://github.com/ZPXD/flaga.git /var/www')
     os.system('sudo python3 /var/www/flaga/pomocnicze_skrypty/xD.py')
     os.system('sudo python3 -m venv /var/www/flaga/flagaenv')
     os.system('source /var/www/flaga/flagaenv/bin/activate')
