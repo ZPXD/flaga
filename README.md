@@ -11,6 +11,15 @@ Jesteś na **GitHub**'ie i czytasz właśnie plik **README.md** który znajduje 
 - i jeżeli wszystko zadziała, przejdziesz do etapu 8 i powiesisz flagę. Zaczynajmy!
 
 #### 1. Start. Wejdź na serwer.
+
+Upewnij się, że masz już stworzony folder xD w którym masz wszystkie potrzebne rzeczy (w tym np. klucz jak taki dostałeś zdobywając serwer AWS, serwery Home go nie mają) oraz, że zakładkę xD w której masz wszystkie podręczne linki dzięki którym szybko przywołasz potrzebne informacje.
+
+1. Włącz terminal/powershell.
+- **terminal:** (linux, mac) klikając jednocześnie **ctrl+shift+t**
+- **powershell:** (windows) otwórz folder w którym chcesz otworzyć terminal i kliknij w adres.
+
+Jeżeli coś tu nie działa lub masz starszy system, napisz odrazu na pomocy.
+
 Aby zacżąć włącz terminal (lub powershell) i połącz się ze swoim serwerem. Jeżeli nie wiesz jak to powróć do etapu 5:
 - http://bityl.pl/6X3gF
 
@@ -106,19 +115,19 @@ su $USER
 ```
 #### Sudo.
 
+Jako użytkownik, pewnych rzeczy robić nie możesz. Np. instalować nowych paczek.
 ```
-apt install git
+apt apt update 
 ```
 
 A spróbuj z sudo:
 ```
-sudo apt install git
+apt apt update 
 ```
 
 
 #### 2. Uaktualniamy paczki (packages).
 ```
-sudo apt update
 sudo apt upgrade
 ```
 W trakcie instalacji gdy proces się zatrzymuje z zapytaniem "Do you want to continue? [Y/n]" na końcu, napisz "Y" aby przejść dalej.
@@ -130,7 +139,6 @@ pwd
 Nie musisz ręcznie go przepisywać. Możesz łatwo skopiować, najedź myszką na tę ramkę wyżej i w prawym rogu a pokaże się przycisk - kliknij i masz skopiowany tekst. Teraz możesz wkleić kod, w zależności czy jesteś w powershellu czy w terminalu:
 - **terminal:** (linux, mac) klikając jednocześnie ctrl+shift+v
 - **powershell:** (windows) klikając prawym przyciskiem myszy.
-
 
 
 #### TWORZENIE KLUCZA ".rsa"
@@ -207,7 +215,13 @@ cd /www
 ```
 
 #### 3. Git.
-Instalujemy git'a, pobieramy repozytorium i rozkładamy manatki.
+
+Instalujemy git'a.
+```
+sudo apt install git
+```
+
+ pobieramy repozytorium i rozkładamy manatki.
 ```
 git clone https://github.com/ZPXD/flaga.git # <--- wklej dokładnie tą linię do terminala
 cd flaga
