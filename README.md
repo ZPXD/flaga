@@ -515,7 +515,7 @@ Ostatnie co zostało, to edycja zakładki /xd flagi. Twoja flaga aby przejść d
 
 Wejdź w przeglądarce na adres swojej strony www i dopisz **/xd** - to Twoja zakładka /xd.
 
-Bedąc dalej w folderze /var/www/flaga edytuj plik templates/xd.txt. Zobacz, jest tam w 12 linii "xDDD". Zostaw xD (z dowolną ilością "D") i: dodaj coś od siebie. Dzięki temu będzie można sprawdzić czy ukończyłeś ten etap. Zrób to tak:
+Bedąc dalej w folderze /var/www/flaga edytuj plik templates/xd.html. Zobacz, jest tam w 12 linii "xDDD". Zostaw xD (z dowolną ilością "D") i: dodaj coś od siebie. Dzięki temu będzie można sprawdzić czy ukończyłeś ten etap. Zrób to tak:
 ```
 nano templates/xd.html
 ```
