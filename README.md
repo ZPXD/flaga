@@ -462,7 +462,7 @@ sudo python3 xd.py
 ```
 lub, jeżeli zdefiniowałeś zmienną, napisz:
 ```
-sudo python3 skrypty_pomocnicze/xd.py $domena
+sudo python3 pomocnicze_skrypty/xd.py $domena
 ```
 
 #### Restart nginxa i serwisów. To zadziało się automatycznie. Nie musisz tego robić.
@@ -475,18 +475,18 @@ sudo systemctl restart flaga.service
 ```
 lub, jeżeli chcesz, napisałem skrypt który to robi za Ciebie.
 ```
-sudo python3 skrypty_pomocnicze/reload.py
+sudo python3 pomocnicze_skrypty/reload.py
 ```
 #### Gdyby coś poszło nie tak w kroku 6 i 7
 Użyj tej komendy a cofniesz się do początku kroku 6.
 
 Jeżeli modyfikowałeś zmienną domena, wpisz:
 ```
-python3 skrypty_pomocnicze/usun_pliki_konfiguracyjne.py $domena
+python3 pomocnicze_skrypty/usun_pliki_konfiguracyjne.py $domena
 ```
 Jeżeli modyfikowałeś plik settings.ini, albo to i to, to użyj:
 ```
-python3 skrypty_pomocnicze/usun_pliki_konfiguracyjne.py
+python3 pomocnicze_skrypty/usun_pliki_konfiguracyjne.py
 ```
 
 ### 8. Zobacz czy strona działa!
@@ -514,7 +514,7 @@ Powróć do:
 Urządź się tu :) Będąc dalej na serwerze, w folderze /var/www/flaga edytuj zawartość pliku xd.txt. Dodaj tam coś od siebie.
 ```
 cd /var/www/flaga
-nano xd.txt
+nano dane/xd.txt
 ```
 
 #### Zobaczy czy na stronie jest nowa treść!
@@ -546,7 +546,7 @@ sudo systemctl restart flaga.service
 ```
 lub
 ```
-sudo python3 skrypty_pomocnicze/reload.py
+sudo python3 pomocnicze_skrypty/reload.py
 ```
 
 #### Zobacz czy zakładka działa :)
