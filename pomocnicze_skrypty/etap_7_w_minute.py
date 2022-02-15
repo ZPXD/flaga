@@ -11,7 +11,7 @@ def etap_7_w_minute(domena):
     os.system('sudo python3 /var/www/flaga/pomocnicze_skrypty/xD.py')
     os.system('sudo python3 -m venv /var/www/flaga/flagaenv')
     os.system('source /var/www/flaga/flagaenv/bin/activate')
-    os.system('sudo pip3 install -r /var/www/flaga/requirements.txt')
+    #os.system('sudo pip3 install -r /var/www/flaga/requirements.txt')
     #os.system('python3 /var/www/flaga/pomocnicze_skrypty/xd.py $domena')
 
 if __name__ == '__main__':
