@@ -18,7 +18,7 @@ Zaczynajmy!
 - że masz **zakładkę xD** w której masz wszystkie podręczne linki dzięki którym szybko przywołasz potrzebne informacje
 - że wiesz, jak szybko włączyć terminal, nie ważne w jakim folderze jesteś:
  **terminal:** (linux, mac) klikając jednocześnie **ctrl+shift+t**
- **powershell:** (windows) otwórz folder w którym chcesz otworzyć terminal i kliknij w adres.
+ **powershell:** (windows) otwórz folder w którym chcesz otworzyć terminal i kliknij w adres i napisz tam powershell - otworzy się.
 - Oraz, że wiesz, że jeżeli coś tu nie działa, a zwłaszcza jeżeli masz starszy system, to zawsze dobrze zrobisz jak napiszesz na kanale pomocy.
 
 PS: od teraz, nie ważne czy jesteś na powershellu czy w terminalu, będę na tego typu okno mówił terminal, a powershell używał jedynie gdy będę opisywał coś co dotyczy konkretnie powershella.
