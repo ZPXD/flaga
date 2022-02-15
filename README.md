@@ -265,7 +265,6 @@ Działa? To nie wszystko. Daj:
 exit
 ```
 
-I pa tera na to:
 
 #### Ustawmy szybkie łączenie się:
 
