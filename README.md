@@ -308,24 +308,31 @@ Postaw stronę www tak, abyśmy widzieli ją w sieci.
 - Restart nginxa i serwisów.
 - Moja strona działa!
 
-Kroki na szybko:
-```
+Jeżeli chcesz przejść etap 7 za jednym kliknięciem, w minutę możesz wpisać. Poniższy kod. Jednak odradzamy to początkującym. Więcej się nauczysz przechodząc ten etap krok po kroku, nawet gdy nie znasz 90% tych rzeczy. To hartuje i daje dobre podstawy na przyszłość. Ewentualnie wróć tutaj później. Oto kod na szybko:
 
+Ustaw nazwę aplikacji i MODYFIKUJ nazwę domeny.:
+```
+export FLASK_APP=app.py
+domena=TUTAJ_WPISZ.pl
+echo 'Moja domena to:' $domena
+```
+Domena się nie zgadza? Popraw powyższe. Zgadza? Skopiuj całość i wklej w terminalu. Na końcu dodaj 1 enter.
+```
 mkdir /var/www 2>1
 cd /var
 sudo chmod -R www-data:www-data /var/www
 cd www
 sudo apt install git
 git clone https://github.com/ZPXD/flaga.git
-cd flaga
-sudo python3 xD.py
+cd flaga                         
+sudo python3 xD.py               # Skrypt pobiera i instaluje wymagane paczki.
 python3 -m venv flagaenv         # Stwórz środowisko flagenv używając venv.
 source flagaenv/bin/activate     # Aktywuj środowisko flagaenv
 export FLASK_APP=app.py          # I zapisz zmienną FLASK_APP równą app.py (nazwie programu strony www) 
 ls # sdfgsdfgsdgsgjpodgksg       # wylistuje foldery i pliki w folderze w którym jesteś.
 pwd                              # pokaże ścieżkę folderu w którym jesteś.
 pip3 install -r requirements.txt # zainstaluj biblioteki pythona spisane w requirements.txt
-
+sudo python3 xd.py $domena       # skrypt przygotowuje pliki serwerowe
 ```
 
 ### 1. Miejsce na stronę: Folder /var/www 
@@ -440,7 +447,7 @@ sudo systemctl restart flaga.service
 lub, jeżeli chcesz, napisałem skrypt który to robi za Ciebie.
 ```
 sudo python3 reload.py
-
+```
 #### Gdyby coś poszło nie tak w kroku 6 i 7
 Użyj tej komendy a cofniesz się do początku kroku 6.
 
@@ -453,7 +460,7 @@ Jeżeli modyfikowałeś plik settings.ini, albo to i to, to użyj:
 python3 usun_pliki_konfiguracyjne.py $domena
 ```
 
-#### 8. Zobacz czy strona działa!
+### 8. Zobacz czy strona działa!
 
 Wejdź na adres Twoje strony w wyszukiwarkę. Zobacz czy strona działa. Nie? Pogłówkuj trochę i/lub napisz na pomoc. 
 
