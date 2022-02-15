@@ -20,7 +20,8 @@ Zaczynajmy!
  **terminal:** (linux, mac) klikając jednocześnie **ctrl+shift+t**
  **powershell:** (windows) otwórz folder w którym chcesz otworzyć terminal i kliknij w adres i napisz tam powershell - otworzy się.
 - Oraz, że wiesz, że jeżeli coś tu nie działa, a zwłaszcza jeżeli masz starszy system, to zawsze dobrze zrobisz jak napiszesz na kanale pomocy.
-
+Powershell/terminal: Windows: kliknij ścieżkę w folderze xD
+![alt text](https://i.imgur.com/6mxKsAY.gif "Powershell gif")
 PS: od teraz, nie ważne czy jesteś na powershellu czy w terminalu, będę na tego typu okno mówił terminal, a powershell używał jedynie gdy będę opisywał coś co dotyczy konkretnie powershella.
 
 ## ETAP 5 - serwer
