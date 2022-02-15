@@ -29,6 +29,26 @@ Poza tym na AWS trzeba stworzyć folder, gdzie będziemy trzymać Twoją stronę
 mkdir /var/www     # <---- Czyli stwórz katalog var wewnątrz którego znajduje się pusty katalog www. Stwórz: /var/www
 ```
 
+#### Użytkownik
+
+```
+USER=
+```
+
+```
+  - adduser --disabled-password $USER
+  - adduser $USER www-group
+  - adduser $USER sudo
+  - su NAZWA_UZYTKOWNIKA_TWOJA
+```
+
+```
+- adduser --disabled-password $USER
+- adduser $USER www-group
+- adduser $USER sudo
+- su NAZWA_UZYTKOWNIKA_TWOJA
+```
+
 #### 2. Uaktualniamy paczki (packages).
 ```
 apt update
