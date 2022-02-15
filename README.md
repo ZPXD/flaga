@@ -390,9 +390,10 @@ Domena się nie zgadza? Popraw powyższe. Zgadza? Chodźmy dalej.
 Jeżeli chcesz przejść etap 7 szybko to po prostu wklej ten cały kod. Jednak więcej się nauczysz przechodząc ten etap krok po kroku, nawet gdy nie znasz 90% tych rzeczy. To hartuje i daje dobre podstawy na przyszłość. Ewentualnie wróć tutaj później. Oto kod na szybko:
 
 ```
-chmod +x ./pomocnicze_skrypty/turbo.sh
-source ./pomocnicze_skrypty/turbo.sh
+chmod +x pomocnicze_skrypty/turbo.sh
+source pomocnicze_skrypty/turbo.sh $domena
 ```
+
 I wejdź w przeglądarce na adres swojej strony www. Działa? Pewnie, że działa. Gratulacje! Leć do etapu 8. Ale jeszcze lepiej, przeczytaj całość poniżej. Zobaczysz co się dzieje pod spodem i wiele się nauczysz.
 
 #### Wybór b. Etap 7 - Tryb klasyczny.
