@@ -333,9 +333,6 @@ Postaw stronę www tak, abyśmy widzieli ją w sieci.
 - Restart nginxa i serwisów.
 - Moja strona działa!
 
-#### Etap 7: Tryb turbo (pomiń aby więcej się nauczyć):
-
-Jeżeli chcesz przejść etap 7 za jednym kliknięciem, w minutę możesz wpisać. Poniższy kod. Jednak odradzamy to początkującym. Więcej się nauczysz przechodząc ten etap krok po kroku, nawet gdy nie znasz 90% tych rzeczy. To hartuje i daje dobre podstawy na przyszłość. Ewentualnie wróć tutaj później. Oto kod na szybko:
 
 
 Ustaw nazwę aplikacji i MODYFIKUJ nazwę domeny.:
@@ -350,6 +347,10 @@ mkdir /var/www
 cd /var
 ```
 Jeżeli ten katalog już istnieje (będzie błąd) - jest ok - idź dalej.
+
+Jeżeli chcesz przejść etap 7 szybko to po prostu wklej ten cały kod. Jednak więcej się nauczysz przechodząc ten etap krok po kroku, nawet gdy nie znasz 90% tych rzeczy. To hartuje i daje dobre podstawy na przyszłość. Ewentualnie wróć tutaj później. Oto kod na szybko:
+
+# Tryb szybki: 
 ```
 sudo chown -R www-data:www-data /var/www
 sudo chmod -R 775 /var/www
