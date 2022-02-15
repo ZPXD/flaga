@@ -42,7 +42,7 @@ if __name__ == '__main__':
         print('Twoja domena to:', domena)
         print('Przygotowuje pliki serwerowe.')
         print()
-        print('Jeżeli się pomyliłeś, uruchom:\ndomena=nazwa-TWOJEJ-domeny.pl\noraz wpisz:\npython3 usun_pliki_serwerowe.py $domena')
+        print('Jezeli się pomyliłeś, uruchom:\ndomena=nazwa-TWOJEJ-domeny.pl\noraz wpisz:\npython3 usun_pliki_serwerowe.py $domena')
         print('I spróbuj znowu.')
         print()
         print('W innym razie, kontynuuj.')
