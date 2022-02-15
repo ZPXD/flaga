@@ -13,7 +13,6 @@ Jesteś na **GitHub**'ie i czytasz właśnie plik **README.md** który znajduje 
 #### 1. Start. Wejdź na serwer.
 Aby zacżąć włącz terminal (lub powershell) i połącz się ze swoim serwerem. Jeżeli nie wiesz jak to powróć do etapu 5:
 - http://bityl.pl/6X3gF
-### Porządek na serwie:
 
 #### Home:
 
@@ -22,12 +21,18 @@ Otwórz terminal/powershell i wpisz:
 ```
 ssh root@1.1.1.1
 ```
+
 #### AWS: 
 Będąc w folderze xD, gdzie masz klucz .pem. Włącz terminal (lub jak masz Windowsa, to powershell i kliknij na pasek z adresem folderu i otworzy Ci się powershell). Wpisz tam:
 ```
 ssh -i nazwaklucza.pem ubuntu@1.1.1.1 
 ```
 
+#### A po ukończeniu poniższych kroków, będziesz łączyć się pisząc:
+Będąc w folderze xD, gdzie masz klucz RSA Włącz terminal/powershell i wpisz tam:
+```
+ssh -i nazwa_klucza_RSA twoj_uzytkownik@1.1.1.1 
+```
 
 
 #### Resetowanie serwera
