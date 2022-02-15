@@ -34,7 +34,7 @@ def clear_files_and_folders_creation():
 
 if __name__ == '__main__':
     config = configparser.ConfigParser()
-    config.read('settings.ini')
+    config.read('/var/www/flaga/settings.ini')
     domena = config['XD']['domena']
     if len(sys.argv) > 1:
         domena = sys.argv[1]
