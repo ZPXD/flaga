@@ -85,6 +85,11 @@ groups $NEW_USER
 ```
 Wyświetli się: $USER : $USER www-data sudo
 
+3. Od teraz też masz swój nowy domowy katalog. Narazie nic tam nie ma. Gdy będziesz się logował na swojego użytkownika, tutaj będziesz się pojawiał
+```
+cd /home/$USER
+pwd
+```
 
 #### Chodzenie pomiędzy użytkownikami:
 ```
@@ -132,7 +137,7 @@ Nie musisz ręcznie go przepisywać. Możesz łatwo skopiować, najedź myszką 
 Stwórz klucz:
 
 ```
-cd /home/$USER # czy sie da, jak nie nowy katalog
+cd /home/$USER
 mkdir /home/$USER/.ssh
 chmod 700 .ssh
 cd  /home/$USER/.ssh
@@ -183,24 +188,14 @@ Zapisz ją w notatkach podreczne_xd.
 1. Otwórz terminal/powershell w katalogu i wpisz:
 
 ```
-ssh -i NAZWA_KLUCZA $USER@$$IP
+ssh -i NAZWA_KLUCZA $USER@$IP
 ```
 
 Działa? Zostaw w tle, przyda się potem. Nie działa? Spróbuj jeszcze raz, pomyśl, albo daj znać na pomocy.
 
 
 
-
-
-
-
-
-
-
-
-
-
-#### Folder /var/www.
+#### Folder /var/www 
 
 Poza tym na AWS trzeba stworzyć folder, gdzie będziemy trzymać Twoją stronę z flagą: mkdir i nazwa folderu: /var/www
 ```
