@@ -343,7 +343,7 @@ cd /var
 W środku znajduje się katalog www. Tam będziemy trzymać strony. Nadaj mu uprawnienia które pozwolą potem na dostęp do plików danych. I wejdź do środka.
 ```
 sudo chmod -R www-data:www-data /var/www
-sudo chmod -R 775 www
+sudo chmod -R 775 /var/www
 cd /www
 ```
 
@@ -353,9 +353,9 @@ Instalujemy git'a. To narzędzie do pobierania repozytoriów czyli powiedźmy pr
 ```
 sudo apt install git
 ```
-I pobieramy repozytorium i rozkładamy manatki.
+I pobieramy (to) repozytorium i rozkładamy manatki.
 ```
-git clone https://github.com/ZPXD/flaga.git # <--- wklej dokładnie tą linię do terminala
+git clone https://github.com/ZPXD/flaga.git
 ```
 
 #### Wejdź do flagi.
@@ -371,10 +371,10 @@ pwd
 
 #### Instalacja paczek systemowych wymaganych do postawienia strony.
 
-Uruchom skrypt pythona który zawiera serię komend dla linuxa, które zrealizuje automatycznie. Jeżeli jesteś ciekaw co to za komendy możesz podejrzeć plik pisząc cat + nazwa_pliku (**cat xD.py**).
-
+Uruchom skrypt pythona który zawiera serię komend dla linuxa, które zrealizuje automatycznie. Jeżeli jesteś ciekaw co to za komendy możesz podejrzeć plik pisząc cat + nazwa_pliku (**cat /var/www/flaga/pomocnicze_skrypty/xD.py** ).
+PS: chodzi o xD.py z dużej litery xD.py a nie xd.py z małej litery.
 ```
-sudo python3 xD.py # <---- xD.py z dużej litery xD.py a nie xd.py z małej litery.
+sudo python3 /var/www/flaga/pomocnicze_skrypty/xD.py
 ```
 PS: Tak jak się domyślasz, terminal nie czyta niczego po znaku "#" zobacz samemu, wpisz:
 ```
@@ -391,7 +391,7 @@ pwd
 ```
 Jeżeli to nie /var/www/flaga to napisz w terminalu:
 ```
-/var/www/flaga
+cd /var/www/flaga
 ```
 
 Stwórz środowisko:
@@ -431,7 +431,7 @@ sudo python3 xd.py
 ```
 lub, jeżeli zdefiniowałeś zmienną, napisz:
 ```
-sudo python3 xd.py $domena
+sudo python3 skrypty_pomocnicze/xd.py $domena
 ```
 
 #### Restart nginxa i serwisów. To zadziało się automatycznie. Nie musisz tego robić.
@@ -444,18 +444,18 @@ sudo systemctl restart flaga.service
 ```
 lub, jeżeli chcesz, napisałem skrypt który to robi za Ciebie.
 ```
-sudo python3 reload.py
+sudo python3 skrypty_pomocnicze/reload.py
 ```
 #### Gdyby coś poszło nie tak w kroku 6 i 7
 Użyj tej komendy a cofniesz się do początku kroku 6.
 
-Jeżeli modyfikowałeś zmienną domena:
+Jeżeli modyfikowałeś zmienną domena, wpisz:
 ```
-python3 usun_pliki_konfiguracyjne.py $domena
+python3 skrypty_pomocnicze/usun_pliki_konfiguracyjne.py $domena
 ```
 Jeżeli modyfikowałeś plik settings.ini, albo to i to, to użyj:
 ```
-python3 usun_pliki_konfiguracyjne.py $domena
+python3 skrypty_pomocnicze/usun_pliki_konfiguracyjne.py
 ```
 
 ### 8. Zobacz czy strona działa!
