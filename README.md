@@ -345,10 +345,13 @@ echo 'Moja domena to:' $domena
 ```
 Domena się nie zgadza? Popraw powyższe. Zgadza? Skopiuj całość i wklej w terminalu. Na końcu dodaj 1 enter. Teraz pobieramy to repo na Twój serwer i instalujemy wszystko automatycznie. Kliknij poniższe i rołóż ręce. Chwila moment i gotowe.
 ```
-mkdir /var/www 2>1
-sudo chmod -R www-data:www-data /var/www'
-sudo apt install git'
-git clone https://github.com/ZPXD/flaga.git /var/www'
+mkdir /var/www
+```
+Jeżeli ten katalog już istnieje (będzie błąd) - jest ok - idź dalej.
+```
+sudo chmod -R www-data:www-data /var/www
+sudo apt install git
+git clone https://github.com/ZPXD/flaga.git /var/www
 sudo python3 /var/www/flaga/pomocnicze_skrypty/etap_7_w_minute.py $domena
 ```
 I wejdź w przeglądarce na adres swojej strony www. Działa? Pewnie, że działa. Gratulacje! Leć do etapu 8. Ale jeszcze lepiej, przeczytaj całość poniżej. Zobaczysz co się dzieje pod spodem i wiele się nauczysz.
