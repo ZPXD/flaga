@@ -337,6 +337,7 @@ Postaw stronę www tak, abyśmy widzieli ją w sieci.
 
 Jeżeli chcesz przejść etap 7 za jednym kliknięciem, w minutę możesz wpisać. Poniższy kod. Jednak odradzamy to początkującym. Więcej się nauczysz przechodząc ten etap krok po kroku, nawet gdy nie znasz 90% tych rzeczy. To hartuje i daje dobre podstawy na przyszłość. Ewentualnie wróć tutaj później. Oto kod na szybko:
 
+
 Ustaw nazwę aplikacji i MODYFIKUJ nazwę domeny.:
 ```
 export FLASK_APP=app.py
@@ -346,12 +347,16 @@ echo 'Moja domena to:' $domena
 Domena się nie zgadza? Popraw powyższe. Zgadza? Skopiuj całość i wklej w terminalu. Na końcu dodaj 1 enter. Teraz pobieramy to repo na Twój serwer i instalujemy wszystko automatycznie. Kliknij poniższe i rołóż ręce. Chwila moment i gotowe.
 ```
 mkdir /var/www
+cd /var
 ```
 Jeżeli ten katalog już istnieje (będzie błąd) - jest ok - idź dalej.
 ```
 sudo chown -R www-data:www-data /var/www
+sudo chmod -R 775 /var/www
+cd /var/www
 sudo apt install git
-git clone https://github.com/ZPXD/flaga.git /var/www
+git clone https://github.com/ZPXD/flaga.git
+cd /var/www/flaga
 sudo python3 /var/www/flaga/pomocnicze_skrypty/etap_7_w_minute.py $domena
 ```
 I wejdź w przeglądarce na adres swojej strony www. Działa? Pewnie, że działa. Gratulacje! Leć do etapu 8. Ale jeszcze lepiej, przeczytaj całość poniżej. Zobaczysz co się dzieje pod spodem i wiele się nauczysz.
@@ -365,14 +370,14 @@ Chcesz dowiedzieć się trochę co się dzieje pod maską, samemu to poczuć i p
 
 Poza tym na AWS trzeba stworzyć folder, gdzie będziemy trzymać Twoją stronę z flagą: mkdir i nazwa folderu: /var/www. Dodaj 2>1 aby nie wyświetlało błędu, jeżeli folder już istnieje. I wejdź do /var.
 ```
-mkdir /var/www 2>1
+mkdir /var/www
 cd /var
 ```
 W środku znajduje się katalog www. Tam będziemy trzymać strony. Nadaj mu uprawnienia które pozwolą potem na dostęp do plików danych. I wejdź do środka.
 ```
 sudo chown -R www-data:www-data /var/www
 sudo chmod -R 775 /var/www
-cd /www
+cd /var/www
 ```
 
 ### 2. Git.
