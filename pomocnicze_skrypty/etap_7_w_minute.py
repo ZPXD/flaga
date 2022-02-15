@@ -29,4 +29,4 @@ if __name__ == '__main__':
         print('I spróbuj znowu.')
         print()
         print('W innym razie, kontynuuj.')
-        create_nginx_and_gunicorn_files(domena)
+        etap_7_w_minute(domena)
