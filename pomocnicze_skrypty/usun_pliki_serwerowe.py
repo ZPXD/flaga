@@ -38,11 +38,11 @@ if __name__ == '__main__':
     domena = config['XD']['domena']
     if len(sys.argv) > 1:
         domena = sys.argv[1]
-    if domena == 'xd.pl':
+    if domena == 'xd.pl' and len(sys.arvg) == 1:
         print('Nie zmieniles domeny. Zrob to piszac:\ndomena=nazwa-TWOJEJ-domeny.pl')
     else:
+        clear_files_and_folders_creation(domena)
         print('Podana przez Ciebie domena na ktorej postawilismy stronke to:\n', domena, '\n')
         print('Sprawdz czy sie zgadza i edytuj jej nazwę piszac:\ndomena=nazwa-TWOJEJ-domeny.pl')
         print('Jak nazwa domeny bedzie sie zgadzac, uruchom spowrotem plik xd.py:\nsudo python3 xd.py $domena')
         print('Powinno się udac. W przeciwnym razie napsz na dziale pomoc.')
-        clear_files_and_folders_creation(domena)
