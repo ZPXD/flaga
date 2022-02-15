@@ -7,15 +7,15 @@ def etap_7_w_minute(domena):
     os.system('chmod -R www-data:www-data /var/www')
     os.system('apt install git')
     os.system('git clone https://github.com/ZPXD/flaga.git /var/www')
-    os.system('python3 xD.py')
-    os.system('python3 -m venv flagaenv')
-    os.system('source flagaenv/bin/activate')
-    os.system('pip3 install -r requirements.txt')
-    os.system('python3 xd.py $domena')
+    os.system('python3 /var/www/flaga/pomocnicze_skrypty/xD.py')
+    os.system('python3 -m venv /var/www/flaga/flagaenv')
+    os.system('source /var/www/flaga/flagaenv/bin/activate')
+    os.system('pip3 install -r /var/www/flaga/requirements.txt')
+    os.system('python3 /var/www/flaga/pomocnicze_skrypty/xd.py $domena')
 
 if __name__ == '__main__':
     config = configparser.ConfigParser()
-    config.read('settings.ini')
+    config.read('/var/www/flaga/settings.ini')
     domena = config['XD']['domena']
     if len(sys.argv) > 1:
         domena = sys.argv[1]
