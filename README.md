@@ -110,8 +110,9 @@ su $USER
 apt install git
 ```
 
+A spróbuj z sudo:
 ```
-sudo apt install tree
+sudo apt install git
 ```
 
 
