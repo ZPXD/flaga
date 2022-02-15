@@ -1,50 +1,77 @@
 Witaj
 
-Jesteś na **GitHub**'ie i czytasz właśnie plik **README.md** który znajduje się wewnątrz **repozytorium Flaga** z 7 i 8 etapu Szturmu na AWS.
+Jesteś na **GitHub**'ie i czytasz właśnie plik **README.md** który znajduje się wewnątrz **repozytorium Flaga** z 5, 7 i 8 etapu Szturmu na AWS.
 
-#### W tym etapie w 6 krokach:
-- wejdziesz na serwer
+### Tutaj w 6 krokach:
+- wejdziesz na zdobyty serwer
 - przygotujesz go
 - pobierzesz repozytorium z flagą,
 - utworzysz nowe środowisko programistyczne
 - w którym uruchomisz i udostępnisz w sieci stronę www napisaną w pythonie
-- i jeżeli wszystko zadziała, przejdziesz do etapu 8 i powiesisz flagę. Zaczynajmy!
+- i jeżeli wszystko zadziała, przejdziesz do etapu 8 i powiesisz flagę. 
 
+Zaczynajmy!
+
+#### Aha, jeszcze jedno. Zadbajmy o szybkość, bądź szybki jak wiatr dzięki 4 rzeczom:
+
+- Upewnij się, że masz już stworzony **folder xD** w którym masz wszystkie potrzebne rzeczy (w tym np. klucz jak taki dostałeś zdobywając serwer AWS, serwery Home go nie mają) 
+- że masz **zakładkę xD** w której masz wszystkie podręczne linki dzięki którym szybko przywołasz potrzebne informacje
+- że wiesz, jak szybko włączyć terminal, nie ważne w jakim folderze jesteś:
+ **terminal:** (linux, mac) klikając jednocześnie **ctrl+shift+t**
+ **powershell:** (windows) otwórz folder w którym chcesz otworzyć terminal i kliknij w adres.
+- Oraz, że wiesz, że jeżeli coś tu nie działa, a zwłaszcza jeżeli masz starszy system, to zawsze dobrze zrobisz jak napiszesz na kanale pomocy.
+
+PS: od teraz, nie ważne czy jesteś na powershellu czy w terminalu, będę na tego typu okno mówił terminal, a powershell używał jedynie gdy będę opisywał coś co dotyczy konkretnie powershella.
 
 ## ETAP 5 - serwer
 
-#### 1. Start. Wejdź na serwer.
+Czas połączyć się z Twoim serwerem i przygotować go. W tym etapie:
+- połączenie z serwerem
+- awaryjnie: restart
+- root 
+- użytkownik
+- sudo i uaktualniamy paczki (packages).
+- tworzymy klucz RSA
+- pobieramy z serwera klucz RSA
+- łaczymy się z serwerem
 
-Upewnij się, że masz już stworzony folder xD w którym masz wszystkie potrzebne rzeczy (w tym np. klucz jak taki dostałeś zdobywając serwer AWS, serwery Home go nie mają) oraz, że zakładkę xD w której masz wszystkie podręczne linki dzięki którym szybko przywołasz potrzebne informacje.
+### 1. Połącz się ze swoim serwerem:
 
-Jeżeli coś tu nie działa, a zwłaszcza jeżeli masz starszy system, napisz odrazu na kanale pomocy.
+(Jeżeli nie wiesz jak to powróć do dokumentu z etapu 5: [Jak połączyć się z serwerem](http://bityl.pl/6X3gF) ). Wpisz:
 
-1. Włącz terminal/powershell.
-- **terminal:** (linux, mac) klikając jednocześnie **ctrl+shift+t**
-- **powershell:** (windows) otwórz folder w którym chcesz otworzyć terminal i kliknij w adres.
-
-2. Połącz się ze swoim serwerem (Jeżeli nie wiesz jak to powróć do dokumentu z etapu 5: [Jak połączyć się z serwerem](http://bityl.pl/6X3gF) ). Wpisz:
-
-#### Home:
+#### A. Home:
 ```
 ssh root@1.1.1.1
 ```
-#### AWS: 
+#### B. AWS: 
 Będąc w folderze xD, gdzie masz klucz .pem wpisz:
 ```
 ssh -i nazwaklucza.pem ubuntu@1.1.1.1 
 ```
-#### A po ukończeniu poniższych kroków, będziesz łączyć się pisząc:
+#### C. A po ukończeniu poniższych kroków, będziesz łączyć się pisząc:
 Będąc w folderze xD, gdzie masz klucz RSA Włącz wpisz tam:
 ```
 ssh -i nazwa_klucza_RSA twoj_uzytkownik@1.1.1.1 
 ```
 
+### 2. Pssst! 
+Od teraz, gdyby coś poszło nie tak, zawsze możesz zrestartować serwer i zacząć od nowa: [Resetowanie Serwera](http://bityl.pl/Bmvwu). To potrwa ok 5-10 minut i będziesz mógł zacząć od nowa. Raczej tego nie rób jak nie trzeba - stracisz wszystko co jest na serwerze.
 
-#### Resetowanie serwera
-Od teraz, gdyby coś poszło nie tak, zawsze możesz zrestartować serwer i zacząć od nowa: [Resetowanie Serwera](http://bityl.pl/Bmvwu)
+### 3. Root.
 
-#### Ten krok jest jedynie dla serwerów na AWS:
+#### Root (teraz już wszyscy robią poniższe kroki).
+
+Pewną stałą wbudowaną w system jest $USER. Zawsze pokazuje aktualnego użytkownika. Wpisz:
+```
+echo $USER
+```
+
+Jeżeli wszystko zrobiłeś prawidłowo, pojawi Ci się: **root**. Chyba, że jesteś na AWS, to pokaże Ci się **ubuntu**. Root to coś jak administrator. Ma nawet swój folder o ścieżce /root do którego tylko on ma dostęp. Wszystko co ma przypisane uprawnienia **root** możesz robić z jego poziomu. Ty jednak chcesz stworzyć nowego użytkownika. 
+
+Jednak najpierw, minuta dla AWS'owców.
+
+#### Poniższe kilka linijek jest jedynie dla serwerów na AWS (nie na np. Home):
+
 Dla serwerów postawionych na AWS najpierw dodatkowo ustawiamy uprawnienia root ("administratora"). Skopiuj poniższe komendy i wklej do terminala.
 ```
 sudo passwd   # <----- Wpisz hasło i zapisz je sobie gdzieś.
@@ -52,17 +79,8 @@ su -          # <----- Tak logujesz się na użytkownika 'root'.
 ```
 Teraz jesteś jako root.
 
-#### Root (teraz już wszyscy robią poniższe kroki).
 
-
-Pewną stałą wbudowaną w system jest $USER. Zawsze pokazuje aktualnego użytkownika. Wpisz:
-```
-echo $USER
-```
-
-Jeżeli wszystko zrobiłeś prawidłowo, pojawi Ci się: **root**. Root to coś jak administrator. Ma nawet swój folder o ścieżce /root do którego tylko on ma dostęp. Wszystko co ma przypisane uprawnienia **root** możesz robić z jego poziomu. Ty jednak chcesz stworzyć nowego użytkownika.
-
-#### Użytkownik
+### 4. Użytkownik
 
 Użytkownik to to jako kto jesteś na serwerze. Zwykli użytkownicy mają inne uprawnienia niż root. Nie mogą robić pewnych rzeczy i wchodzić w pewne miejsca.
 
@@ -75,6 +93,8 @@ Stworzyłeś zmienną NEW_USER. Teraz możesz ją wywoływać zawsze pisząc jej
 echo $NEW_USER
 ```
 
+#### Tworzymy użytkownika.
+
 Czas stworzyć użytkownika o takiej nazwie jak chcesz.
 
 Będziesz pytany o numer telefonu, pokoju i inne rzeczy - wszystko pomijaj naciskając enter.
@@ -84,124 +104,189 @@ Wklej poniższy kod aby stworzyć użytkownika o takiej nazwie jaką wartość p
 adduser --disabled-password $NEW_USER
 ```
 I poniższy kod aby przypisać go do grupy www-data (potrzebnej np. do postawienia strony www) i do grupy sudo (potrzebnej do wykonywania operacji z poziomu użytkownika **root**).
+
+
+#### Przy tej okazji, mały boost.
+
+Nie musisz kodu ręcznie go przepisywać. Możesz łatwo skopiować, najedź myszką na tę ramkę wyżej i w prawym rogu a pokaże się przycisk - kliknij i masz skopiowany tekst. Oczywiście możesz robić to także ręcznie. Ważna rzecz: **możesz jednocześnie skopiować i wkleić do terminala wiele linii kodu** Teraz możesz wkleić kod, w zależności czy jesteś w powershellu czy w terminalu:
+- **terminal:** (linux, mac) klikając jednocześnie ctrl+shift+v
+- **powershell:** (windows) klikając prawym przyciskiem myszy.
+
 ```
 adduser $NEW_USER www-data
 adduser $NEW_USER sudo
 ```
 
-2. Sprawdź czy jesteś w grupie sudo i www-data:
+Sprawdź czy jesteś w grupie sudo i www-data:
 ```        
 groups $NEW_USER 
 ```
 Wyświetli się: $USER : $USER www-data sudo
 
-3. Od teraz też masz swój nowy domowy katalog. Narazie nic tam nie ma. Gdy będziesz się logował na swojego użytkownika, tutaj będziesz się pojawiał
+#### Katalog domowy.
+
+Od teraz też masz swój nowy domowy katalog. Narazie nic tam nie ma. Gdy będziesz się logował na swojego użytkownika, tutaj będziesz się pojawiał
 ```
 cd /home/$USER
 pwd
 ```
 
 #### Chodzenie pomiędzy użytkownikami:
+
+Jak przełączać użytkowników? Wejście na Twojego użytkownika: su + nazwa Twojego użytkownika.
 ```
-su $USER
-sudo su ubuntu
+su $NEW_USER
+```
+Wejście spowrotem na **root**:
+```
 su -
+``
+Gdybyś miał jeszcze innego użytkownia, wszedł byś na niego pisząc (nie zadziała):
+```
+sudo inny_uzytkownik
+```
+Wejdź jeszcze raz na swojego użytkownika. Napisz:
+```
+su $NEW_USER
+```
+Aby wylogować się z użytkownika możesz też napisać (nie pisz tego na root!):
+```
 exit
 ```
+To też służy do np. zamykania terminala, jeżeli zalogujesz się jako Ty albo jesteś na root. Ale o tym później
 
 #### Logujemy się i idziemy dalej:
 
+Dobra, lecimy.
 ```
 su $USER
 ```
-#### Sudo.
+### 5. Sudo i uaktualniamy paczki (packages).
 
-Jako użytkownik, pewnych rzeczy robić nie możesz. Np. instalować nowych paczek.
+Jako użytkownik, pewnych rzeczy robić nie możesz. Np. wchodzić na niektóre foldery, modyfikować pewnych plików czy ich w pewnych miejscach tworzyć. Ani nie możesz instalować nowych paczek. 
+
+#### Pytanie [Y/n]
+
+PS: w trakcie różnych instalacji gdy proces się zatrzymuje z zapytaniem "Do you want to continue? [Y/n]" na końcu, napisz "Y" aby przejść dalej.
+
+#### Zaktualizuj paczki:
 ```
 apt apt update 
 ```
-
-A spróbuj z sudo:
+Nie działa. A spróbuj z sudo:
 ```
-apt apt update 
+sudo apt apt update 
 ```
-
-
-#### 2. Uaktualniamy paczki (packages).
+Działa. Podnieś wersję paczek:
 ```
 sudo apt upgrade
 ```
-W trakcie instalacji gdy proces się zatrzymuje z zapytaniem "Do you want to continue? [Y/n]" na końcu, napisz "Y" aby przejść dalej.
+Teraz upewniliśmy się, że paczki na naszym serwerze są zaktualizowane. Czasem wchodząc na nowy serwer mamy doczynienia z niezłym skansenem i zawsze warto to zrobić przed całą resztą.
 
-PS: w plikach **README.md** kod umieszcza się w takiej ramce jak poniżej.
+Dzięki sudo możesz robić takie rzeczy jak instalacje. Zwłąszcza takie które mają wpływ na bardziej systemowe rzeczy, jak np. powyższe aktualizowanie paczek, 
+
+#### Upewnij się gdzie jesteś:
+
+Napisz pwd a poznasz ścieżkę katalogu w którym jesteś.
 ```
 pwd
 ```
-Nie musisz ręcznie go przepisywać. Możesz łatwo skopiować, najedź myszką na tę ramkę wyżej i w prawym rogu a pokaże się przycisk - kliknij i masz skopiowany tekst. Teraz możesz wkleić kod, w zależności czy jesteś w powershellu czy w terminalu:
-- **terminal:** (linux, mac) klikając jednocześnie ctrl+shift+v
-- **powershell:** (windows) klikając prawym przyciskiem myszy.
+Gdziekolwiek jesteś, przenieś się do swojego katalogu domowego. Zrobisz to używając komendy cd.
 
+#### Teleportacja.
 
-#### TWORZENIE KLUCZA ".rsa"
-
-Stwórz klucz:
-
+Przeniesiesz do dowolnego katalogu pisząc cd + ścieżka. Lećmy do Twojego katalogu domowego.
 ```
 cd /home/$USER
+```
+
+### 6. Tworzenie klucza ".rsa"
+
+Stwórz klucz RSA :)
+
+Stwórz katalog .ssh pisząc mkdir + ścieżka folderu.
+```
 mkdir /home/$USER/.ssh
+```
+
+Nadaj mu wymagane uprawnienia i wejdź do środka:
+```
 chmod 700 .ssh
 cd  /home/$USER/.ssh
-ssh-keygen -f /home/$USER/.ssh/xd_NAZWA_UZYTKOWNIKA_TWOJA -C $USER -N ''
-cat ~/.ssh/xd_NAZWA_UZYTKOWNIKA_TWOJA.pub > authorized_keys
+```
+Nazwij swoje klucze rsa:
+```
+klucz=NAZWA_KLUCZA
+```
+Stwórz parę kluczy RSA: prywatny i publiczny. Zapisz publiczny do authorized_keys i ustaw mu uprawnienia na 600 używając chmod. Wklej poniższe (to gęstsze komendy, ale nie martw się tym aż tak, opowiemy wszystko na zajęciach):
+```
+ssh-keygen -f /home/$USER/.ssh/$klucz -C $USER -N ''
+cat ~/.ssh/$klucz.pub > authorized_keys
 chmod 600 authorized_keys
 ```
 
 Sprawdź, czy klucz został stworzony. 
-
 ```
 ls
 ```
-Pojawią się 2 klucze o nazwie xd_$USER. W przeciwnym razie powtórz albo daj znać, 
+Pojawią się 2 klucze o nazwie xd_$USER. W przeciwnym razie powtórz te kroki albo daj znać, 
 że potrzebujesz pomocy.
 
-#### POBRANIE KLUCZA rsa .pub
+### 7. Pobieranie z serwera KLUCZA rsa .pub
 
-1. Wchodzisz do katalogu xD w terminal/powershell
-2. Uprawnienia katalogu 
+Teraz sprawmy abyś mógł się logować. Potrzebujemy pobrać do Twojego katalogu xD nowoutworzony klucz prywatny (bez dopisku .pub).
 
+#### Ci z was, którzy są na AWS muszą zrobić dodatkowy krok.
+Trzeba przygotować klucz do pobrania. Narazie nie możemy zrobić tego tutaj, bo nasz użytkownik główny to ubuntu. Trzeba skopiować klucz i nadać mu właściwe uprawnienia, pobrać go przez ubuntu i dopiero będzie można go używać na naszym nowym użytkowniku i dać mu jego uprawnienia. W tym celu dwie linie:
 ```
-scp root@46.41.135.4:/var/www/zpxd NAZWA_KLUCZA NAZWA_KLUCZA
-scp -i twoj_klucz.pem ubuntu@46.41.135.4:/home/$USER/.ssh/NAZWA_KLUCZA NAZWA_KLUCZA
+cp $klucz /home/ubuntu/$klucz
+chown ubuntu:ubuntu /home/ubuntu/$klucz
 ```
-3. Zobacz ls, powinieneś widzieć plik NAZWA_KLUCZA. 
+Gotowe. 
+
+#### Wejdź będąc w katalogu xD w drugi terminal/powershell
+
+Aby pobrać klucz na komputer edytuj w poniższej komendzie:
+- NUMER_IP - numer ip Twojego serwera, masz to w notatkach,
+- NAZWA_UŻYTKOWNIKA - taka jaką stworzyłeś,
+- NAZWA_KLUCZA - taka jaką stworzyłeś.
+Komenda dla VPS Ubuntu w Home:
+```
+scp root@NUMER_IP:/home/NAZWA_UŻYTKOWNIKA/.ssh/NAZWA_KLUCZA NAZWA_KLUCZA
+```
+Komenda dla AWS EC2 Ubuntu (tu jest jeszcze jedna zmienna):
+- NAZWA_KLUCZA_PEM - ten klucz który dostałeś tworząc serwer.
+```
+scp -i NAZWA_KLUCZA_PEM.pem ubuntu@NUMER_IP:/home/ubuntu/.ssh/NAZWA_KLUCZA NAZWA_KLUCZA
+```
+
+Zobacz ls, powinieneś widzieć plik NAZWA_KLUCZA. 
 ```
 ls
 ```
 
-4. Skopiuj swoją ścieżkę folderu xD i wklej do notatnika podreczne_xd. Dodaj do tego po ukośniku NAZWA_KLUCZA.
+#### Dodaj ścieżkę klucza do notatek. Przyda się na potem.
 
-Na linuxie to było by:
+Skopiuj swoją ścieżkę folderu xD i wklej do notatnika podreczne_xd. Dodaj do tego po ukośniku NAZWA_KLUCZA.
 
+Na linuxie to było by coś w stylu:
 ```
 sciezka_pliku_pub = /home/$USER/xD/NAZWA_KLUCZA
 ```
 Na windowsie:
-
 ```
 sciezka_pliku_pub = C://......
 ```
-
 Zapisz ją w notatkach podreczne_xd.
 
-#### ŁĄCZENIE PRZEZ KLUCZ ".rsa"
+### 8. Łączenie przez klucz ".rsa"
 
-1. Otwórz terminal/powershell w katalogu i wpisz:
-
+Otwórz terminal/powershell w katalogu i wpisz:
 ```
-ssh -i NAZWA_KLUCZA $USER@$IP
+ssh -i NAZWA_KLUCZA NAZWA_UŻYTKOWNIKA@$NUMER_IP
 ```
 
-Działa? Zostaw w tle, przyda się potem. Nie działa? Spróbuj jeszcze raz, pomyśl, albo daj znać na pomocy.
+Działa? Zostaw ten terminal w tle, może przyda się potem. Nie działa? Spróbuj jeszcze raz, pomyśl, albo daj znać na pomocy.
 
 ## Etap 6 - łączenie domeny z serwerm:
 
@@ -210,6 +295,8 @@ Wróć tu za chwilę. Teraz zobacz tutaj: [łączenie domeny z serwerem](http://
 Przyniesz domenę do serwera w panelu. To zabierze z 5 minut, zaraz tu wrócisz.
 
 ## Etap 7 - WWW
+
+Postaw stronę www tak, abyśmy widzieli ją w sieci.
 
 - miejsce na stronę: folder /var/www
 - git
@@ -220,52 +307,97 @@ Przyniesz domenę do serwera w panelu. To zabierze z 5 minut, zaraz tu wrócisz.
 - Restart nginxa i serwisów.
 - Moja strona działa!
 
-#### Miejsce na stronę: Folder /var/www 
-
-Poza tym na AWS trzeba stworzyć folder, gdzie będziemy trzymać Twoją stronę z flagą: mkdir i nazwa folderu: /var/www
+Kroki na szybko:
 ```
-mkdir /var/www 2>1    # <---- Czyli stwórz katalog var wewnątrz którego znajduje się pusty katalog www. Stwórz: /var/www
+
+mkdir /var/www 2>1
 cd /var
 sudo chmod -R www-data:www-data /var/www
+cd www
+sudo apt install git
+git clone https://github.com/ZPXD/flaga.git
+cd flaga
+sudo python3 xD.py
+python3 -m venv flagaenv         # Stwórz środowisko flagenv używając venv.
+source flagaenv/bin/activate     # Aktywuj środowisko flagaenv
+export FLASK_APP=app.py          # I zapisz zmienną FLASK_APP równą app.py (nazwie programu strony www) 
+ls # sdfgsdfgsdgsgjpodgksg       # wylistuje foldery i pliki w folderze w którym jesteś.
+pwd                              # pokaże ścieżkę folderu w którym jesteś.
+pip3 install -r requirements.txt # zainstaluj biblioteki pythona spisane w requirements.txt
+nano settings.ini    
+```
+ls
+nano settings.ini
+pwd
+pwd
+
+### 1. Miejsce na stronę: Folder /var/www 
+
+Poza tym na AWS trzeba stworzyć folder, gdzie będziemy trzymać Twoją stronę z flagą: mkdir i nazwa folderu: /var/www. Dodaj 2>1 aby nie wyświetlało błędu, jeżeli folder już istnieje. I wejdź do /var.
+```
+mkdir /var/www 2>1
+cd /var
+```
+W środku znajduje się katalog www. Tam będziemy trzymać strony. Nadaj mu uprawnienia które pozwolą potem na dostęp do plików danych. I wejdź do środka.
+```
+sudo chmod -R www-data:www-data /var/www
+sudo chmod -R 775 www
 cd /www
 ```
 
-#### 3. Git.
+### 2. Git.
 
-Instalujemy git'a.
+Instalujemy git'a. To narzędzie do pobierania repozytoriów czyli powiedźmy projektów, aplikacji. My pobieramy repozytorium flagi, które zawiera wszystko czego potrzeba abyś postawił stronę www i zawiesił flagę. Zainstaluj go używając apt, co zrobisz jako użytkownik tylko, jak pamiętasz, używając sudo.
 ```
 sudo apt install git
 ```
-
- pobieramy repozytorium i rozkładamy manatki.
+I pobieramy repozytorium i rozkładamy manatki.
 ```
 git clone https://github.com/ZPXD/flaga.git # <--- wklej dokładnie tą linię do terminala
+```
+
+#### Wejdź do flagi.
+```
 cd flaga
 ```
-#### Instalacja paczek systemowych wymaganych do postawienia strony.
+Wszystkie polecenia od teraz do końca skryptu wykonywane są wykonywane w folderze /var/www/flaga .
+
+PS: Zawsze możesz sprawdzić w którym folderze jesteś, pisząc:
 ```
-sudo python3 xD.py # <---- z dużej litery xD.py a nie xd.py z małej litery.
+pwd
+```
+
+#### Instalacja paczek systemowych wymaganych do postawienia strony.
+
+Uruchom skrypt pythona który zawiera serię komend dla linuxa, które zrealizuje automatycznie. Jeżeli jesteś ciekaw co to za komendy możesz podejrzeć plik pisząc cat + nazwa_pliku (**cat xD.py**).
+
+```
+sudo python3 xD.py # <---- xD.py z dużej litery xD.py a nie xd.py z małej litery.
 ```
 PS: Tak jak się domyślasz, terminal nie czyta niczego po znaku "#" zobacz samemu, wpisz:
 ```
 ls # sdfgsdfgsdgsgjpodgksg
 ```
 
-#### 4. Wewnątrz środowiska (env).
+### 4. Wewnątrz środowiska (env).
+
 Wszystkie polecenia wykonywane w tym kroku są wykonywane w folderze /var/www/flaga .
 
 Upewnij się w jakim folderze jesteś, napisz:
 ```
 pwd
 ```
-Teraz, zobacz ale jeszcze nie wpisuj poniższych 3 komend:
+Jeżeli to nie /var/www/flaga to napisz w terminalu:
+```
+/var/www/flaga
+```
 
+Stwórz środowisko:
 ```
 python3 -m venv flagaenv      # Stwórz środowisko flagenv używając venv.
 source flagaenv/bin/activate  # Aktywuj środowisko flagaenv
 export FLASK_APP=app.py       # I zapisz zmienną FLASK_APP równą app.py (nazwie programu strony www) 
 ```
-Teraz skopiuj wszystkie 3 linie i spróbuj je wkleić w terminalu. Po ostatniej komendzie naciśnij enter.
 
 #### Instalacja wymaganych bibliotek.
 Użyjemy do tego **pip3** - to narzędzie którym pobieramy w pythonie potrzebne biblioteki. We fladze używamy dodatkowo pliku **requirements.txt**, który jest niczym innym jak listą nazw i wersji bibliotek które będą.
