@@ -261,7 +261,7 @@ scp root@NUMER_IP:/home/NAZWA_UŻYTKOWNIKA/NAZWA_KLUCZA NAZWA_KLUCZA
 Komenda dla AWS EC2 Ubuntu (tu jest jeszcze jedna zmienna):
 - NAZWA_KLUCZA_PEM - ten klucz który dostałeś tworząc serwer.
 ```
-scp -i NAZWA_KLUCZA_PEM.pem ubuntu@NUMER_IP:/home/ubuntu/.ssh/NAZWA_KLUCZA NAZWA_KLUCZA
+scp -i NAZWA_KLUCZA_PEM.pem ubuntu@NUMER_IP:/home/ubuntu/NAZWA_KLUCZA NAZWA_KLUCZA
 ```
 
 Zobacz ls, powinieneś widzieć plik NAZWA_KLUCZA. 
