@@ -13,6 +13,22 @@ Jesteś na **GitHub**'ie i czytasz właśnie plik **README.md** który znajduje 
 #### 1. Start. Wejdź na serwer.
 Aby zacżąć włącz terminal (lub powershell) i połącz się ze swoim serwerem. Jeżeli nie wiesz jak to powróć do etapu 5:
 - http://bityl.pl/6X3gF
+### Porządek na serwie:
+
+#### Home:
+
+Otwórz terminal/powershell i wpisz:
+
+```
+ssh root@1.1.1.1
+```
+#### AWS: 
+Będąc w folderze xD, gdzie masz klucz .pem. Włącz terminal (lub jak masz Windowsa, to powershell i kliknij na pasek z adresem folderu i otworzy Ci się powershell). Wpisz tam:
+```
+ssh -i nazwaklucza.pem ubuntu@1.1.1.1 
+```
+
+
 
 #### Resetowanie serwera
 Od teraz, gdyby coś poszło nie tak, zawsze możesz zrestartować serwer i zacząć od nowa:
@@ -35,12 +51,35 @@ Stworzyłeś zmienną NEW_USER. Teraz możesz ją wywoływać zawsze pisząc jej
 ```
 echo $NEW_USER
 ```
-Wklej poniższy kod aby stworzyć użytkownika o takiej nazwie jak chcesz, przy
+
+#### root
+
+Taką samą stałą, wbudowaną jest $USER. Zawsze pokazuje aktualnego użytkownika. Wpisz:
+```
+echo $USER
+```
+Jeżeli wszystko zrobiłeś prawidłowo, pojawi Ci się: **root**. Root to coś jak administrator. Ma nawet swój folder o ścieżce /root do którego tylko on ma dostęp. Wszystko co ma przypisane uprawnienia **root** możesz robić z jego poziomu. Ty jednak chcesz stworzyć nowego użytkownika.
+
+Czas stworzyć użytkownika o takiej nazwie jak chcesz.
+
+Będziesz pytany o numer telefonu, pokoju i inne rzeczy - wszystko pomijaj naciskając enter.
+
+Wklej poniższy kod aby stworzyć użytkownika o takiej nazwie jaką wartość przypisałeś do NEW_USER.
 ```
 adduser --disabled-password $NEW_USER
-adduser $USER www-group
-adduser $USER sudo
 ```
+I poniższy kod aby przypisać go do grupy www-data (potrzebnej np. do postawienia strony www) i do grupy sudo (potrzebnej do wykonywania operacji z poziomu użytkownika **root**).
+```
+adduser $NEW_USER www-data
+adduser $NEW_USER sudo
+```
+
+2. Sprawdź czy jesteś w grupie sudo i www-data:
+```        
+groups $NEW_USER 
+```
+Wyświetli się: $USER : $USER www-data sudo
+
 
 #### Chodzenie pomiędzy użytkownikami:
 ```
@@ -80,6 +119,81 @@ pwd
 Nie musisz ręcznie go przepisywać. Możesz łatwo skopiować, najedź myszką na tę ramkę wyżej i w prawym rogu a pokaże się przycisk - kliknij i masz skopiowany tekst. Teraz możesz wkleić kod, w zależności czy jesteś w powershellu czy w terminalu:
 - **terminal:** (linux, mac) klikając jednocześnie ctrl+shift+v
 - **powershell:** (windows) klikając prawym przyciskiem myszy.
+
+
+
+#### TWORZENIE KLUCZA ".rsa"
+
+Stwórz klucz:
+
+```
+cd /home/$USER # czy sie da, jak nie nowy katalog
+mkdir /home/$USER/.ssh
+chmod 700 .ssh
+cd  /home/$USER/.ssh
+ssh-keygen -f /home/$USER/.ssh/xd_NAZWA_UZYTKOWNIKA_TWOJA -C $USER -N ''
+cat ~/.ssh/xd_NAZWA_UZYTKOWNIKA_TWOJA.pub > authorized_keys
+chmod 600 authorized_keys
+```
+
+Sprawdź, czy klucz został stworzony. 
+
+```
+ls
+```
+Pojawią się 2 klucze o nazwie xd_$USER. W przeciwnym razie powtórz albo daj znać, 
+że potrzebujesz pomocy.
+
+#### POBRANIE KLUCZA rsa .pub
+
+1. Wchodzisz do katalogu xD w terminal/powershell
+2. Uprawnienia katalogu 
+
+```
+scp root@46.41.135.4:/var/www/zpxd NAZWA_KLUCZA NAZWA_KLUCZA
+scp -i twoj_klucz.pem ubuntu@46.41.135.4:/home/$USER/.ssh/NAZWA_KLUCZA NAZWA_KLUCZA
+```
+3. Zobacz ls, powinieneś widzieć plik NAZWA_KLUCZA. 
+```
+ls
+```
+
+4. Skopiuj swoją ścieżkę folderu xD i wklej do notatnika podreczne_xd. Dodaj do tego po ukośniku NAZWA_KLUCZA.
+
+Na linuxie to było by:
+
+```
+sciezka_pliku_pub = /home/$USER/xD/NAZWA_KLUCZA
+```
+Na windowsie:
+
+```
+sciezka_pliku_pub = C://......
+```
+
+Zapisz ją w notatkach podreczne_xd.
+
+#### ŁĄCZENIE PRZEZ KLUCZ ".rsa"
+
+1. Otwórz terminal/powershell w katalogu i wpisz:
+
+```
+ssh -i NAZWA_KLUCZA $USER@$$IP
+```
+
+Działa? Zostaw w tle, przyda się potem. Nie działa? Spróbuj jeszcze raz, pomyśl, albo daj znać na pomocy.
+
+
+
+
+
+
+
+
+
+
+
+
 
 #### Folder /var/www.
 
