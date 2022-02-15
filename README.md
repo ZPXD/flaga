@@ -202,7 +202,7 @@ Nadaj mu wymagane uprawnienia i wejdź do środka:
 chmod 700 .ssh
 cd  /home/$USER/.ssh
 ```
-Nazwij swoje klucze rsa:
+Nazwij swoje klucze rsa. Bez spacji, znaków specjalnych. Najlepiej tak abyś kojarzył to z Twoim użytkownikiem i serwerem, projektem, np. klucz=xd_moj_uzytkownik:
 ```
 klucz=NAZWA_KLUCZA
 ```
