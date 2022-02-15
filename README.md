@@ -48,10 +48,10 @@ Będąc w folderze xD, gdzie masz klucz .pem wpisz:
 ```
 ssh -i nazwaklucza.pem ubuntu@1.1.1.1 
 ```
-#### C. A po ukończeniu poniższych kroków, będziesz łączyć się pisząc:
-Będąc w folderze xD, gdzie masz klucz RSA Włącz wpisz tam:
+#### C. A po ukończeniu poniższych kroków, będziesz łączyć się:
+Otwierając terminal w **dowolnym** miejscu i pisząc:
 ```
-ssh -i nazwa_klucza_RSA twoj_uzytkownik@1.1.1.1 
+ssh moj_serwerek
 ```
 
 ### 2. Pssst! 
