@@ -9,5 +9,3 @@ os.system('sudo systemctl enable nginx')
 os.system('sudo systemctl start nginx')
 
 os.system('sudo rm -r /var/www/html')
-
-os.system('sudo apt install nano')
