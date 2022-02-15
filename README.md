@@ -24,35 +24,52 @@ Dla serwerów postawionych na AWS najpierw dodatkowo ustawiamy uprawnienia root 
 sudo passwd   # <----- To dla AWS tylkooo! Podaj hasło i zapisz. Wpisz jeszcze poniższe i podaj hasło.
 su -          # <----- Od teraz będziesz jako 'root'.
 ```
-Poza tym na AWS trzeba stworzyć folder, gdzie będziemy trzymać Twoją stronę z flagą: mkdir i nazwa folderu: /var/www
-```
-mkdir /var/www     # <---- Czyli stwórz katalog var wewnątrz którego znajduje się pusty katalog www. Stwórz: /var/www
-```
 
 #### Użytkownik
 
+Napisz w terminalu poniższy kod zamieńiając XXX na nazwę jaką chcesz mieć jako użytkownik Twojego serwera.
 ```
-USER=
+NEW_USER=XXXX
+```
+Stworzyłeś zmienną NEW_USER. Teraz możesz ją wywoływać zawsze pisząc jej nazwę ze znakiem dolara.
+```
+echo $NEW_USER
+```
+Wklej poniższy kod aby stworzyć użytkownika o takiej nazwie jak chcesz, przy
+```
+adduser --disabled-password $NEW_USER
+adduser $USER www-group
+adduser $USER sudo
+```
+
+#### Chodzenie pomiędzy użytkownikami:
+```
+su $USER
+sudo su ubuntu
+su -
+exit
+```
+
+#### Logujemy się i idziemy dalej:
+
+```
+su $USER
+```
+#### Sudo.
+
+```
+apt install git
 ```
 
 ```
-  - adduser --disabled-password $USER
-  - adduser $USER www-group
-  - adduser $USER sudo
-  - su NAZWA_UZYTKOWNIKA_TWOJA
+sudo apt install tree
 ```
 
-```
-- adduser --disabled-password $USER
-- adduser $USER www-group
-- adduser $USER sudo
-- su NAZWA_UZYTKOWNIKA_TWOJA
-```
 
 #### 2. Uaktualniamy paczki (packages).
 ```
-apt update
-apt upgrade
+sudo apt update
+sudo apt upgrade
 ```
 W trakcie instalacji gdy proces się zatrzymuje z zapytaniem "Do you want to continue? [Y/n]" na końcu, napisz "Y" aby przejść dalej.
 
@@ -64,14 +81,22 @@ Nie musisz ręcznie go przepisywać. Możesz łatwo skopiować, najedź myszką 
 - **terminal:** (linux, mac) klikając jednocześnie ctrl+shift+v
 - **powershell:** (windows) klikając prawym przyciskiem myszy.
 
+#### Folder /var/www.
+
+Poza tym na AWS trzeba stworzyć folder, gdzie będziemy trzymać Twoją stronę z flagą: mkdir i nazwa folderu: /var/www
+```
+mkdir /var/www 2>1    # <---- Czyli stwórz katalog var wewnątrz którego znajduje się pusty katalog www. Stwórz: /var/www
+cd /var
+sudo chmod -R www-data:www-data /var/www
+cd /www
+```
+
 #### 3. Git.
 Instalujemy git'a, pobieramy repozytorium i rozkładamy manatki.
 ```
-apt install git
-cd /var/www
 git clone https://github.com/ZPXD/flaga.git # <--- wklej dokładnie tą linię do terminala
 cd flaga
-python3 xD.py # <---- z dużej litery xD.py a nie xd.py z małej litery.
+sudo python3 xD.py # <---- z dużej litery xD.py a nie xd.py z małej litery.
 ```
 PS: Tak jak się domyślasz, terminal nie czyta niczego po znaku "#" zobacz samemu, wpisz:
 ```
@@ -113,13 +138,13 @@ Aby zapisać wciśnij ctrl+s Aby zamknąć wciśnij ctrl+x
 
 Uruchom skrypt przygotowujący hosting na serwerze (1 raz).
 ```
-python3 xd.py
+sudp python3 xd.py
 ```
 #### Restart nginxa i serwisów.
 ```
-systemctl daemon-reload
-systemctl restart nginx
-systemctl restart flaga.service
+sudo systemctl daemon-reload
+sudo systemctl restart nginx
+sudo systemctl restart flaga.service
 ```
 
 #### Zobacz czy strona działa. Działa? Wyślij komuś, pochwal się i powróć do:
@@ -149,7 +174,7 @@ nano /templates/xd.html
 
 Przeładuj:
 ```
-systemctl restart flaga.service
+sudo systemctl restart flaga.service
 ```
 
 Zobacz na stronie www czy działa :) - dodaj do swojego adresu "/xd" czyli jak masz domenę "kubus-puchatek.pl" to wpisz "kubus-puchatek.pl/xd".
