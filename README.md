@@ -534,7 +534,7 @@ Wejdź w przeglądarce na adres swojej strony www i dopisz **/xd** - to Twoja za
 
 Bedąc dalej w folderze /var/www/flaga edytuj plik templates/xd.txt. Zobacz, jest tam w 12 linii "xDDD". Zostaw xD (z dowolną ilością "D") i: dodaj coś od siebie. Dzięki temu będzie można sprawdzić czy ukończyłeś ten etap. Zrób to tak:
 ```
-nano /templates/xd.html
+nano templates/xd.html
 ```
 To plik html. Dodaj coś w 12 linii pomiędzy znakami ">" a "</h1>".
 ```
