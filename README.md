@@ -10,52 +10,61 @@ Jesteś na **GitHub**'ie i czytasz właśnie plik **README.md** który znajduje 
 - w którym uruchomisz i udostępnisz w sieci stronę www napisaną w pythonie
 - i jeżeli wszystko zadziała, przejdziesz do etapu 8 i powiesisz flagę. Zaczynajmy!
 
+
+## ETAP 5 - serwer
+
 #### 1. Start. Wejdź na serwer.
 
 Upewnij się, że masz już stworzony folder xD w którym masz wszystkie potrzebne rzeczy (w tym np. klucz jak taki dostałeś zdobywając serwer AWS, serwery Home go nie mają) oraz, że zakładkę xD w której masz wszystkie podręczne linki dzięki którym szybko przywołasz potrzebne informacje.
+
+Jeżeli coś tu nie działa, a zwłaszcza jeżeli masz starszy system, napisz odrazu na kanale pomocy.
 
 1. Włącz terminal/powershell.
 - **terminal:** (linux, mac) klikając jednocześnie **ctrl+shift+t**
 - **powershell:** (windows) otwórz folder w którym chcesz otworzyć terminal i kliknij w adres.
 
-Jeżeli coś tu nie działa lub masz starszy system, napisz odrazu na pomocy.
-
-Aby zacżąć włącz terminal (lub powershell) i połącz się ze swoim serwerem. Jeżeli nie wiesz jak to powróć do etapu 5:
-- http://bityl.pl/6X3gF
+2. Połącz się ze swoim serwerem (Jeżeli nie wiesz jak to powróć do dokumentu z etapu 5: [Jak połączyć się z serwerem](http://bityl.pl/6X3gF) ). Wpisz:
 
 #### Home:
-
-Otwórz terminal/powershell i wpisz:
-
 ```
 ssh root@1.1.1.1
 ```
-
 #### AWS: 
-Będąc w folderze xD, gdzie masz klucz .pem. Włącz terminal (lub jak masz Windowsa, to powershell i kliknij na pasek z adresem folderu i otworzy Ci się powershell). Wpisz tam:
+Będąc w folderze xD, gdzie masz klucz .pem wpisz:
 ```
 ssh -i nazwaklucza.pem ubuntu@1.1.1.1 
 ```
-
 #### A po ukończeniu poniższych kroków, będziesz łączyć się pisząc:
-Będąc w folderze xD, gdzie masz klucz RSA Włącz terminal/powershell i wpisz tam:
+Będąc w folderze xD, gdzie masz klucz RSA Włącz wpisz tam:
 ```
 ssh -i nazwa_klucza_RSA twoj_uzytkownik@1.1.1.1 
 ```
 
 
 #### Resetowanie serwera
-Od teraz, gdyby coś poszło nie tak, zawsze możesz zrestartować serwer i zacząć od nowa:
-- http://bityl.pl/Bmvwu
+Od teraz, gdyby coś poszło nie tak, zawsze możesz zrestartować serwer i zacząć od nowa: [Resetowanie Serwera](http://bityl.pl/Bmvwu)
 
-#### Krok jedynie dla serwerów na AWS:
+#### Ten krok jest jedynie dla serwerów na AWS:
 Dla serwerów postawionych na AWS najpierw dodatkowo ustawiamy uprawnienia root ("administratora"). Skopiuj poniższe komendy i wklej do terminala.
 ```
-sudo passwd   # <----- To dla AWS tylkooo! Podaj hasło i zapisz. Wpisz jeszcze poniższe i podaj hasło.
-su -          # <----- Od teraz będziesz jako 'root'.
+sudo passwd   # <----- Wpisz hasło i zapisz je sobie gdzieś.
+su -          # <----- Tak logujesz się na użytkownika 'root'.
+```
+Teraz jesteś jako root.
+
+#### Root (teraz już wszyscy robią poniższe kroki).
+
+
+Pewną stałą wbudowaną w system jest $USER. Zawsze pokazuje aktualnego użytkownika. Wpisz:
+```
+echo $USER
 ```
 
+Jeżeli wszystko zrobiłeś prawidłowo, pojawi Ci się: **root**. Root to coś jak administrator. Ma nawet swój folder o ścieżce /root do którego tylko on ma dostęp. Wszystko co ma przypisane uprawnienia **root** możesz robić z jego poziomu. Ty jednak chcesz stworzyć nowego użytkownika.
+
 #### Użytkownik
+
+Użytkownik to to jako kto jesteś na serwerze. Zwykli użytkownicy mają inne uprawnienia niż root. Nie mogą robić pewnych rzeczy i wchodzić w pewne miejsca.
 
 Napisz w terminalu poniższy kod zamieńiając XXX na nazwę jaką chcesz mieć jako użytkownik Twojego serwera.
 ```
@@ -65,14 +74,6 @@ Stworzyłeś zmienną NEW_USER. Teraz możesz ją wywoływać zawsze pisząc jej
 ```
 echo $NEW_USER
 ```
-
-#### root
-
-Taką samą stałą, wbudowaną jest $USER. Zawsze pokazuje aktualnego użytkownika. Wpisz:
-```
-echo $USER
-```
-Jeżeli wszystko zrobiłeś prawidłowo, pojawi Ci się: **root**. Root to coś jak administrator. Ma nawet swój folder o ścieżce /root do którego tylko on ma dostęp. Wszystko co ma przypisane uprawnienia **root** możesz robić z jego poziomu. Ty jednak chcesz stworzyć nowego użytkownika.
 
 Czas stworzyć użytkownika o takiej nazwie jak chcesz.
 
