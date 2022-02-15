@@ -341,28 +341,20 @@ export FLASK_APP=app.py
 domena=TUTAJ_WPISZ.pl
 echo 'Moja domena to:' $domena
 ```
-Domena się nie zgadza? Popraw powyższe. Zgadza? Skopiuj całość i wklej w terminalu. Na końcu dodaj 1 enter. Teraz pobieramy to repo na Twój serwer i instalujemy wszystko automatycznie. Kliknij poniższe i rołóż ręce. Chwila moment i gotowe.
+
+Domena się nie zgadza? Popraw powyższe. Zgadza? Chodźmy dalej.
+
+Zainstalujmy git.
 ```
-mkdir /var/www
-cd /var
+sudo apt install git
 ```
-Jeżeli ten katalog już istnieje (będzie błąd) - jest ok - idź dalej.
+
+### Etap 7 - Tryb szybki.
 
 Jeżeli chcesz przejść etap 7 szybko to po prostu wklej ten cały kod. Jednak więcej się nauczysz przechodząc ten etap krok po kroku, nawet gdy nie znasz 90% tych rzeczy. To hartuje i daje dobre podstawy na przyszłość. Ewentualnie wróć tutaj później. Oto kod na szybko:
 
-### Etap 7 - Tryb szybki.
 ```
-sudo chown -R www-data:www-data /var/www
-sudo chmod -R 775 /var/www
-cd /var/www
-sudo apt install git
-git clone https://github.com/ZPXD/flaga.git
-cd /var/www/flaga
-sudo python3 pomocnicze_skrypty/xD.py
-python3 -m venv /var/www/flaga/flagaenv
-source flagaenv/bin/activate
-pip3 install -r requirements.txt
-sudo python3 /var/www/flaga/pomocnicze_skrypty/xd.py $domena
+chmod +x ./turbo
 ```
 I wejdź w przeglądarce na adres swojej strony www. Działa? Pewnie, że działa. Gratulacje! Leć do etapu 8. Ale jeszcze lepiej, przeczytaj całość poniżej. Zobaczysz co się dzieje pod spodem i wiele się nauczysz.
 
@@ -373,11 +365,14 @@ Chcesz dowiedzieć się trochę co się dzieje pod maską, samemu to poczuć i p
 
 ### 1. Miejsce na stronę: Folder /var/www 
 
+
 Poza tym na AWS trzeba stworzyć folder, gdzie będziemy trzymać Twoją stronę z flagą: mkdir i nazwa folderu: /var/www. Dodaj 2>1 aby nie wyświetlało błędu, jeżeli folder już istnieje. I wejdź do /var.
 ```
 mkdir /var/www
 cd /var
 ```
+Jeżeli ten katalog już istnieje (będzie błąd) - jest ok - idź dalej.
+
 W środku znajduje się katalog www. Tam będziemy trzymać strony. Nadaj mu uprawnienia które pozwolą potem na dostęp do plików danych. I wejdź do środka.
 ```
 sudo chown -R www-data:www-data /var/www
