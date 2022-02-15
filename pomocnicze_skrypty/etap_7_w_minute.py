@@ -3,10 +3,10 @@ import os
 import sys
 
 def etap_7_w_minute(domena):
-    os.system('sudo python3 /var/www/flaga/pomocnicze_skrypty/xD.py')
-    os.system('sudo python3 -m venv /var/www/flaga/flagaenv')
-    os.system('sudo chown $USER:$USER /var/www/flaga/flagaenv')
-    os.system('source /var/www/flaga/flagaenv/bin/activate')
+    #os.system('sudo python3 /var/www/flaga/pomocnicze_skrypty/xD.py')
+    #os.system('sudo python3 -m venv /var/www/flaga/flagaenv')
+    #os.system('sudo chown $USER:$USER /var/www/flaga/flagaenv')
+    #os.system('source /var/www/flaga/flagaenv/bin/activate')
     #os.system('sudo pip3 install -r /var/www/flaga/requirements.txt')
     #os.system('python3 /var/www/flaga/pomocnicze_skrypty/xd.py $domena')
 
