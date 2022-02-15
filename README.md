@@ -114,10 +114,6 @@ Urządź się tu :) Będąc dalej na serwerze, w folderze /var/www/flaga edytuj 
 ```
 cd /var/www/flaga
 nano xd.txt
-
-systemctl daemon-reload
-systemctl restart nginx
-systemctl restart flaga.service
 ```
 Zobacz na stronie www czy działa :)
 
@@ -128,13 +124,11 @@ Ostatnie co zostało, to edycja flagi. Twoja flaga aby przejść dalej musi spe�
 
 Bedąc dalej w folderze /var/www/flaga edytuj plik flaga_xd.txt. "xDDD" + coś od siebie. Dzięki temu będzie można sprawdzić czy ukończyłeś ten etap.
 ```
-nano flaga_xd.txt
+nano /templates/xd.html
 ```
 
 Przeładuj:
 ```
-systemctl daemon-reload
-systemctl restart nginx
 systemctl restart flaga.service
 ```
 
