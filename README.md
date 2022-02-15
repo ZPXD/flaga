@@ -203,9 +203,24 @@ ssh -i NAZWA_KLUCZA $USER@$IP
 
 Działa? Zostaw w tle, przyda się potem. Nie działa? Spróbuj jeszcze raz, pomyśl, albo daj znać na pomocy.
 
+## Etap 6 - łączenie domeny z serwerm:
 
+Wróć tu za chwilę. Teraz zobacz tutaj: [łączenie domeny z serwerem](http://bityl.pl/C4xbH).
 
-#### Folder /var/www 
+Przyniesz domenę do serwera w panelu. To zabierze z 5 minut, zaraz tu wrócisz.
+
+## Etap 7 - WWW
+
+- miejsce na stronę: folder /var/www
+- git
+- Instalacja paczek systemowych wymaganych do postawienia strony.
+- 4. Wewnątrz środowiska (env).
+- Instalacja wymaganych bibliotek.
+- Stworzenie plików z informacjami dla serwera aby wystawił stronę (nginx i gunicorn).
+- Restart nginxa i serwisów.
+- Moja strona działa!
+
+#### Miejsce na stronę: Folder /var/www 
 
 Poza tym na AWS trzeba stworzyć folder, gdzie będziemy trzymać Twoją stronę z flagą: mkdir i nazwa folderu: /var/www
 ```
@@ -226,6 +241,9 @@ sudo apt install git
 ```
 git clone https://github.com/ZPXD/flaga.git # <--- wklej dokładnie tą linię do terminala
 cd flaga
+```
+#### Instalacja paczek systemowych wymaganych do postawienia strony.
+```
 sudo python3 xD.py # <---- z dużej litery xD.py a nie xd.py z małej litery.
 ```
 PS: Tak jak się domyślasz, terminal nie czyta niczego po znaku "#" zobacz samemu, wpisz:
@@ -266,10 +284,12 @@ domena = nazwa_domeny.pl
 ```
 Aby zapisać wciśnij ctrl+s Aby zamknąć wciśnij ctrl+x
 
+#### Stworzenie plików z informacjami dla serwera aby wystawił stronę (nginx i gunicorn).
 Uruchom skrypt przygotowujący hosting na serwerze (1 raz).
 ```
-sudp python3 xd.py
+sudo python3 xd.py
 ```
+
 #### Restart nginxa i serwisów.
 ```
 sudo systemctl daemon-reload
@@ -277,7 +297,9 @@ sudo systemctl restart nginx
 sudo systemctl restart flaga.service
 ```
 
-#### Zobacz czy strona działa. Działa? Wyślij komuś, pochwal się i powróć do:
+#### Moja strona działa!
+
+Wejdź na adres Twoje strony w wyszukiwarkę. Zobacz czy strona działa. Nie? Pogłówkuj trochę i/lub napisz na pomoc. Działa? Wyślij komuś, pochwal się i powróć do:
 - [strona 7 etapu Szturmu na AWS](https://zajecia-programowania-xd.pl/szturm_na_aws/7)
 - [discord 7 etapu Szturmu na AWS](https://discord.gg/NjKvJeYZtB)
 
@@ -285,11 +307,23 @@ sudo systemctl restart flaga.service
 
 ## Etap 8: Flaga.
 
+- Edytuj plik tekstowy którego treść widać na Twojej stronie.
+- Zobaczy czy na stronie jest nowa treść!
+- Stwórz nową zakładkę wymaganą do przejścia szturmu!
+- Zobacz czy zakładka działa :)
+
+
+#### Edytuj plik tekstowy którego treść widać na Twojej stronie.
+
 Urządź się tu :) Będąc dalej na serwerze, w folderze /var/www/flaga edytuj zawartość pliku xd.txt. Dodaj tam coś od siebie.
 ```
 cd /var/www/flaga
 nano xd.txt
 ```
+
+#### Zobaczy czy na stronie jest nowa treść!
+
+
 Zobacz na stronie www czy działa :)
 
 Ostatnie co zostało, to edycja flagi. Twoja flaga aby przejść dalej musi spełniać 3 kryteria
@@ -297,6 +331,8 @@ Ostatnie co zostało, to edycja flagi. Twoja flaga aby przejść dalej musi spe�
 - jest na niej "xD" - to też już mamy
 - oraz jest coś napisane poza "xDDD" - to mamy do zrobienia.
 
+
+#### Stwórz nową zakładkę wymaganą do przejścia szturmu!
 Bedąc dalej w folderze /var/www/flaga edytuj plik flaga_xd.txt. "xDDD" + coś od siebie. Dzięki temu będzie można sprawdzić czy ukończyłeś ten etap.
 ```
 nano /templates/xd.html
@@ -307,17 +343,35 @@ Przeładuj:
 sudo systemctl restart flaga.service
 ```
 
+#### Zobacz czy zakładka działa :)
+
 Zobacz na stronie www czy działa :) - dodaj do swojego adresu "/xd" czyli jak masz domenę "kubus-puchatek.pl" to wpisz "kubus-puchatek.pl/xd".
 
 
 #### Gotowe?
-Możesz opuścić Terminal pisząć
+Możesz opuścić Terminal pisząć:
 
+Najpierw aby się wylogować:
 ```
 exit
 ```
-
+Potem aby opuścić terminal:
+```
+exit
+```
 A strona nadal będzie stała w internecie.
+
+#### Od teraz będziesz mógł łączyć się pisząc:
+(Będąc w folderze xD, gdzie masz klucz RSA):
+```
+ssh -i nazwa_klucza_RSA twoj_uzytkownik@1.1.1.1 
+```
+PS: jeżeli chcesz, takie klucze profesjonalnie trzyma się w folderze **.ssh** który jest zwykle w głównym folderze Twojego użytkownika na komputerze. Jeżeli zechcesz, odnajdź go i wklej kopię swojego klucza do folderu .ssh. Wtedy będziesz mógł się zawsze połączyć pisząc:
+```
+ssh -i /sciezka/do/uzytkownika/.ssh/nazwa_klucza_RSA twoj_uzytkownik@1.1.1.1 
+```
+
+W krótce też dodak tutaj jeszcze prostszy sposób do logowania.
 
 #### Jeżeli postawiłeś stronę www, flagę i edytowałeś ją to przeszedłeś ten etap i idź dalej:
 - [strona 8 etapu Szturmu na AWS](https://zajecia-programowania-xd.pl/szturm_na_aws/8)
@@ -325,5 +379,5 @@ A strona nadal będzie stała w internecie.
 
 #### Flagi: 
 
-Zawisło już ponad 650 flag. Zobacz je na:
+Zawisło już ponad 750 flag. Zobacz je na:
 https://zajecia-programowania-xd.pl/flagi
