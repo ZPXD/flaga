@@ -39,6 +39,7 @@ if __name__ == '__main__':
     if domena == 'xd.pl':
         print('Nie zmieniles domeny. Zrob to piszac:\ndomena=nazwa-TWOJEJ-domeny.pl.')
     else:
+        create_nginx_and_gunicorn_files(domena)
         print('Twoja domena to:', domena)
         print('Przygotowuje pliki serwerowe.')
         print()
@@ -46,4 +47,3 @@ if __name__ == '__main__':
         print('I spróbuj znowu.')
         print()
         print('W innym razie, kontynuuj.')
-        create_nginx_and_gunicorn_files(domena)
