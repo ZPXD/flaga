@@ -350,7 +350,7 @@ Jeżeli ten katalog już istnieje (będzie błąd) - jest ok - idź dalej.
 
 Jeżeli chcesz przejść etap 7 szybko to po prostu wklej ten cały kod. Jednak więcej się nauczysz przechodząc ten etap krok po kroku, nawet gdy nie znasz 90% tych rzeczy. To hartuje i daje dobre podstawy na przyszłość. Ewentualnie wróć tutaj później. Oto kod na szybko:
 
-# Tryb szybki: 
+### Etap 7 - Tryb szybki.
 ```
 sudo chown -R www-data:www-data /var/www
 sudo chmod -R 775 /var/www
