@@ -250,7 +250,7 @@ Gotowe.
 
 #### Wejdź będąc w katalogu xD w drugi terminal/powershell
 
-Aby pobrać klucz na komputer edytuj w poniższej komendzie:
+Aby pobrać klucz na komputer wejdź do folderu xD w terminalu i edytuj w poniższej komendzie:
 - NUMER_IP - numer ip Twojego serwera, masz to w notatkach,
 - NAZWA_UŻYTKOWNIKA - taka jaką stworzyłeś,
 - NAZWA_KLUCZA - taka jaką stworzyłeś.
@@ -269,20 +269,6 @@ Zobacz ls, powinieneś widzieć plik NAZWA_KLUCZA.
 ls
 ```
 
-#### Dodaj ścieżkę klucza do notatek. Przyda się na potem.
-
-Skopiuj swoją ścieżkę folderu xD i wklej do notatnika podreczne_xd. Dodaj do tego po ukośniku NAZWA_KLUCZA.
-
-Na linuxie to było by coś w stylu:
-```
-sciezka_pliku_pub = /home/$USER/xD/NAZWA_KLUCZA
-```
-Na windowsie:
-```
-sciezka_pliku_pub = C://......
-```
-Zapisz ją w notatkach podreczne_xd.
-
 ### 8. Łączenie przez klucz ".rsa"
 
 Otwórz terminal/powershell w katalogu i wpisz:
@@ -290,7 +276,43 @@ Otwórz terminal/powershell w katalogu i wpisz:
 ssh -i NAZWA_KLUCZA NAZWA_UŻYTKOWNIKA@$NUMER_IP
 ```
 
-Działa? Zostaw ten terminal w tle, może przyda się potem. Nie działa? Spróbuj jeszcze raz, pomyśl, albo daj znać na pomocy.
+Działa? To nie wszystko. Daj:
+```
+exit
+```
+
+I pa tera na to:
+
+#### Ustawmy szybkie łączenie się:
+
+1. Otwórz folder xD i skopiuj znajdujący się tam klucz który właśnie popbrałeś.
+2. Znajdź u siebie folder .ssh Powinien być w folderze Twojego użytkownika.
+3. Wklej do środka .ssh Twój klucz który przed chwilą skopiowałeś w kroku 1.
+4. W środku .ssh znajdź plik config (w windowsie jest to Config) - lub stwórz go. 
+5. Otwórz go i usuń w nim wszystkie wzmianki o Twoim serwerze (bloki zaczynające się od Host, w których jest ip Twojego serwera.
+6. W środku wklej:
+```
+Host TUTAJ_WPISZ_JAKAS_FAJNA_NAZWE_KROTKA_xD
+  HostName TU_WPISZ_IP_TWOJEGO_SERWERA_xD
+  User TU_WPISZ_JAK_NAZYWA_SIE_TWOJ_UZYTKOWNIK
+  IdentityFile TU_WPISZ_PELNA_SCIEZKE_DO_KLUCZA_RSA
+```
+Przykład:
+```
+Host moj_serwerek
+  HostName 1.1.1.1
+  User rafal_paczes
+  IdentityFile /home/rafi/.ssh/potezny_klucz_rafiego
+```
+
+#### Od teraz będziesz mógł łączyć się z dowolnego serwera pisząc:
+ssh + to co wpisałeś wyżej po prawej stronie słowa Host. Np:
+```
+ssh moj_serwerek
+```
+I jesteś.
+
+
 
 ## Etap 6 - łączenie domeny z serwerm:
 
@@ -539,17 +561,6 @@ exit
 ```
 A strona nadal będzie stała w internecie.
 
-#### Od teraz będziesz mógł łączyć się pisząc:
-(Będąc w folderze xD, gdzie masz klucz RSA):
-```
-ssh -i nazwa_klucza_RSA twoj_uzytkownik@1.1.1.1 
-```
-PS: jeżeli chcesz, takie klucze profesjonalnie trzyma się w folderze **.ssh** który jest zwykle w głównym folderze Twojego użytkownika na komputerze. Jeżeli zechcesz, odnajdź go i wklej kopię swojego klucza do folderu .ssh. Wtedy będziesz mógł się zawsze połączyć pisząc:
-```
-ssh -i /sciezka/do/uzytkownika/.ssh/nazwa_klucza_RSA twoj_uzytkownik@1.1.1.1 
-```
-
-W krótce też dodak tutaj jeszcze prostszy sposób do logowania.
 
 #### Jeżeli postawiłeś stronę www, flagę i edytowałeś ją to przeszedłeś ten etap i idź dalej:
 - [strona 8 etapu Szturmu na AWS](https://zajecia-programowania-xd.pl/szturm_na_aws/8)
