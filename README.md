@@ -243,8 +243,8 @@ Teraz sprawmy abyś mógł się logować. Potrzebujemy pobrać do Twojego katalo
 #### Ci z was, którzy są na AWS muszą zrobić dodatkowy krok.
 Trzeba przygotować klucz do pobrania. Narazie nie możemy zrobić tego tutaj, bo nasz użytkownik główny to ubuntu. Trzeba skopiować klucz i nadać mu właściwe uprawnienia, pobrać go przez ubuntu i dopiero będzie można go używać na naszym nowym użytkowniku i dać mu jego uprawnienia. W tym celu dwie linie:
 ```
-cp $klucz /home/ubuntu/$klucz
-chown ubuntu:ubuntu /home/ubuntu/$klucz
+sudo cp $klucz /home/ubuntu/$klucz
+sudo chown ubuntu:ubuntu /home/ubuntu/$klucz
 ```
 Gotowe. 
 
