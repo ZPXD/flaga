@@ -357,7 +357,11 @@ cd /var/www
 sudo apt install git
 git clone https://github.com/ZPXD/flaga.git
 cd /var/www/flaga
-sudo python3 /var/www/flaga/pomocnicze_skrypty/etap_7_w_minute.py $domena
+sudo python3 pomocnicze_skrypty/xD.py
+python3 -m venv /var/www/flaga/flagaenv
+source flagaenv/bin/activate
+pip3 install -r requirements.txt
+sudo python3 /var/www/flaga/pomocnicze_skrypty/xd.py $domena
 ```
 I wejdź w przeglądarce na adres swojej strony www. Działa? Pewnie, że działa. Gratulacje! Leć do etapu 8. Ale jeszcze lepiej, przeczytaj całość poniżej. Zobaczysz co się dzieje pod spodem i wiele się nauczysz.
 
