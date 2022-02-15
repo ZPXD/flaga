@@ -140,31 +140,14 @@ Jak przełączać użytkowników? Wejście na Twojego użytkownika: su + nazwa T
 su $NEW_USER
 ```
 
-Wejście spowrotem na **root**:
+Tego nie wpisuj: Wejście spowrotem na **root**:
 ```
 su root
 ```
-Gdybyś miał jeszcze innego użytkownia, wszedł byś na niego pisząc (nie zadziała):
+Tego nie wpisuj: Gdybyś miał jeszcze innego użytkownia, wszedł byś na niego pisząc (nie zadziała):
 ```
-sudo inny_uzytkownik
+su inny_uzytkownik
 ```
-Wejdź jeszcze raz na swojego użytkownika. Napisz:
-```
-su $NEW_USER
-```
-Aby wylogować się z użytkownika możesz też napisać (nie pisz tego na root!):
-```
-exit
-```
-To też służy do np. zamykania terminala, jeżeli zalogujesz się jako Ty albo jesteś na root. Ale o tym później
-
-#### Logujemy się i idziemy dalej:
-
-Dobra, lecimy.
-```
-su $USER
-```
-Od teraz zawsze gdy w poniższych instrukcjach trafisz na zmienną $USER - nie zmieniaj jej. Ona automatycznie wstawi Twoją nazwę tam gdzie będzie trzeba.
 
 ### 5. Sudo i uaktualniamy paczki (packages).
 
