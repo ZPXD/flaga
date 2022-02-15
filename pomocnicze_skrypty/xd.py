@@ -42,8 +42,3 @@ if __name__ == '__main__':
         create_nginx_and_gunicorn_files(domena)
         print('Twoja domena to:', domena)
         print('Przygotowuje pliki serwerowe.')
-        print()
-        print('Jezeli się pomyliłeś, uruchom:\ndomena=nazwa-TWOJEJ-domeny.pl\noraz wpisz:\npython3 usun_pliki_serwerowe.py $domena')
-        print('I spróbuj znowu.')
-        print()
-        print('W innym razie, kontynuuj.')
