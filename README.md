@@ -137,10 +137,11 @@ Jak przełączać użytkowników? Wejście na Twojego użytkownika: su + nazwa T
 ```
 su $NEW_USER
 ```
+
 Wejście spowrotem na **root**:
 ```
 su -
-``
+```
 Gdybyś miał jeszcze innego użytkownia, wszedł byś na niego pisząc (nie zadziała):
 ```
 sudo inny_uzytkownik
