@@ -102,7 +102,7 @@ Będziesz pytany o numer telefonu, pokoju i inne rzeczy - wszystko pomijaj nacis
 
 Wklej poniższy kod aby stworzyć użytkownika o takiej nazwie jaką wartość przypisałeś do NEW_USER.
 ```
-adduser --disabled-password $NEW_USER
+adduser $NEW_USER
 ```
 I poniższy kod aby przypisać go do grupy www-data (potrzebnej np. do postawienia strony www) i do grupy sudo (potrzebnej do wykonywania operacji z poziomu użytkownika **root**).
 
