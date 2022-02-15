@@ -85,6 +85,7 @@ Teraz jesteś jako root.
 Użytkownik to to jako kto jesteś na serwerze. Zwykli użytkownicy mają inne uprawnienia niż root. Nie mogą robić pewnych rzeczy i wchodzić w pewne miejsca.
 
 Napisz w terminalu poniższy kod zamieńiając XXX na nazwę jaką chcesz mieć jako użytkownik Twojego serwera.
+Nazwa nie może zawierać spacji i specjalnych znaków poza _ i - oraz rozpoczynać się od cyfr.
 ```
 NEW_USER=XXXX
 ```
@@ -127,7 +128,7 @@ Wyświetli się: $USER : $USER www-data sudo
 
 Od teraz też masz swój nowy domowy katalog. Narazie nic tam nie ma. Gdy będziesz się logował na swojego użytkownika, tutaj będziesz się pojawiał
 ```
-cd /home/$USER
+cd /home/$NEW_USER
 pwd
 ```
 
@@ -140,7 +141,7 @@ su $NEW_USER
 
 Wejście spowrotem na **root**:
 ```
-su -
+su root
 ```
 Gdybyś miał jeszcze innego użytkownia, wszedł byś na niego pisząc (nie zadziała):
 ```
@@ -162,6 +163,8 @@ Dobra, lecimy.
 ```
 su $USER
 ```
+Od teraz zawsze gdy w poniższych instrukcjach trafisz na zmienną $USER - nie zmieniaj jej. Ona automatycznie wstawi Twoją nazwę tam gdzie będzie trzeba.
+
 ### 5. Sudo i uaktualniamy paczki (packages).
 
 Jako użytkownik, pewnych rzeczy robić nie możesz. Np. wchodzić na niektóre foldery, modyfikować pewnych plików czy ich w pewnych miejscach tworzyć. Ani nie możesz instalować nowych paczek. 
