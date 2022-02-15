@@ -22,7 +22,7 @@ def create_nginx_and_gunicorn_files(domena):
     # Kopiujemy plik gunicorna tam gdzie powinien być.
     gunicorn_file = '/var/www/flaga/pliki_serwerowe/gunicorn_file'
     where_it_needs_to_be = '/etc/systemd/system/flaga.service'
-    os.system('cp {} {}'.format(gunicorn_file, where_it_needs_to_be))
+    os.system('sudo cp {} {}'.format(gunicorn_file, where_it_needs_to_be))
     
     # Restartujemy startujemy serwis flagi, restartujemy nginxa.
     os.system('sudo systemctl start flaga.service')
