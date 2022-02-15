@@ -37,5 +37,14 @@ if __name__ == '__main__':
     domena = config['XD']['domena']
     if len(sys.argv) > 1:
         domena = sys.argv[1]
-    print('Podana przez Ciebie domena na której stawiamy stronkę to:\n', domena, '\n')
-    create_nginx_and_gunicorn_files(domena)
+    if domena == 'xd.pl':
+        print('Nie zmieniles domeny. Zrob to piszac:\ndomena=nazwa-TWOJEJ-domeny.pl.')
+    else:
+        print('Twoja domena to:', domena)
+        print('Przygotowuje pliki serwerowe.')
+        print()
+        print('Jeżeli się pomyliłeś, uruchom:\ndomena=nazwa-TWOJEJ-domeny.pl\noraz wpisz:\npython3 usun_pliki_serwerowe.py $domena')
+        print('I spróbuj znowu.')
+        print()
+        print('W innym razie, kontynuuj.')
+        create_nginx_and_gunicorn_files(domena)
