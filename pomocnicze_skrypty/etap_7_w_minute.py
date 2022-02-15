@@ -3,8 +3,9 @@ import os
 import sys
 
 def etap_7_w_minute(domena):
-    os.system('mkdir /var/www 2>1')
-    os.system('chmod -R www-data:www-data /var/www')
+    os.system('mkdir /var/www')
+    os.system('chown -R www-data:www-data /var/www')
+    os.system('chmod -R 775 /var/www')
     os.system('apt install git')
     os.system('git clone https://github.com/ZPXD/flaga.git /var/www')
     os.system('python3 /var/www/flaga/pomocnicze_skrypty/xD.py')
