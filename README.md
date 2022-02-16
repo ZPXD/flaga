@@ -149,9 +149,19 @@ Tego nie wpisuj: Gdybyś miał jeszcze innego użytkownia, wszedł byś na niego
 su inny_uzytkownik
 ```
 
+I spowrotem na nowo utworzonego użytkownika:
+```
+su tak_jak_sie_nazwales
+```
 ### 5. Sudo i uaktualniamy paczki (packages).
 
 Jako użytkownik, pewnych rzeczy robić nie możesz. Np. wchodzić na niektóre foldery, modyfikować pewnych plików czy ich w pewnych miejscach tworzyć. Ani nie możesz instalować nowych paczek. 
+
+Upewnij się, że jesteś 
+```
+su $NEW_USER
+```
+
 
 #### Pytanie [Y/n]
 
