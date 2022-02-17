@@ -475,11 +475,11 @@ Użyj tej komendy a cofniesz się do początku kroku 6.
 
 Jeżeli modyfikowałeś zmienną domena, wpisz:
 ```
-python3 pomocnicze_skrypty/usun_pliki_konfiguracyjne.py $domena
+python3 pomocnicze_skrypty/usun_pliki_serwerowe.py $domena
 ```
 Jeżeli modyfikowałeś plik settings.ini, albo to i to, to użyj:
 ```
-python3 pomocnicze_skrypty/usun_pliki_konfiguracyjne.py
+python3 pomocnicze_skrypty/usun_pliki_serwerowe.py
 ```
 
 ### 8. Zobacz czy strona działa!
