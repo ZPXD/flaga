@@ -315,6 +315,8 @@ Przyniesz domenę do serwera w panelu. To zabierze z 5 minut, zaraz tu wrócisz.
 
 ## Etap 7 - WWW
 
+Ten etap robisz już jako Twój użytkownik.
+
 Postaw stronę www tak, abyśmy widzieli ją w sieci.
 
 - miejsce na stronę: folder /var/www
