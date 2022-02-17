@@ -392,7 +392,7 @@ chmod +x pomocnicze_skrypty/turbo.sh
 source pomocnicze_skrypty/turbo.sh $domena
 ```
 
-I wejdź w przeglądarce na adres swojej strony www. Działa? Pewnie, że działa. Gratulacje! Leć do etapu 8. Ale jeszcze lepiej, przeczytaj całość poniżej. Zobaczysz co się dzieje pod spodem i wiele się nauczysz.
+I wejdź w przeglądarce na adres swojej strony www. Działa? Pewnie, że działa. **Gratulacje! Leć do etapu 8.** Ale jeszcze lepiej, przeczytaj całość poniżej. Zobaczysz co się dzieje pod spodem i wiele się nauczysz.
 
 #### Wybór b. Etap 7 - Tryb klasyczny.
 
