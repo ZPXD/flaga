@@ -123,7 +123,7 @@ Sprawdź czy jesteś w grupie sudo i www-data:
 ```        
 groups $NEW_USER 
 ```
-Wyświetli się: $USER : $USER www-data sudo
+Wyświetli się: $NEW_USER : $NEW_USER www-data sudo. Jak nie ma sudo i www-data, to pominąłeś krok wyżej.
 
 #### Katalog domowy.
 
