@@ -54,7 +54,7 @@ apt upgrade
 adduser $user
 adduser $user sudo
 adduser $user www-data
-sudo $user
+su $user
 
 # Klucze RSA.
 mkdir /home/$user/.ssh
