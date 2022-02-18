@@ -2,6 +2,7 @@
 
 # Warcraft 2 code - win scenario instantly.
 
+# Ten code to cheat-mode: wygrana za 1 kliknięciem. No, za 8 komendami :)
 
 # Aby użyć tego skryptu należy:
 
