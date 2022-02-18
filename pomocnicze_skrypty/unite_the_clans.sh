@@ -53,16 +53,16 @@ apt upgrade
 adduser $user
 adduser $user sudo
 adduser $user www-data
-su $user
+
 
 # Klucze RSA.
 mkdir /home/$user/.ssh
 chmod 700 /home/$user/.ssh
 cd  /home/$user/.ssh
-ssh-keygen -f /home/$user/.ssh/$klucz -C $USER -N ''
+ssh-keygen -f /home/$user/.ssh/$klucz -C $user -N ''
 cat ~/.ssh/$klucz.pub > /home/$user/.ssh/authorized_keys
 chmod 600 authorized_keys
-
+chown $user:$user /home/$user/.ssh
 # IF UBUNTU IN HOME:
 if [ $? -eq 0 ]; then
     echo "UBUNTU. COPYING KEY:"
@@ -78,10 +78,9 @@ chmod -R 775 /var/w
 # Flaga
 cp -r $flaga_start /var/www/
 rm -r $flaga_start 
-chown -R $user:$user /var/www/flaga
 
 # Dogranie paczek.
-sudo python3 /var/www/flaga/pomocnicze_skrypty/xD.py
+python3 /var/www/flaga/pomocnicze_skrypty/xD.py
 
 # Środowisko.
 python3 -m venv /var/www/flaga/flagaenv
@@ -90,7 +89,9 @@ export FLASK_APP=app.py
 pip3 install -r requirements.txt
 
 # Serwerowe pliki i uruchomienie usługi i serwera.
-sudo python3 /var/www/flaga/pomocnicze_skrypty/xd.py $domena
+python3 /var/www/flaga/pomocnicze_skrypty/xd.py $domena
+
+chown -R $user:$user /var/www/flaga
 
 # How to download the key:
 server_ip=`curl -s http://checkip.amazonaws.com`
@@ -109,9 +110,10 @@ else
     echo "scp -i klucz.pem ubuntu@$server_ip:/home/$user/.ssh/$klucz $klucz"
 fi
 
-
 # INFO:
-echo "Stworzony użytkownik:" $USER
+echo "Stworzony użytkownik:" $user
 echo "Stworzona strona na domenie:" $domena
 echo " "
 echo "Sprawdź Twoją domenę w przeglądarce."
+
+su $user
