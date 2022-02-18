@@ -209,7 +209,7 @@ mkdir /home/$USER/.ssh
 
 Nadaj mu wymagane uprawnienia i wejdź do środka:
 ```
-chmod 700 .ssh
+chmod 700 /home/$USER/.ssh
 cd  /home/$USER/.ssh
 ```
 Nazwij swoje klucze rsa. Bez spacji, znaków specjalnych. Najlepiej tak abyś kojarzył to z Twoim użytkownikiem i serwerem, projektem, np. klucz=xd_moj_uzytkownik:
