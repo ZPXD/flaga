@@ -41,7 +41,7 @@
 # SCRIPT:
 
 # Zmienne.
-user=$1
+the_user=$1
 domena=$2
 klucz=xd_$1
 flaga_start=`pwd`/flaga
@@ -50,19 +50,19 @@ flaga_start=`pwd`/flaga
 apt upgrade
 
 # Użytkownicy.
-adduser $user
-adduser $user sudo
-adduser $user www-data
+adduser $the_user
+adduser $the_user sudo
+adduser $the_user www-data
 
 
 # Klucze RSA.
-mkdir /home/$user/.ssh
-chmod 700 /home/$user/.ssh
-cd  /home/$user/.ssh
-ssh-keygen -f /home/$user/.ssh/$klucz -C $user -N ''
-cat ~/.ssh/$klucz.pub > /home/$user/.ssh/authorized_keys
-chmod 600 authorized_keys
-chown $user:$user /home/$user/.ssh
+mkdir /home/$the_user/.ssh
+chmod 700 /home/$the_user/.ssh
+cd  /home/$the_user/.ssh
+ssh-keygen -f /home/$the_user/.ssh/$klucz -C $the_user -N ''
+cat /home/$the_user/.ssh/$klucz.pub > /home/$the_user/.ssh/authorized_keys
+chmod 600 /home/$the_user/.ssh/authorized_keys
+chown $the_user:$the_user /home/$the_user/.ssh
 # IF UBUNTU IN HOME:
 if [ $? -eq 0 ]; then
     echo "UBUNTU. COPYING KEY:"
@@ -86,16 +86,15 @@ python3 /var/www/flaga/pomocnicze_skrypty/xD.py
 python3 -m venv /var/www/flaga/flagaenv
 source /var/www/flaga/flagaenv/bin/activate
 export FLASK_APP=app.py
-pip3 install -r requirements.txt
+pip3 install -r /var/www/flaga/requirements.txt
 
 # Serwerowe pliki i uruchomienie usługi i serwera.
 python3 /var/www/flaga/pomocnicze_skrypty/xd.py $domena
 
-chown -R $user:$user /var/www/flaga
+chown -R $the_user:$the_user /var/www/flaga
 
 # How to download the key:
 server_ip=`curl -s http://checkip.amazonaws.com`
-echo $x
 if [ $? -eq 0 ]; then
     echo "Get your key by using command:"
     echo "Paste below command into your terminal in computer"
@@ -107,13 +106,13 @@ else
     echo "Paste below command into your terminal in computer"
     echo " while being in /.shh folder:"
     echo " "
-    echo "scp -i klucz.pem ubuntu@$server_ip:/home/$user/.ssh/$klucz $klucz"
+    echo "scp root@$server_ip:/home/$the_user/.ssh/$klucz $klucz"
 fi
 
 # INFO:
-echo "Stworzony użytkownik:" $user
+echo "Stworzony użytkownik:" $the_user
 echo "Stworzona strona na domenie:" $domena
 echo " "
 echo "Sprawdź Twoją domenę w przeglądarce."
 
-su $user
+su $the_user
