@@ -33,7 +33,7 @@
 
 # 5. Pozwól skryptowi działać i go uruchom:
 #
-#    source flaga/pomocnicze_skrypty/unite_the_clans.sh $NEW_USER $domena 
+#    source flaga/pomocnicze_skrypty/unite_the_clans.sh $NEW_USER $DOMENA 
 
 #    gotowe!
 
