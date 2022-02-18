@@ -73,7 +73,7 @@ fi
 # var/www
 mkdir /var/www
 chown -R www-data:www-data /var/www
-chmod -R 775 /var/w
+chmod -R 775 /var/www
 
 # Flaga
 cp -r $flaga_start /var/www/
