@@ -375,10 +375,6 @@ Ustaw nazwę aplikacji i MODYFIKUJ nazwę domeny.:
 domena=TUTAJ_WPISZ.pl
 echo 'Moja domena to:' $domena
 ```
-Przygotuj zmienną:
-```
-export FLASK_APP=app.py
-```
 
 Domena się nie zgadza? Popraw powyższe. Zgadza? Chodźmy dalej.
 
