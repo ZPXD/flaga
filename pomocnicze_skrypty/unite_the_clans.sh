@@ -28,13 +28,11 @@
 # 4. Przypisz wartości zmiennym:
 #
 #    NEW_USER=ja_xd
-#    domena=domena.pl
-#    klucz=NAZWA_KLUCZA
+#    DOMENA=domena.pl
 
 # 5. Pozwól skryptowi działać i go uruchom:
 #
-#    chmod +x flaga/pomocnicze_skrypty/unite_the_clans.sh
-#    source flaga/pomocnicze_skrypty/unite_the_clans.sh $domena
+#    source flaga/pomocnicze_skrypty/unite_the_clans.sh $NEW_USER $domena 
 
 #    gotowe!
 
