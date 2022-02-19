@@ -277,8 +277,8 @@ klucz=NAZWA_KLUCZA
 Stwórz parę kluczy RSA: prywatny i publiczny. Zapisz publiczny do authorized_keys i ustaw mu uprawnienia na 600 używając chmod. Wklej poniższe (to gęstsze komendy, ale nie martw się tym aż tak, opowiemy wszystko na zajęciach):
 ```
 ssh-keygen -f /home/$USER/.ssh/$klucz -C $USER -N ''
-cat /home/$USER/.ssh/$klucz.pub > cauthorized_keys
-chmod 600 /home/$USER/authorized_keys
+cat /home/$USER/.ssh/$klucz.pub > /home/$USER/.ssh/authorized_keys
+chmod 600 /home/$USER/.ssh/authorized_keys
 ```
 
 Sprawdź, czy klucz został stworzony. 
