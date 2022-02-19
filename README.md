@@ -54,7 +54,6 @@ DOMENA=TU_WSTAW_NAZWE_SWOJEJ_DOMENY
 ```
 5. Uruchom skrypt:
 ```
-
 source flaga/pomocnicze_skrypty/unite_the_clans.sh
 ```
 
@@ -63,7 +62,7 @@ I gotowe :) pobierz jeszcze klucz RSA, wypełniając poniższe:
 Jak masz serwer w AWS: 
 ```
 scp -i NAZWA_KLUCZA_PEM.pem ubuntu@NUMER_IP:/home/ubuntu/NAZWA_KLUCZA NAZWA_KLUCZA
-``
+```
 Jak masz serwer VPS z Home:
 ```
 scp root@NUMER_IP:/home/NAZWA_UZYTKOWNIKA_NA_SERWERZE/.ssh/NAZWA_KLUCZA NAZWA_KLUCZA
@@ -81,7 +80,7 @@ Gotowe! Pobaw się flagą, zmień coś (zobacz etap 8 w tym pliku) lub idź dale
 
 # Droga B. klasyczna
 
-- Normalnie przechodzimy etapy 5, 6, 7, 8
+Normalnie przechodzimy etapy 5, 6, 7, 8
 
 ## ETAP 5 - serwer
 
