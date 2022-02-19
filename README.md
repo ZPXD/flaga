@@ -54,7 +54,7 @@ DOMENA=TU_WSTAW_NAZWE_SWOJEJ_DOMENY
 ```
 5. Uruchom skrypt:
 ```
-source flaga/pomocnicze_skrypty/unite_the_clans.sh
+source flaga/pomocnicze_skrypty/unite_the_clans.sh $NEW_USER $DOMENA
 ```
 
 I gotowe :) pobierz jeszcze klucz RSA, wypełniając poniższe:
