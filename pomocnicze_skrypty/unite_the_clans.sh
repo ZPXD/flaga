@@ -64,7 +64,7 @@ cat /home/$the_user/.ssh/$klucz.pub > /home/$the_user/.ssh/authorized_keys
 chmod 600 /home/$the_user/.ssh/authorized_keys
 chown $the_user:$the_user /home/$the_user/.ssh
 # IF UBUNTU IN HOME:
-if [ $? -eq 0 ]; then
+if [ $(getent passwd ubuntu) ] ; then
     echo "UBUNTU. COPYING KEY:"
     sudo cp $klucz /home/ubuntu/$klucz
     sudo chown ubuntu:ubuntu /home/ubuntu/$klucz
@@ -76,7 +76,8 @@ chown -R www-data:www-data /var/www
 chmod -R 775 /var/www
 
 # Flaga
-cp -r $flaga_start /var/www/
+cd
+mv -r $flaga_start /var/www/
 rm -r $flaga_start 
 
 # Dogranie paczek.
@@ -95,7 +96,7 @@ chown -R $the_user:$the_user /var/www/flaga
 
 # How to download the key:
 server_ip=`curl -s http://checkip.amazonaws.com`
-if [ $? -eq 0 ]; then
+if [ $(getent passwd ubuntu) ] ; then
     echo "Get your key by using command:"
     echo "Paste below command into your terminal in computer"
     echo " while being in /.shh folder:"
