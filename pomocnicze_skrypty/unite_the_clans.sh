@@ -20,19 +20,19 @@
 
 # 2. Update paczek.
 #
-#    apt update --yes
+#    apt update
 
 # 3. Git.
 #
-#    apt install git --yes
+#    apt install git
 #    git clone https://github.com/ZPXD/flaga.git
 
 # 4. Przypisz wartości zmiennym:
 #
 #    NEW_USER=ja_xd
-#    DOMENA=domena.pl
+#    DOMENA=TU_WSTAW_NAZWE_SWOJEJ_DOMENY
 
-# 5. Pozwól skryptowi działać i go uruchom:
+# 5. Pozwól skryptowi działać, uruchom go:
 #
 #    source flaga/pomocnicze_skrypty/unite_the_clans.sh $NEW_USER $DOMENA 
 
@@ -95,14 +95,14 @@ python3 /var/www/flaga/pomocnicze_skrypty/xd.py $domena
 chown -R $the_user:$the_user /var/www/flaga
 
 # How to download the key:
-apt install curl --yes
+apt install curl
 server_ip=`curl -s http://checkip.amazonaws.com`
 if [ $(getent passwd ubuntu) ] ; then
     echo "Get your key by using command:"
     echo "Paste below command into your terminal in computer"
     echo " while being in /.shh folder:"
     echo " "
-    echo "scp -i klucz.pem ubuntu@$server_ip:/home/ubuntu/$klucz $klucz"
+    echo "scp -i [TU_WSTAW_NAZWE_SWOJEGO_KLUCZA_AWS].pem ubuntu@$server_ip:/home/ubuntu/$klucz $klucz"
 else
     echo "Get your key by using command:"
     echo "Paste below command into your terminal in computer"
@@ -118,3 +118,5 @@ echo " "
 echo "Sprawdź Twoją domenę w przeglądarce."
 
 su $the_user
+cd /var/www
+pwd
