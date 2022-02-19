@@ -76,9 +76,8 @@ chown -R www-data:www-data /var/www
 chmod -R 775 /var/www
 
 # Flaga
-cd
-mv $flaga_start /var/www/
-rm -r $flaga_start 
+cd /
+mv $flaga_start /var/www
 
 # Dogranie paczek.
 python3 /var/www/flaga/pomocnicze_skrypty/xD.py
