@@ -17,7 +17,7 @@ flaga_start=`pwd`/flaga
 
 # Update paczek.
 apt upgrade --yes
-
+apt install curl --yes
 
 #test IP domeny
 HOST=$(host $DOMENA | awk '{ print $4 }')
