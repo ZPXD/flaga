@@ -24,6 +24,65 @@ Powershell/terminal: Windows: kliknij ścieżkę w folderze xD
 ![alt text](https://i.imgur.com/6mxKsAY.gif "Powershell gif")
 PS: od teraz, nie ważne czy jesteś na powershellu czy w terminalu, będę na tego typu okno mówił terminal, a powershell używał jedynie gdy będę opisywał coś co dotyczy konkretnie powershella.
 
+# Droga A. turbo
+
+Po zalogowaniu na serwer:
+
+1. wejdź na root (utwórz go jeżeli jeszcze nie robiłeś).
+```
+echo $USER
+```
+Jak pokazuje root to idź do kroku 2. Jeżeli nie, utwórz hasło dla root wpisując:
+```
+sudo su
+```
+I sprawdź znów pisząc "echo $USER", aż będzie pokazywać root. Jak masz błąd, spytaj na grupie o pomoc.
+
+2. Uaktualnij paczki.
+```
+apt update --yes
+```
+3. Pobierz git'a i repozytorium
+```
+apt install git --yes
+git clone https://github.com/ZPXD/flaga.git
+```
+4. Podaj domenę swojej strony na zajęcia i nazwę użytkownika po prawej stronie znaku równa-się zamiast wartości wstawionych przezemnie:
+```
+NEW_USER=ja_xd
+DOMENA=TU_WSTAW_NAZWE_SWOJEJ_DOMENY
+```
+5. Uruchom skrypt:
+```
+
+source flaga/pomocnicze_skrypty/unite_the_clans.sh
+```
+
+I gotowe :) pobierz jeszcze klucz RSA, wypełniając poniższe:
+
+Jak masz serwer w AWS: 
+```
+scp -i NAZWA_KLUCZA_PEM.pem ubuntu@NUMER_IP:/home/ubuntu/NAZWA_KLUCZA NAZWA_KLUCZA
+``
+Jak masz serwer VPS z Home:
+```
+scp root@NUMER_IP:/home/NAZWA_UZYTKOWNIKA_NA_SERWERZE/.ssh/NAZWA_KLUCZA NAZWA_KLUCZA
+```
+Klucz wrzuć do folderu .ssh i dodaj go do pola w pliku .ssh/config wg. wzoru:
+
+```
+Host moj_serwerek
+  HostName 1.1.1.1
+  User rafal_paczes
+  IdentityFile /home/rafi/.ssh/potezny_klucz_rafiego
+```
+
+Gotowe! Pobaw się flagą, zmień coś (zobacz etap 8 w tym pliku) lub idź dalej. 
+
+# Droga B. klasyczna
+
+- Normalnie przechodzimy etapy 5, 6, 7, 8
+
 ## ETAP 5 - serwer
 
 Czas połączyć się z Twoim serwerem i przygotować go. W tym etapie:
