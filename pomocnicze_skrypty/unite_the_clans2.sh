@@ -18,28 +18,14 @@
 
 #    i sprawdź znów pisząc "echo $USER", aż będzie pokazywać root. Jak masz błąd, spytaj na grupie o pomoc.
 
-# 2. Update paczek.
+# 2. Przypisz wartości zmiennym:
 #
-#    apt update --yes
-
-# 3. Git.
-#
-#    apt install git --yes
-#    git clone https://github.com/ZPXD/flaga.git
-
-# 4. Przypisz wartości zmiennym:
-#
-#    NEW_USER=ja_xd
-#    DOMENA=TU_WSTAW_NAZWE_SWOJEJ_DOMENY
-
-# 5. Pozwól skryptowi działać, uruchom go:
-#
-#    source flaga/pomocnicze_skrypty/unite_the_clans.sh $NEW_USER $DOMENA 
-
-#    gotowe!
-
-
-# SCRIPT:
+# NEW_USER=ja_xd
+# DOMENA=TU_WSTAW_NAZWE_SWOJEJ_DOMENY
+   
+# 3. Odpal skrypt
+# 
+# wget 
 
 # Zmienne.
 the_user=$1
@@ -48,7 +34,15 @@ klucz=xd_$1
 flaga_start=`pwd`/flaga
 
 # Update paczek.
+apt update --yes
 apt upgrade --yes
+
+# SCRIPT:
+apt install git --yes
+git clone https://github.com/ZPXD/flaga.git
+
+# Clash
+source flaga/pomocnicze_skrypty/unite_the_clans.sh $NEW_USER $DOMENA
 
 # Użytkownicy.
 adduser $the_user --gecos GECOS --disabled-password
