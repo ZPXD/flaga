@@ -77,7 +77,7 @@ chmod -R 775 /var/www
 
 # Flaga
 cd
-mv -r $flaga_start /var/www/
+mv $flaga_start /var/www/
 rm -r $flaga_start 
 
 # Dogranie paczek.
