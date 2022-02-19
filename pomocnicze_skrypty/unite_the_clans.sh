@@ -95,7 +95,7 @@ python3 /var/www/flaga/pomocnicze_skrypty/xd.py $domena
 chown -R $the_user:$the_user /var/www/flaga
 
 # How to download the key:
-apt install curl
+apt install curl --yes
 server_ip=`curl -s http://checkip.amazonaws.com`
 if [ $(getent passwd ubuntu) ] ; then
     echo "Get your key by using command:"
