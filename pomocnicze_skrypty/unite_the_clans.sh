@@ -24,7 +24,7 @@
 
 # 3. Git.
 #
-#    apt install git
+#    apt install git --yes
 #    git clone https://github.com/ZPXD/flaga.git
 
 # 4. Przypisz wartości zmiennym:
