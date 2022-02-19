@@ -124,9 +124,9 @@ else
     echo " "
     echo "Jest tam też plik config. Dodaj w nim poprawnie nazwę klucza"
     echo "Host moj_serwerek"
-    echo "  HostName 1.1.1.1"
-    echo "  User rafal_paczes"
-    echo "  IdentityFile /home/rafi/.ssh/potezny_klucz_rafiego"
+    echo "  HostName $server_ip"
+    echo "  User $the_user"
+    echo "  IdentityFile ~/.ssh/$klucz"
 fi
 
 # INFO:
