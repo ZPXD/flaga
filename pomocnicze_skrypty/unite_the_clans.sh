@@ -96,26 +96,51 @@ chown -R $the_user:$the_user /var/www/flaga
 # How to download the key:
 apt install curl --yes
 server_ip=`curl -s http://checkip.amazonaws.com`
+echo " "
+echo " "
+echo " "
+echo " "
+echo " "
+echo " "
+echo " "
+echo " "
+echo " "
 if [ $(getent passwd ubuntu) ] ; then
-    echo "Get your key by using command:"
-    echo "Paste below command into your terminal in computer"
-    echo " while being in /.shh folder:"
+    echo "Edytuj poniższą komendę i wklej u siebie w terminalu/powershellu na komputerze."
+    echo "Pobierze się plik. Przenieś go do swojego folderu ssh."
     echo " "
     echo "scp -i [TU_WSTAW_NAZWE_SWOJEGO_KLUCZA_AWS].pem ubuntu@$server_ip:/home/ubuntu/$klucz $klucz"
+    echo " "
+    echo "Jest tam też plik config. Dodaj w nim poprawnie nazwę klucza"
+    echo "Host moj_serwerek"
+    echo "  HostName 1.1.1.1"
+    echo "  User rafal_paczes"
+    echo "  IdentityFile /home/rafi/.ssh/potezny_klucz_rafiego"
 else
-    echo "Get your key by using command:"
-    echo "Paste below command into your terminal in computer"
-    echo " while being in /.shh folder:"
+    echo "Edytuj poniższą komendę i wklej u siebie w terminalu/powershellu na komputerze."
+    echo "Pobierze się plik. Przenieś go do swojego folderu ssh."
     echo " "
     echo "scp root@$server_ip:/home/$the_user/.ssh/$klucz $klucz"
+    echo " "
+    echo "Jest tam też plik config. Dodaj w nim poprawnie nazwę klucza"
+    echo "Host moj_serwerek"
+    echo "  HostName 1.1.1.1"
+    echo "  User rafal_paczes"
+    echo "  IdentityFile /home/rafi/.ssh/potezny_klucz_rafiego"
 fi
 
 # INFO:
+echo " "
+echo " "
 echo "Stworzony użytkownik:" $the_user
 echo "Stworzona strona na domenie:" $domena
 echo " "
+echo " "
+echo " "
 echo "Sprawdź Twoją domenę w przeglądarce."
+echo " "
+tutaj=`pwd`
+echo "PS: jesteś w folderze:" $tutaj
 
 su $the_user
-cd /var/www
-pwd
+cd /var/www/flaga
