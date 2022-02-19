@@ -4,6 +4,21 @@
 
 # Ten code to cheat-mode: wygrana przygody 5 komendami :)
 
+
+
+
+
+# Nazwa użytkownika
+
+the_user=$1
+domena=$2
+klucz=xd_$1
+flaga_start=`pwd`/flaga
+
+# Update paczek.
+apt upgrade --yes
+
+
 #test IP domeny
 HOST=$(host $DOMENA | awk '{ print $4 }')
 
@@ -33,26 +48,6 @@ else
  echo "HTTP OK"
 fi
 
-
-
-
-# Nazwa użytkownika
-
-the_user=$1
-domena=$2
-klucz=xd_$1
-flaga_start=`pwd`/flaga
-
-# Update paczek.
-apt update --yes
-apt upgrade --yes
-
-# SCRIPT:
-apt install git --yes
-git clone https://github.com/ZPXD/flaga.git
-
-# Clash
-source flaga/pomocnicze_skrypty/unite_the_clans.sh $NEW_USER $DOMENA
 
 # Użytkownicy.
 adduser $the_user --gecos GECOS --disabled-password
