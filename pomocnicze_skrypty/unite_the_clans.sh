@@ -14,18 +14,17 @@
 #    
 #    jak pokazuje root to idź do kroku 2. Jeżeli nie, utwórz hasło dla root wpisując:
 #
-#    sudo passwd
-#    su
+#    sudo su
 
 #    i sprawdź znów pisząc "echo $USER", aż będzie pokazywać root. Jak masz błąd, spytaj na grupie o pomoc.
 
 # 2. Update paczek.
 #
-#    apt update
+#    apt update --yes
 
 # 3. Git.
 #
-#    apt install git
+#    apt install git --yes
 #    git clone https://github.com/ZPXD/flaga.git
 
 # 4. Przypisz wartości zmiennym:
@@ -49,7 +48,7 @@ klucz=xd_$1
 flaga_start=`pwd`/flaga
 
 # Update paczek.
-apt upgrade
+apt upgrade --yes
 
 # Użytkownicy.
 adduser $the_user
@@ -96,7 +95,7 @@ python3 /var/www/flaga/pomocnicze_skrypty/xd.py $domena
 chown -R $the_user:$the_user /var/www/flaga
 
 # How to download the key:
-apt install curl
+apt install curl --yes
 server_ip=`curl -s http://checkip.amazonaws.com`
 if [ $(getent passwd ubuntu) ] ; then
     echo "Get your key by using command:"
