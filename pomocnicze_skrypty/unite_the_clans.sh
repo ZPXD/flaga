@@ -2,40 +2,7 @@
 
 # Warcraft 2 code - win scenario instantly.
 
-
 # Ten code to cheat-mode: wygrana przygody 5 komendami :)
-
-# Na świeżym serwerze:
-
-# 1. wejdź na root (utwórz go jeżeli jeszcze nie robiłeś).
-#
-#    Napisz:
-#    echo $USER
-#    
-#    jak pokazuje root to idź do kroku 2. Jeżeli nie, utwórz hasło dla root wpisując:
-#
-#    sudo su
-
-#    i sprawdź znów pisząc "echo $USER", aż będzie pokazywać root. Jak masz błąd, spytaj na grupie o pomoc.
-
-# 2. Przypisz wartości zmiennym:
-#
-# NEW_USER=ja_xd
-# DOMENA=TU_WSTAW_NAZWE_SWOJEJ_DOMENY
- 
-# 3. Odpal skrypt
-# 
-# wget 
-
-
-
-wget_output=$(wget -q "$DOMENA")
-if [ $? -ne 0 ]; then
- echo "OK, nie masz flagi - lecimy dalej"
-else
- echo "MASZ JUZ FLAGE, ANULUJEMY SKRYPT!!!!!!!!"
- exit "MASZ JUZ FLAGE"
-fi
 
 #test IP domeny
 HOST=$(host $DOMENA | awk '{ print $4 }')
