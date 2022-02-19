@@ -20,7 +20,7 @@
 
 # 2. Update paczek.
 #
-#    apt update
+#    apt update --yes
 
 # 3. Git.
 #
