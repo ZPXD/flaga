@@ -51,7 +51,7 @@ flaga_start=`pwd`/flaga
 apt upgrade --yes
 
 # Użytkownicy.
-adduser $the_user --gecos GECOS --disabled-login
+adduser $the_user --gecos GECOS --disabled-password
 adduser $the_user sudo
 adduser $the_user www-data
 
