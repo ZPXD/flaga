@@ -22,13 +22,69 @@
 #
 # NEW_USER=ja_xd
 # DOMENA=TU_WSTAW_NAZWE_SWOJEJ_DOMENY
-   
+ 
 # 3. Odpal skrypt
 # 
 # wget 
 
-# Zmienne.
-the_user=$1
+
+
+wget_output=$(wget -q "$DOMENA")
+if [ $? -ne 0 ]; then
+ echo "OK, nie masz flagi - lecimy dalej"
+else
+ echo "MASZ JUZ FLAGE, ANULUJEMY SKRYPT!!!!!!!!"
+ exit "MASZ JUZ FLAGE"
+fi
+
+#test IP domeny
+HOST=$(host $DOMENA | awk '{ print $4 }')
+
+#twoje aktualne IP
+IP=$(curl -s http://checkip.amazonaws.com/)
+
+echo ""
+echo "wpisana domena: $DOMENA"
+echo ""
+
+if [ "$IP" = "$HOST" ]
+then
+ echo "domena jest OK"
+else
+ echo "domena jest zla"
+fi
+
+echo "twoje IP:"
+echo "$IP"
+echo "rekord A z domeny:"
+echo "$HOST"
+
+wget_output=$(wget -q "$DOMENA")
+if [ $? -ne 0 ]; then
+ echo "HTTP error"
+else
+ echo "HTTP OK"
+fi
+
+
+
+
+# Nazwa użytkownika
+
+while true; do
+    read -p "Podaj nazwę użytkownika jaką chcesz mieć na tym serwerze:" yn
+    case $yn in
+        [Yy]* ) make install; break;;
+        [Nn]* ) exit;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
+
+echo "Podaj nazwę użytkownika jaką chcesz mieć na tym serwerze:"
+
+read the_user
+
+
 domena=$2
 klucz=xd_$1
 flaga_start=`pwd`/flaga
