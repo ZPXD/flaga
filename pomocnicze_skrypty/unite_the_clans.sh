@@ -12,10 +12,12 @@
 #    Napisz:
 #    echo $USER
 #    
-#    jak pokazuje root to idź dalej. Jeżeli nie, utwórz hasło dla root:
+#    jak pokazuje root to idź do kroku 2. Jeżeli nie, utwórz hasło dla root wpisując:
 #
 #    sudo passwd
 #    su
+
+#    i sprawdź znów pisząc "echo $USER", aż będzie pokazywać root. Jak masz błąd, spytaj na grupie o pomoc.
 
 # 2. Update paczek.
 #
@@ -94,6 +96,7 @@ python3 /var/www/flaga/pomocnicze_skrypty/xd.py $domena
 chown -R $the_user:$the_user /var/www/flaga
 
 # How to download the key:
+apt install curl
 server_ip=`curl -s http://checkip.amazonaws.com`
 if [ $(getent passwd ubuntu) ] ; then
     echo "Get your key by using command:"
