@@ -38,20 +38,7 @@ fi
 
 # Nazwa użytkownika
 
-while true; do
-    read -p "Podaj nazwę użytkownika jaką chcesz mieć na tym serwerze:" yn
-    case $yn in
-        [Yy]* ) make install; break;;
-        [Nn]* ) exit;;
-        * ) echo "Please answer yes or no.";;
-    esac
-done
-
-echo "Podaj nazwę użytkownika jaką chcesz mieć na tym serwerze:"
-
-read the_user
-
-
+the_user=$1
 domena=$2
 klucz=xd_$1
 flaga_start=`pwd`/flaga
