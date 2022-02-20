@@ -16,7 +16,7 @@ elseif [ $1 == "mkswapfile" ]; then
 # 		swapon $swapfile
 # 		echo -e "$swapfile\tswap\tswap\tdefaults\t0\t0" >> /etc/fstab
 # 	fi
-else;
+else
 	if [ -z $(swapon --show=NAME) ]; then
     		echo "fallocate -l 2G /swapfile" &&
 		echo "chmod 600 $swapfile" &&
@@ -25,5 +25,5 @@ else;
 		echo "echo -e "$swapfile\tswap\tswap\tdefaults\t0\t0" >> /etc/fstab"
 	fi
 fi
+
 swapon --show
-    
