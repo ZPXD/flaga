@@ -7,7 +7,8 @@ swapfile = "/swapfile"
 if [ ! -e $swapfile ]; then
 	echo "$swapfile exists!"
 # Checking the swapfile is non-existing
-# else:
+elseif [ $1 == "mkswapfile" ]; then
+	echo "Tworzę swapfile w pliku $swapfile"
 # 	if [ -z $(swapon --show=NAME) ]; then
 #     		fallocate -l 2G /swapfile && 
 # 		chmod 600 $swapfile &&
@@ -15,8 +16,7 @@ if [ ! -e $swapfile ]; then
 # 		swapon $swapfile
 # 		echo -e "$swapfile\tswap\tswap\tdefaults\t0\t0" >> /etc/fstab
 # 	fi
-# fi
-else:
+else;
 	if [ -z $(swapon --show=NAME) ]; then
     		echo "fallocate -l 2G /swapfile" &&
 		echo "chmod 600 $swapfile" &&
