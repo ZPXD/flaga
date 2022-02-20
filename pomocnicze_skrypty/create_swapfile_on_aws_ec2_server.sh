@@ -50,7 +50,7 @@ elif [[ $do_the_job == $arg1 ]]; then
 ##############################################################################
 # #                                                                          #
 # # If argument1 is not valid show command queue                             #
-# #                                                                          #
+# # (bottom list is sketch of steps to do)                                   #
 ##############################################################################
 else
 	if [[ -z $(swapon --show=NAME) ]]; then
