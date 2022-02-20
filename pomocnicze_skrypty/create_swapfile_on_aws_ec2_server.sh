@@ -4,7 +4,7 @@ do_the_job=$1
 
 swapfile = "/swapfile"
 
-if [ ! -e $swapfile ]; then
+if [ -e $swapfile ]; then
 	echo "$swapfile exists!"
 # Checking the swapfile is non-existing
 elseif [ $1 == "mkswapfile" ]; then
