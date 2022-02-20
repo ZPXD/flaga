@@ -31,6 +31,8 @@ if [[ -e $swapfile ]]; then
 ## For now only accepted argument is 'mkswapfile' -                          #
 ## empty argument or any other is equivalent of help (it shows commands      #
 ## queue)                                                                    #
+## TODO: function check_free_disk_size() to determine free size on disk and  #
+#          stop creating swapfile (or modify swapfile filesize)              #
 ##############################################################################
 elif [[ $do_the_job == $arg1 ]]; then
 	echo "Tworzę swapfile w pliku $swapfile"
