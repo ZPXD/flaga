@@ -7,7 +7,7 @@ swapfile = "/swapfile"
 if [ -e $swapfile ]; then
 	echo "$swapfile exists!"
 # Checking the swapfile is non-existing
-elseif [ $1 == "mkswapfile" ]; then
+elif [ $1 == "mkswapfile" ]; then
 	echo "Tworzę swapfile w pliku $swapfile"
 # 	if [ -z $(swapon --show=NAME) ]; then
 #     		fallocate -l 2G /swapfile && 
