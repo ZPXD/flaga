@@ -2,7 +2,7 @@
 ##############################################################################
 # # Bash (watch out double square brackets!) script                          #
 # # for create swapfile on AWS EC2 Ubuntu server                             #
-# # Tested on Ubuntu 20.04 LTS                                               #
+# # Tested on Ubuntu 20.04 LTS           (I'm sorry for my english)          #
 ##############################################################################
 
 arg1=$1
@@ -22,7 +22,7 @@ size=1G
 swapfile="/swapfile"
 
 ##############################################################################
-# # Checking the swapfile is non-existing # I'm sorry for my english :)      #
+# Checking the swapfile is non-existing # I'm sorry for my english. Again :) #
 ##############################################################################
 if [[ -e $swapfile ]]; then
 	echo "$swapfile exists!"
@@ -64,7 +64,7 @@ else
 fi
 ##############################################################################
 # #                                                                          #
-# # Always show "swapon --show"                                              #
+# # Always show "swapon --show" #（•_ㅅ_•）                                  #
 # #                                                                          #
 ##############################################################################
 swapon --show
