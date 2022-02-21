@@ -87,43 +87,44 @@ Jeżeli masz z tym problem, wróć do [Etap 4.3 - połączenie z serwerem](https
 
 ![foto](foty_do_instrukcji/dk_3.png)
 
-#### 4. Kliknij ok. Pokaże Ci się folder .ssh z kluczami.
-
-![foto](foty_do_instrukcji/dk_4.png)
-
-#### 5. Wybierz nowoutworzony klucz bez rozszeżenia .pub i pobierz go do siebie na komputer do swojego folderu .ssh.
 
 ![foto](foty_do_instrukcji/dk_5.png)
 
-#### 6. Opcjonalnie: czasem, jeżeli nie widzisz swojego folderu .ssh jak ja (a jest on zawsze w folderze domowym Twojego użytkownika na komputerze) - być może musisz kliknąć prawym przyciskiem myszy i odblokować tę opcję.
+#### 4. Kliknij ok. Pokaże Ci się folder .ssh z kluczami.
+
+#### 5. Wybierz nowoutworzony klucz bez rozszeżenia .pub i pobierz go do siebie na komputer do swojego folderu .ssh.
 
 ![foto](foty_do_instrukcji/dk_6.png)
+
+#### 6. Opcjonalnie: czasem, jeżeli nie widzisz swojego folderu .ssh jak ja (a jest on zawsze w folderze domowym Twojego użytkownika na komputerze) - być może musisz kliknąć prawym przyciskiem myszy i odblokować tę opcję.
+
+
+![foto](foty_do_instrukcji/dk_7.png)
 
 #### 7. Wejdź do folderu .ssh i tutaj zapisz plik z kluczem.
 
 Ewentualnie zapisz go gdzie chcesz i skopiuj go do folderu .ssh potem tak jak uznasz.
-![foto](foty_do_instrukcji/dk_7.png)
-
-#### 8. Włącz znów VSC. Kliknij w "SSH-Targets" w zembatkę (drugi przycisk po prawej od "SSH-TARGETS")
 
 ![foto](foty_do_instrukcji/dk_8.png)
 
-#### 9. Spyta Cię który plik edytować. Wybierz confik z folderu .ssh (ten plik najwyżej na liście).
+#### 8. Włącz znów VSC. Kliknij w "SSH-Targets" w zembatkę (drugi przycisk po prawej od "SSH-TARGETS")
 
 ![foto](foty_do_instrukcji/dk_9.png)
+
+#### 9. Spyta Cię który plik edytować. Wybierz confik z folderu .ssh (ten plik najwyżej na liście).
+
+![foto](foty_do_instrukcji/dk_10.png)
 
 #### 10. Otwórz go.
 
 Jeżeli jesteś w Home i wkleiłeś to o co prosiłem wcześniej, to zobaczysz coś w tym stylu (tylko inne adresy IP).
 
-![foto](foty_do_instrukcji/dk_10.png)
+![foto](foty_do_instrukcji/dk_11.png)
 
 #### 11. Edytuj plik wstawiając swoje adresy IP, popraw nazwę klucza i zmień nazwę użytkownika w 2gim Hoście. Zapisz plik.
 
-![foto](foty_do_instrukcji/dk_11.png)
-
-
 ![foto](foty_do_instrukcji/dk_12.png)
+
 ![foto](foty_do_instrukcji/dk_13.png)
 ![foto](foty_do_instrukcji/dk_14.png)
 ![foto](foty_do_instrukcji/dk_15.png)
