@@ -9,3 +9,4 @@ MarkupSafe==2.0.1
 typing-extensions==4.0.1
 Werkzeug==2.0.2
 zipp==3.6.0
+lolpython==2.2.0
