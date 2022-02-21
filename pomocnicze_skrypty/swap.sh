@@ -1,3 +1,9 @@
+# Jeżeli po instalacji u siebie na serwerze przez VSCode Jupuytera alba innych rzeczy nie 
+# możesz nic robić na serwerze, odpal ten skrypt. Po prostu włącz ten program.
+
+# aby odpalić: wejdź na root (sudo su)
+# i wpisz: bash swap.sh
+
 fallocate -l 1G /swapfile
 chmod 600 /swapfile
 mkswap /swapfile
