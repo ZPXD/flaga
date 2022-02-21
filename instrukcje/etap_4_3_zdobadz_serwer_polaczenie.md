@@ -22,16 +22,30 @@ Extensions (5 ikonka po lewej od góry)
 
 3. W search wpisz: SSH i kliknij w najwyższą pozycję: Remote-SSH i kliknij Install.
 
-![003.png](foty_do_instrukcji/003.png)
+![4](foty_do_instrukcji/4.png)
+![5](foty_do_instrukcji/5.png)
+![6](foty_do_instrukcji/6.png)
+![7](foty_do_instrukcji/7.png)
+![8](foty_do_instrukcji/8.png)
+![9](foty_do_instrukcji/9.png)
+![10](foty_do_instrukcji/10.png)
+![11](foty_do_instrukcji/11.png)
+![12](foty_do_instrukcji/12.png)
+![13](foty_do_instrukcji/l3.png)
+![14](foty_do_instrukcji/l4.png)
+![15](foty_do_instrukcji/l5.png)
 
 4. Kliknij w Remote Explorer (6 ikonka po lewej od góry)
 
 5. Jeżeli przechodzisz to pokolei, to powinien pojawić Ci się w SSH TARGETS conajmniej 1 punkt do połączenia, zdefiniowany w pliku config (lub Config). Możesz go edytować.
-6. Najedź na niego myszką. Po prawej stronie pokaże Ci się przycisk którym połączysz się w nowym oknie z serwerem :)
-7. W listwie na górze w nowym oknie spyta się Ciebie o haslo.
+
+7. Najedź na niego myszką. Po prawej stronie pokaże Ci się przycisk którym połączysz się w nowym oknie z serwerem :)
+
+8. W listwie na górze w nowym oknie spyta się Ciebie o haslo.
 - Jeżeli to Cię nie połączy 3 razy i wybierz "more actions" 
 - Wybierz Open SSH Configuration File i sprawdź czy tutaj wszystko się zgadza albo spytaj się opomoc.
-8. Jesteś na serwerze. Hurra :) To jeszcze raz wyjdź wyłączając to okno.
+
+9. Jesteś na serwerze. Hurra :) To jeszcze raz wyjdź wyłączając to okno.
 
 #### 2. Połącz się z serwerem aby sprowokować otworzenie pliku config w folderze .ssh
 
