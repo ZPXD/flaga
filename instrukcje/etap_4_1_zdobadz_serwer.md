@@ -17,7 +17,8 @@ Karatecy mają kimona, bokserzy rękawice, baletnice mają treningowe pantofle a
 
 
 #### Cel:
-Wybierz drogę jak zdobądź serwer.
+Ogólny: Wybierz drogę jaką zdobędziesz serwer. Zdobądź go i połącz się z nim.
+Tej części: wybierz jedną z 3 dróg i podążaj nią.
 
 #### Plan:
 Ten etap składa się z 3 części:
