@@ -1,15 +1,15 @@
 ## Etap 1 - Przygotowania.
 
-- [Etap 1 - Wprowadzenie i przygotowania - Discord](https://discord.gg/dEyZ5S7pzM)
-- [Etap 1 - Wprowadzenie i przygotowania - Film](http://bityl.pl/yhIm9)
-
-
 ### Cel:
 - Zapoznaj się z planem Szturmu
 - Przygotuj folder xD na notatki inne przydatne rzeczy.
 - Przygotuj w zakładkach katalog xD na ważne linki.
 - Spróbuj odnaleźć folder .ssh
 - Poznaj kilka skrótów klawiszowych
+
+#### Wsparcie:
+- [Etap 1 - Film](http://bityl.pl/yhIm9)
+- [Etap 1 - Pomoc na discordzie](https://discord.gg/dEyZ5S7pzM)
 
 #### Potrzebny czas: 
 60-180 min + ile chcesz.
