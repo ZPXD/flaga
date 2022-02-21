@@ -1,4 +1,6 @@
-## Etap 1 - Przygotowania.
+# Szturm na AWS 
+
+## Etap 1 - Wprowadzenie i przygotowania.
 
 [Zobacz film otwierający przygodę: Etap 1 - Wprowadzenie i przygotowania](http://bityl.pl/yhIm9)
 
