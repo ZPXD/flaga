@@ -1,7 +1,6 @@
 ## Etap 2 - Anonimowość
 
 - [Etap 2 - Anonimowość - Film](http://bityl.pl/VkxmB)
-- [Etap 2 - Anonimowość - Instrukcje](http://bityl.pl/irUcO)
 - [Etap 2 - Anonimowość - Discord](https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_2_anonimowosc.md)
 
 Film Szturmowy 2 - Anonimowość i poczta
