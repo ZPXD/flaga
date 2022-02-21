@@ -14,15 +14,15 @@ Wejdź na Twój serwer przez VSCode.
 
 #### 1. Otwórz VSCode i zainstaluj rozszeżenie Remote-SSH.
 
-![o01.png](foto/o01.png)
+![o01.png](foty_do_instrukcji/o01.png)
 
 Extensions (5 ikonka po lewej od góry)
 
-![002.png](foto/002.png)
+![002.png](foty_do_instrukcji/002.png)
 
 3. W search wpisz: SSH i kliknij w najwyższą pozycję: Remote-SSH i kliknij Install.
 
-![003.png](foto/003.png)
+![003.png](foty_do_instrukcji/003.png)
 
 4. Kliknij w Remote Explorer (6 ikonka po lewej od góry)
 
