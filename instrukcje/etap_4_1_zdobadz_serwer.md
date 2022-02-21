@@ -5,7 +5,7 @@
 [Zobacz film o zdobywaniu serwera](http://bityl.pl/hrFwi)
 
 
-**Pytacie czemu serwer.** 
+#### Pytacie czemu serwer:
 - Serwer będzie służyć do zajęć.
 - Ale możecie tam stawiać też swoje rzeczy.
 - Będziecie się uczyć w realnym środowisku linuxowym i sieciowym.
@@ -22,10 +22,7 @@ Wybierz drogę jak zdobądź serwer.
 #### Plan:
 Ten etap składa się z 3 części:
 1. Etap 4.1 - Wybór drogi
-2. Etap 4.2 - Zdobywanie serwera:
-- Droga Home
-- Droga AWS
-- Inna droga
+2. Etap 4.2 - Zdobywanie serwera: AWS lub Home lub innego.
 3. Etap 4.3 - Połączenie z serwerem przez VSCode
 
 
