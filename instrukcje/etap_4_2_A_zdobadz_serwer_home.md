@@ -34,7 +34,7 @@ Host xd
   HostName 1.1.1.1
   User 
   IdentityFile "~/.ssh/tu_wstaw_nazwe_klucza"
-	```
+```
 
 5. Spróbuj się połączyć z terminala/powershell ; )
 ```
