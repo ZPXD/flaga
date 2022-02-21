@@ -32,10 +32,11 @@ Albo wróć do szturmu tam gdzie skończyłeś:
 - [Szturm na AWS - Film krok po kroku](https://www.youtube.com/playlist?list=PLaPjE0og8b6Lof4yYXJmdRv5coaVePmI5)
 
 
-
-### Mam serwer, przypisaną domenę, VSC i chcę szybko dołączyć do zajęć. Co robić?
-
 ## Droga ASAP:
+
+#### Masz serwer, przypisaną do niego domenę, VSCode i chcesz szybko dołączyć do zajęć. Co robić?
+
+
 
 Po zalogowaniu na serwer:
 
