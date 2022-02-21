@@ -50,4 +50,5 @@ git clone https://github.com/ZPXD/zajecia_programowania_xd.git
 
  
 **Jeżeli się śpieszysz, pójdź tędy:** [Etap 7.A - Strona www i Flaga - droga ASAP (flaga w 5 minut) - Instrukcje]( http://bityl.pl/o7IM4)
+
 **Jeżeli nic się nie pali, wybierz tę drogę:** [Etap 7.B - Strona www i Flaga - droga klasyczna - Instrukcje]( http://bityl.pl/BcfxJ)
