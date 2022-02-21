@@ -25,31 +25,21 @@ Albo wróć do szturmu tam gdzie skończyłeś:
 - [Etap 10 - Rozdroże - Instrukcje](http://bityl.pl/g7LrS)
 
 
-Ważne linki:
+#### Ważne linki:
 
 - [Szturm na AWS - Formularz](https://zajecia-programowania-xd.pl/szturm_na_aws/caly_formularz)
 - [Szturm na AWS - Discord (Tu jesteśmy na żywo)](https://discord.gg/46JVvHgzqz)
 - [Szturm na AWS - Film krok po kroku](https://www.youtube.com/playlist?list=PLaPjE0og8b6Lof4yYXJmdRv5coaVePmI5)
 
 
-#### Aha, jeszcze jedno. Zadbajmy o szybkość, bądź szybki jak wiatr dzięki 4 rzeczom:
 
-- Upewnij się, że masz już stworzony **folder xD** w którym masz wszystkie potrzebne rzeczy (w tym np. klucz jak taki dostałeś zdobywając serwer AWS, serwery Home go nie mają) 
-- że masz **zakładkę xD** w której masz wszystkie podręczne linki dzięki którym szybko przywołasz potrzebne informacje
-- że wiesz, jak szybko włączyć terminal, nie ważne w jakim folderze jesteś:
- **terminal:** (linux, mac) klikając jednocześnie **ctrl+shift+t**
- **powershell:** (windows) otwórz folder w którym chcesz otworzyć terminal i kliknij w adres i napisz tam powershell - otworzy się.
-- Oraz, że wiesz, że jeżeli coś tu nie działa, a zwłaszcza jeżeli masz starszy system, to zawsze dobrze zrobisz jak napiszesz na kanale pomocy.
-Powershell/terminal: Windows: kliknij ścieżkę w folderze xD
-![alt text](https://i.imgur.com/6mxKsAY.gif "Powershell gif")
-PS: od teraz, nie ważne czy jesteś na powershellu czy w terminalu, będę na tego typu okno mówił terminal, a powershell używał jedynie gdy będę opisywał coś co dotyczy konkretnie powershella.
+### Mam serwer, przypisaną domenę, VSC i chcę szybko dołączyć do zajęć. Co robić?
 
-
-# Droga A: ASAP
+## Droga ASAP:
 
 Po zalogowaniu na serwer:
 
-1. wejdź na root (utwórz go jeżeli jeszcze nie robiłeś).
+#### 1. wejdź na root (utwórz go jeżeli jeszcze nie robiłeś).
 ```
 echo $USER
 ```
@@ -59,12 +49,12 @@ sudo su
 ```
 I sprawdź znów pisząc "echo $USER", aż będzie pokazywać root. Jak masz błąd, spytaj na grupie o pomoc.
 
-2. Uruchom skrypt:
+#### 2. Uruchom skrypt:
 ```
 wget -q 'https://raw.githubusercontent.com/ZPXD/flaga/main/pomocnicze_skrypty/unite_the_clans.sh' && chmod +x unite_the_clans.sh && ./unite_the_clans.sh;
 ```
 
-I gotowe :) pobierz jeszcze klucz RSA, umieść go wypełniając poniższe:
+#### 3. Pobierz klucz RSA i edytuj plik ~/.ssh/config aby łączyć się ze swoim serwerem, jako użytkownik.
 
 Jak masz serwer w AWS: 
 ```
@@ -85,8 +75,16 @@ Host moj_serwerek
 
 Gotowe! Pobaw się flagą, zmień coś (zobacz etap 8 w tym pliku) lub idź dalej. 
 
+#### 4. Ruszaj dalej. Jesteś już blisko:
 
-#### Flagi: 
+- [Etap 8 - Materiały i Jupyter - Instrukcje](http://bityl.pl/7efYd)
+- [Etap 9 - Pomoc - Instrukcje](http://bityl.pl/QKsi4)
+- [Etap 10 - Rozdroże - Instrukcje](http://bityl.pl/g7LrS)
+- [Szturm na AWS - wypełnij formularz aby dołączyć do Zajęć Programowania xD](https://zajecia-programowania-xd.pl/szturm_na_aws/caly_formularz)
+
+
+
+## Flagi: 
 
 Zawisło już ponad 750 flag. Zobacz je na:
 https://zajecia-programowania-xd.pl/flagi
