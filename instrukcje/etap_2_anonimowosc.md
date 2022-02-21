@@ -1,7 +1,7 @@
 ## Etap 2 - Anonimowość
 
 - [Etap 2 - Anonimowość - Film](http://bityl.pl/VkxmB)
-- [Etap 2 - Anonimowość - Discord](https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_2_anonimowosc.md)
+- [Etap 2 - Anonimowość - Discord](https://discord.gg/ZtJ2tq2vbd)
 
 Film Szturmowy 2 - Anonimowość i poczta
 
@@ -21,6 +21,20 @@ Film Szturmowy 2 - Anonimowość i poczta
 
 
 **Poczta i konto Google**
+
+** To opcjonalny etap dla tych z was którzy zechcą na zajęciach zachować anonimowość.  **
+Konta google będziemy podczas zajęć używać też do pracy na otwartych dokumentach googla i excelach.
+
+Jeżeli pocztę masz już gotową i nie chcesz zakładać nowej to wypełnij formularz poniżej i przejdź do kolejnego etapu.
+
+**Cel:** wybierz w jakim stopniu chcesz zachować anonimowość i użyj obecnego / załóż nowe konto i pocztę googla na zajęcia programowania xD.
+
+**Instrukcja: **
+http://bityl.pl/PS2mA
+
+**Masz już pocztę i konto Google na zajęcia? Wypełnij formularz poniżej: **
+https://zajecia-programowania-xd.pl/szturm_na_aws/poczta
+
 
 ** To opcjonalny etap dla tych z was którzy zechcą na zajęciach zachować anonimowość.  **
 Konta google będziemy podczas zajęć używać też do pracy na otwartych dokumentach googla i excelach.
