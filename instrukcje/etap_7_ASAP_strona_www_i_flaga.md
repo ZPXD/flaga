@@ -105,17 +105,14 @@ Jeżeli masz z tym problem, wróć do [Etap 4.3 - połączenie z serwerem](https
 
 Ewentualnie zapisz go gdzie chcesz i skopiuj go do folderu .ssh potem tak jak uznasz.
 
-![foto](foty_do_instrukcji/dk_8.png)
+![foto](foty_do_instrukcji/dk_9.png)
 
 #### 8. Włącz znów VSC. Kliknij w "SSH-Targets" w zembatkę (drugi przycisk po prawej od "SSH-TARGETS")
 
-![foto](foty_do_instrukcji/dk_9.png)
-
-#### 9. Spyta Cię który plik edytować. Wybierz confik z folderu .ssh (ten plik najwyżej na liście).
-
 ![foto](foty_do_instrukcji/dk_10.png)
 
-#### 10. Otwórz go.
+
+#### 9. Spyta Cię który plik edytować. Wybierz config z folderu .ssh (ten plik najwyżej na liście). I otwórz go.
 
 Jeżeli jesteś w Home i wkleiłeś to o co prosiłem wcześniej, to zobaczysz coś w tym stylu (tylko inne adresy IP).
 
@@ -126,41 +123,18 @@ Jeżeli jesteś w Home i wkleiłeś to o co prosiłem wcześniej, to zobaczysz c
 ![foto](foty_do_instrukcji/dk_12.png)
 
 ![foto](foty_do_instrukcji/dk_13.png)
-![foto](foty_do_instrukcji/dk_14.png)
-![foto](foty_do_instrukcji/dk_15.png)
-![foto](foty_do_instrukcji/dk_16.png)
-![foto](foty_do_instrukcji/dk_17.png)
 
-Jak masz serwer w AWS - uzupełnij: 
-- NAZWA_KLUCZA_PEM.pem - nazwa Twojego klucza .pem z AWS.
-- NUMER_IP - numer IP Twojego serwera.
-- NAZWA_KLUCZA - to "klucz_" + nazwa Twojego użytkownika. Możesz sprawdzić na serwerze pisząc
-```
-ls /home/$USER/.ssh/
-```
 
-Wklej sobie poniższą komendę do notatnika i uzupełnij ją poniższą komendę:
-```
-scp -i NAZWA_KLUCZA_PEM.pem ubuntu@NUMER_IP:/home/ubuntu/NAZWA_KLUCZA NAZWA_KLUCZA
-```
-Jak masz serwer VPS z Home:
-```
-scp root@NUMER_IP:/home/NAZWA_UZYTKOWNIKA_NA_SERWERZE/.ssh/NAZWA_KLUCZA NAZWA_KLUCZA
-```
-Klucz wrzuć do folderu .ssh i dodaj go do pola w pliku .ssh/config wg. wzoru:
-
-```
-Host moj_serwerek
-  HostName 1.1.1.1
-  User rafal_paczes
-  IdentityFile /home/rafi/.ssh/potezny_klucz_rafiego
-```
 
 Gotowe! Pobaw się flagą, zmień coś (zobacz etap 8 w tym pliku) lub idź dalej. 
 
 
 
-## Etap 8: Flaga.
+#### 12. Flaga.
+
+
+**Cel:** dodaj coś do xDDD. Zmień coś. Zrób coś po swojemu.
+
 
 - Edytuj plik tekstowy którego treść widać na Twojej stronie.
 - Zobaczy czy na stronie jest nowa treść!
@@ -168,7 +142,10 @@ Gotowe! Pobaw się flagą, zmień coś (zobacz etap 8 w tym pliku) lub idź dale
 - Zobacz czy zakładka działa :)
 
 
-#### Edytuj plik tekstowy którego treść widać na Twojej stronie.
+#### 1. Edytuj plik tekstowy którego treść widać na Twojej stronie.
+
+Otwórz folder z kodem Flagi na serwerze w nowym oknie i otwórz Terminal.
+
 
 Urządź się tu :) Będąc dalej na serwerze, w folderze /var/www/flaga edytuj zawartość pliku xd.txt. Dodaj tam coś od siebie.
 ```
@@ -176,13 +153,13 @@ cd /var/www/flaga
 nano dane/xd.txt
 ```
 
-#### Zobaczy czy na stronie jest nowa treść!
+#### 2. Zobaczy czy na stronie jest nowa treść!
 
 
 Zobacz na stronie www czy działa :)
 
 
-#### Stwórz nową zakładkę wymaganą do przejścia szturmu!
+#### 3. Stwórz nową zakładkę wymaganą do przejścia szturmu!
 
 Ostatnie co zostało, to edycja zakładki /xd flagi. Twoja flaga aby przejść dalej musi spełniać 3 kryteria. 
 - być widoczna w sieci, czyli działać - to mamy
@@ -203,17 +180,18 @@ Przeładuj:
 ```
 sudo systemctl restart flaga.service
 ```
-lub
+lub korzystając z gotowego skryptu:
 ```
 sudo python3 pomocnicze_skrypty/reload.py
 ```
 
-#### Zobacz czy zakładka działa :)
+#### 4. Zobacz czy zakładka działa :)
 
 Zobacz na stronie www czy działa :) - dodaj do swojego adresu "/xd" czyli jak masz domenę "kubus-puchatek.pl" to wpisz "kubus-puchatek.pl/xd".
 
 
 #### Gotowe?
+
 Możesz opuścić Terminal pisząć:
 
 Najpierw aby się wylogować:
@@ -228,25 +206,8 @@ A strona nadal będzie stała w internecie.
 
 
 
- ** Powieś swoją flagę! **
 
-**Cel:** dodaj coś do xDDD. Zmień coś. Zrób coś po swojemu.
-
-**Instrukcje:**
- http://bityl.pl/wyF86
-
-    - dorga dla mezczyzn 
-    - droga za 3 kliknieciami: a, b, run
-    - edycja flagi
-
-1. Wejdź na swoją nową domenę.
-2. Jak działa to pochwal się komuś. Wrzuć też na kanał #flaga.
-3. I pobaw się flagą, modyfikuj ją. Opis jak to zrobić jest w kroku 6 w instrukcji: https://github.com/ZPXD/flaga
-
-**Gotowe? Powiedź czy wszystko gra:**
-https://zajecia-programowania-xd.pl/szturm_na_aws/8
+**Przejdź dalej:**
 
 
-
-
-**Przejdź dalej:** [Etap 8 - Materiały i Jupyter - Instrukcje](http://bityl.pl/7efYd)
+[Etap 8 - Materiały i Jupyter - Instrukcje](http://bityl.pl/7efYd)
