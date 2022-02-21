@@ -30,7 +30,6 @@
 
 the_user=$1
 domena=$2
-klucz=klucz_$1
 flaga_start=`pwd`/flaga
 
 if [ $USER == "root"  ] ; then
@@ -128,6 +127,7 @@ else
 
 fi
 
+klucz=klucz_$1
 #uninstall apache
 systemctl stop apache
 apt remove apache2 --yes
