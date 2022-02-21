@@ -3,23 +3,18 @@
 ## Etap 4.2.B - Zdobądź serwer - droga AWS EC2 serwer Linux Ubuntu 20 
 
 
-#### Uwagi wstępne:
+#### Cel:
+- Zdobądź konto  i serwer na AWS
+- Poustawiaj co trzeba (http rules, inbound, elastic IP) aby serwer działał sprawnie.
+- Poznaj login i adres IP do swojego serwera, pobierz klucz do folderu .ssh.
 
+
+#### Uwagi wstępne:
 1. Założenie konta Free Tier (darmowego) na AWS i tak wymaga posiadania karty kredytowej i podania jej numerów podczas rejestracji.
 2. Jeżeli zrobimy wszystko wg. Instrukcji, będzie ok, ale bywa, że AWS nalicza dodatkowe opłaty jak przekroczymy jakieś limity bo np. Ktoś coś źle ustawi, albo np. Nieumyślnie zapuści jakiś program który zje mu całe zasoby obliczeniowe. Będziemy przed tym robić zapory, ale trzeba wiedzieć, że jest takie ryzyko. Kilka osób na własną rękę ustawiało już np. Elastic IP i naliczyło niektórym po $0.01 czy $0.04. Niby nic, ale lepiej tego uniknąć. Na VPS z drogi A takich atrakcji nie będzie.
 3. Wszystko z głową.
 
 
-#### Cel:
-Zdobądź konto  i serwer na AWS
-Poustawiaj co trzeba (http rules, inbound, elastic IP) aby serwer działał sprawnie.
-Poznaj login i adres IP do swojego serwera, pobierz klucz do folderu .ssh.
-
-
-Kto zna login i adres IP do swojego serwera - kliknijcie poniżej.
-
-Instrukcje krok po kroku do zdobycia serwera Ubuntu 20 na AWS:
-http://bityl.pl/JAZ0W 
 
 
 #### Plan
@@ -71,4 +66,7 @@ możesz ruszać dalej. Czas połączyć się z Twoim serwerem.
 [Pomoc na discordzie dla problemów związanych z Etapem 4](https://discord.gg/8YQAaBHh3u)
 
 
-**Przejdź dalej:** [Etap 4.3 - Zdobądź serwer: połączenie z serwerem przez VSCode](http://bityl.pl/nYH1X)
+
+**Przejdź dalej:** 
+
+[Etap 4.3 - Zdobądź serwer: połączenie z serwerem przez VSCode](http://bityl.pl/nYH1X)
