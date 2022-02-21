@@ -1,4 +1,4 @@
-## etap_7_Klasyczna_strona_www_i_flaga_droga_ASAP.md
+## etap_7_Klasyczna_strona_www_i_flaga.md
 
 - Szturmowy 7 - Flaga
 	
