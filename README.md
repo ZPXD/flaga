@@ -38,10 +38,9 @@ Albo wróć do szturmu tam gdzie skończyłeś:
 
 #### Ważne linki:
 
-- [Szturm na AWS - Formularz aby dołączyć do Zajęć Programowania xD](https://zajecia-programowania-xd.pl/szturm_na_aws/caly_formularz)
 - [Szturm na AWS - Discord (Tu jesteśmy na żywo)](https://discord.gg/46JVvHgzqz)
 - [Szturm na AWS - Film krok po kroku](https://www.youtube.com/playlist?list=PLaPjE0og8b6Lof4yYXJmdRv5coaVePmI5)
-
+- [Szturm na AWS - Formularz aby dołączyć do Zajęć Programowania xD](https://zajecia-programowania-xd.pl/szturm_na_aws/caly_formularz)
 
 
 # Droga ASAP (dołącz w 5 minut):
