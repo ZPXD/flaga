@@ -42,9 +42,7 @@ Proponuję tę drogę dla świętego spokoju - mamy support po Polsku, w miarę 
 + Obsługa PL 24/7
 - Płatny ok. 20zł/m
 
-#### Przejdź dalej:
-
-[Etap 4.2.A - Zdobądź serwer - Droga Home - Instrukcje](http://bityl.pl/8tLm2)
+Wybierz drogę Home! Przejdź do [Etap 4.2.A - Zdobądź serwer - Droga Home](http://bityl.pl/8tLm2)
 
 
 #### B. Serwer AWS EC2 Ubuntu z Free Tier (darmowy). 
@@ -56,9 +54,8 @@ Plusy i minusy:
 - Może naliczyć dodatkowe opłaty jak coś nabroimy [rzadkie. będę to omawiał na video]
 - Obsługa dosyć powolna (nawet kilka dni) po angielsku
 
-#### Przejdź dalej: 
 
-[Etap 4.2.B - Zdobądź serwer - Droga AWS - Instrukcje](http://bityl.pl/i3YCE)
+Wybierz drogę AWS! Przejdź do [Etap 4.2.B - Zdobądź serwer - Droga AWS](http://bityl.pl/i3YCE)
 
 #### C. Serwer VPS Ubuntu - inne opcje. (~10-50zł/m)
 Plusy i minusy:
@@ -66,6 +63,9 @@ Plusy i minusy:
 - Jak coś się skiepści to możemy nie wiedzieć jak Ci pomóc
 
 #### Tu linków nie ma - sam wytyczasz szlak :) 
+
+Ale jak sobie poradzisz to idź do [Etap 4.3 - połączenie z serwerem przez VSCode](http://bityl.pl/nYH1X)
+
 
 
 ##### Wsparcie:
