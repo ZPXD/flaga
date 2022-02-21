@@ -41,26 +41,37 @@ Zrób 'fetch' na [LinuxHot16Challenge](https://github.com/ZPXD/LinuxHot16Challen
 
 Sklonuj [zajecia_programowania_xd](https://github.com/ZPXD/zajecia_programowania_xd)  korzystając z VSCode. 
 
+1. Link do repo. 
 
-1. Kliknij w 3 klocek od góry z lewej **(Source Controll)**
-2. Kliknij w duży niebieski przycisk na dole **(Clone Repository)**
-3. Wklej link do repozytorium które chcesz sklonować
+Wejdź na link [zajecia_programowania_xd](https://github.com/ZPXD/zajecia_programowania_xd) i zobacz zielony przycisk. Jak na niego naciśniesz, pokaże Ci się tam ścieżka linku. Skopiuj go. To namiar na git'a tego repozytorium. Przyda się za chwilę.
+
+2. Wróć do VSC. Kliknij w 3 klocek od góry z lewej **(Source Controll)**
+
+3. Kliknij w duży niebieski przycisk na dole **(Clone Repository)**
+
+
+![git_clone1.png](foty_do_instrukcji/git_clone1.png)
+
+4. Wklej link do repozytorium które chcesz sklonować
+
+
+![git_clone_2.png](foty_do_instrukcji/git_clone_2.png)
+
+Podanie tam linku do repozytorium to analogia do wpisania w terminalu:
 ```
 git clone https://github.com/ZPXD/zajecia_programowania_xd
 ```
-4. Spyta się Ciebie w jakim folderze - podaj katalog domowy
-5. Spyta się Cibie czy otworzyć ten folder - powiedz, że tak
+5. Spyta się Ciebie w jakim folderze zapisać repozytorium - podaj katalog domowy albo root. Narazie to nie istotne.
+6. Spyta się Cibie czy otworzyć ten folder - powiedz, że tak
 
-![git_clone1.png](foty_do_instrukcji/git_clone1.png)
-![git_clone_2.png](foty_do_instrukcji/git_clone_2.png)
 
 #### 5. Github - clone: flaga.
 
-Otwórz nowe okno z nowym połączeniem z Twoim serwerem.
+Otwórz nowe okno z nowym połączeniem z Twoim serwerem. Powtórz to samo dla repozytorium Flagi.
 
 Sklonuj [Flaga](https://github.com/ZPXD/flaga) korzystając z VSCode. 
 
-#### 6. Jesteś gotowy aby osiodłać serwer i postawić stronę WWW ze swoją Flagą.
+#### 6. Jesteś gotowy aby przygotować serwer i postawić stronę WWW ze swoją Flagą.
 
  
 **Jeżeli się śpieszysz, pójdź tędy:** [Etap 7.A - Strona www i Flaga - droga ASAP (flaga w 5 minut) - Instrukcje]( http://bityl.pl/o7IM4)
