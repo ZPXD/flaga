@@ -4,8 +4,14 @@
 # aby odpalić: wejdź na root (sudo su)
 # i wpisz: bash swap.sh
 
-fallocate -l 1G /swapfile
-chmod 600 /swapfile
-mkswap /swapfile
-swapon /swapfile
-echo "/swapfile swap swap defaults 0 0" >> /etc/fstab
+if $(grep -q "swap" /etc/fstab) ; then
+    echo "SWAP ODNALEZIONY, pomijam tworzenie nowego"
+else
+    echo "TWORZENIE SWAP"
+    fallocate -l 1G /swapfile
+    chmod 600 /swapfile
+    mkswap /swapfile
+    swapon /swapfile
+    echo "/swapfile swap swap defaults 0 0" >> /etc/fstab
+fi
+swapon --show
