@@ -2,7 +2,7 @@
 
 ## Etap 2 - Anonimowość i poczta
 
-[Zobacz film omawiający kwestie anoimowości na zajęciach i Szturmie](http://bityl.pl/VkxmB)
+[Zobacz film omawiający kwestie anonimowości na zajęciach i Szturmie](http://bityl.pl/VkxmB)
 
 
 **Poczta i konto Google**
