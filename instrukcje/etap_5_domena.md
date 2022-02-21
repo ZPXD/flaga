@@ -20,7 +20,9 @@ Karatecy mają kimona, bokserzy rękawice, baletnice mają treningowe pantofle a
 
 #### 1. Zdobądź domenę
 
-Domeny można zamówić np. w https://home.pl/ bo tam jest support 24/7 po polsku. Instrukcja do zdobycia domeny: http://bityl.pl/KW7vp 
+Domeny można zamówić np. w https://home.pl/ bo tam jest support 24/7 po polsku. Instrukcja do zdobycia domeny:
+
+http://bityl.pl/KW7vp 
 
 #### 2. Wybór nazwy domeny. Jaka nazwa?
 - Taka żebyś nie wstydził się cioci pochwalić potem jak cos fajnego zaprogramujesz :slight_smile:
@@ -37,7 +39,7 @@ Domeny można zamówić np. w https://home.pl/ bo tam jest support 24/7 po polsk
 - Dodanie rekordu A dla domeny
 - Dodanie rekordu A dla domeny z www
 
-**Instrukcja do rejestracji domeny:**
+Instrukcja do rejestracji domeny:
  http://bityl.pl/C4xbH
 
 Z waszą domeną i serwerem (i jego adresem ip) to trochę tak jak byście założyli firmę z zarejestrowaną nazwą xD a mieli lokal na ulicy Skłodowskiej Curie 30. Teraz trzeba te dwie informacje ze sobą skojarzyć.
