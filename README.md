@@ -5,15 +5,17 @@ W tym repozytorium znajduje się tutaj cały kod do zainstalowania na serwerze a
 
 ## Szturm na AWS:
 
+To przygoda otwierająca zajęcia programowania xD
 
+Czas trwania: ok 120-180 minut, chociaz można tu spędzić wiele czasu i często wracać, ciągle ucząc się nowych rzeczy i poznając świetnych ludzi.
 
 ### Cel
 Przygotuj wszystko czego trzeba aby rozpocząć naukę programowania na Zajęciach Programowania xD. 
 Zdoądź serwer, postaw stronę www i powieś flagę. Pomóż innym.
-Poznaj świetnych ludzi i zobacz jak u nas jest :)
+Poznaj niesamowitych ludzi i zobacz jak u nas jest :)
  
 ### Wygrana: 
-Dodstęp do rocznych darmowych Zajęć Programowania xD
+Daje dodstęp do aktywnego uczestnictwa w rocznych darmowych Zajęć Programowania xD
 
 Rozpocznij szturm, zdobądź serwer, postaw stronę www i zawieś flagę. 
 Albo wróć do szturmu tam gdzie skończyłeś:
