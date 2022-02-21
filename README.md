@@ -104,8 +104,11 @@ Pobaw się flagą, zmień coś (zobacz etap 8 w tym pliku) lub idź dalej.
 - [Etap 9 - Leć komuś pomóc - Instrukcje](http://bityl.pl/QKsi4)
 - [Etap 10 - Leć do nas na zamek - Instrukcje](http://bityl.pl/g7LrS)
 - [I wypełnij formularz aby dołączyć do Zajęć Programowania xD](https://zajecia-programowania-xd.pl/szturm_na_aws/caly_formularz)
-- Codziennie o 18:00 na głównym discordzie  [tu o 18 będzie link]() jest możliwość aby zaprezentować flagę i dołączyć jako aktywny uczestnik zajęć.
 
+#### Gotowe?
+
+**Przyjdź o 18:00 i zaprezentuj flagę:** 
+[Zajęcia Programowania xD - Discord (Tu jesteśmy na żywo)](https://discord.gg/9rc3KJdJCa)
 
 ## Flagi: 
 
