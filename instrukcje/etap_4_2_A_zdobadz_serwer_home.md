@@ -8,8 +8,7 @@
 
 #### Cel:
 - Zdobądź serwer na Home. 
-- Kto zna login i adres IP do swojego serwera - idźcie dalej.
-
+- Zmień system na Ubuntu, hasło i poznaj adres IP swojego serwera.
 
 #### 1. Zdobądź Server VPS Ubuntu 20 na home.pl (~20zł miesięcznie).
 
