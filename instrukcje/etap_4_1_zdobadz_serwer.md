@@ -41,6 +41,8 @@ Proponuję tę drogę dla świętego spokoju - mamy support po Polsku, w miarę 
 #### Plusy i minusy:
 + Obsługa PL 24/7
 - Płatny ok. 20zł/m
+- Pomocny panel do reinstalacji systemu, restartu, konsoli zapasowej
+
 
 Wybierz drogę Home! Przejdź do [Etap 4.2.A - Zdobądź serwer - Droga Home](http://bityl.pl/8tLm2)
 
