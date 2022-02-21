@@ -15,26 +15,97 @@
 #    jak pokazuje root to idź do kroku 2. Jeżeli nie, utwórz hasło dla root wpisując:
 #
 #    sudo su
-
+#    echo $USER
+#
 #    i sprawdź znów pisząc "echo $USER", aż będzie pokazywać root. Jak masz błąd, spytaj na grupie o pomoc.
 
 # 2. Przypisz wartości zmiennym:
 #
-# NEW_USER=ja_xd
-# DOMENA=TU_WSTAW_NAZWE_SWOJEJ_DOMENY
+#    NEW_USER=ja_xd
+#    DOMENA=TU_WSTAW_NAZWE_SWOJEJ_DOMENY
    
 # 3. Odpal skrypt
 # 
-# wget -qO - 'https://raw.githubusercontent.com/ZPXD/flaga/main/pomocnicze_skrypty/unite_the_clans2.sh' | bash -s $NEW_USER $DOMENA
+#    wget -qO - 'https://raw.githubusercontent.com/ZPXD/flaga/main/pomocnicze_skrypty/unite_the_clans2.sh' | bash -s $NEW_USER $DOMENA
 #
-# Zmienne.
+#    Skryp załaduje poprzednio podane zmienne.
+
+
 the_user=$1
 domena=$2
 klucz=xd_$1
 flaga_start=`pwd`/flaga
 
+if [ $USER == "root"  ] ; then
+    echo "USER to root - OK"
+    echo "Użytkownik to: $the_user"   
+    echo "Domena to: $domena"
+else
+    echo "/!\/!\/!\ "
+    echo "PRZELOGUJ SIE NA ROOTa, wpisz:"
+    echo "sudo su"
+    echo "/!\/!\/!\ "
+    exit
+fi
+
+# instalacja curl do weryfikacji domeny:
+apt -qq  update --yes
+apt -qq install curl --yes
+
+
+
+
+if [ $# == "2"  ] ; then
+    echo "Weryfikowanie danych"
+    #test IP domeny
+    server_ip=`curl -s http://checkip.amazonaws.com`
+    dns_ip=$(host $domena | awk '{ print $4 }')
+
+    if [ "$server_ip" = "$dns_ip" ]
+    then
+        echo "Wpisana domena jest OK"
+    else
+        echo "/!\/!\/!\ "
+        echo "WPISANA ZLA DOMENE!"
+        echo "podana domena: $domena"    
+        echo "TWOJ ADRES SERWERA to:"
+        echo "$server_ip"      
+        echo "TWOJA KONFIGURACJA DNS:"
+        echo "$(host $domena)"
+        echo "jeśli chcesz zmienić domenę to wpisz:"
+        echo "DOMENA=twoja.domena.pl"
+        echo "/!\/!\/!\ "
+        exit
+    fi
+
+else
+    echo "/!\/!\/!\ "
+    echo "PODAJ NAZWE UŻYTKOWNIKA ORAZ DOMENY, a następnie uruchom polecenie ponownie"
+    echo "/!\/!\/!\ "
+    exit
+fi
+
+
+
+
+
+wget_output=$(wget -q "$domena")
+if [ $? -ne 0 ]; then
+    echo "HTTP error"
+else
+    echo "/!\/!\/!\ "
+    echo "STRONA ODPOWIADA NA HTTP, MASZ JUZ FLAGE"
+    echo "/!\/!\/!\ "
+    exit
+fi
+
+
+
+
+
+
 # Update paczek.
-apt update --yes
+apt -qq update --yes
 apt upgrade --yes
 
 # SCRIPT:
@@ -42,7 +113,7 @@ apt install git --yes
 git clone https://github.com/ZPXD/flaga.git
 
 # Clash
-source flaga/pomocnicze_skrypty/unite_the_clans.sh $NEW_USER $DOMENA
+source flaga/pomocnicze_skrypty/unite_the_clans.sh $the_user $domena
 
 # Użytkownicy.
 adduser $the_user --gecos GECOS --disabled-password
@@ -88,21 +159,31 @@ python3 /var/www/flaga/pomocnicze_skrypty/xd.py $domena
 
 chown -R $the_user:$the_user /var/www/flaga
 
-# How to download the key:
-apt install curl --yes
-server_ip=`curl -s http://checkip.amazonaws.com`
+
 if [ $(getent passwd ubuntu) ] ; then
-    echo "Get your key by using command:"
-    echo "Paste below command into your terminal in computer"
-    echo " while being in /.shh folder:"
+    #gdy mamy ubunut
+    echo "Edytuj poniższą komendę i wklej u siebie w terminalu/powershellu na komputerze."
+    echo "Pobierze się plik. Przenieś go do swojego folderu ssh."
     echo " "
-    echo "scp -i [TU_WSTAW_NAZWE_SWOJEGO_KLUCZA_AWS].pem ubuntu@$server_ip:/home/ubuntu/$klucz $klucz"
+    echo "scp -i [NAZWA_KLUCZA_AWS].pem ubuntu@$server_ip:/home/ubuntu/$klucz $klucz"
+    echo " "
+    echo "Jest tam też plik config. Dodaj w nim konfigurację z poprawną nazwą nowego klucza"
+    echo "Host $domena"
+    echo "  HostName $server_ip"
+    echo "  User $the_user"
+    echo "  IdentityFile ~/.ssh/$klucz"
 else
-    echo "Get your key by using command:"
-    echo "Paste below command into your terminal in computer"
-    echo " while being in /.shh folder:"
+    #gdy mamy home.pl lub micr.us
+    echo "Edytuj poniższą komendę i wklej u siebie w terminalu/powershellu na komputerze."
+    echo "Pobierze się plik. Przenieś go do swojego folderu ssh."
     echo " "
-    echo "scp root@$server_ip:/home/$the_user/.ssh/$klucz $klucz"
+    echo "scp root@$server_ip:/root/.ssh/$klucz $klucz"
+    echo " "
+    echo "Jest tam też plik config. Dodaj w nim konfigurację z poprawną nazwą nowego klucza"
+    echo "Host $domena"
+    echo "  HostName $server_ip"
+    echo "  User $the_user"
+    echo "  IdentityFile ~/.ssh/$klucz"
 fi
 
 # INFO:
@@ -113,5 +194,5 @@ echo " "
 echo "Sprawdź Twoją domenę w przeglądarce."
 
 su $the_user
-cd /var/www
-pwd
+#cd /var/www
+#pwd
