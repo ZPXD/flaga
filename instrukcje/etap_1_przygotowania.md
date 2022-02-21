@@ -13,7 +13,7 @@
 - Poznaj kilka skrótów klawiszowych
 
 #### Wsparcie:
-[Pomoc na discordzie dla Etapu 1](https://discord.gg/dEyZ5S7pzM)
+[Pomoc na żywo na discordzie dla problemów związanych z Etapem 1](https://discord.gg/dEyZ5S7pzM)
 
 #### Potrzebny czas: 
 60-180 min + ile chcesz.
