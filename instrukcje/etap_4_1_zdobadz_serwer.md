@@ -39,10 +39,9 @@ Proponuję tę drogę dla świętego spokoju - mamy support po Polsku, w miarę 
 
 
 #### Plusy i minusy:
-+ Obsługa PL 24/7
-- Płatny ok. 20zł/m
+- Obsługa PL 24/7
 - Pomocny panel do reinstalacji systemu, restartu, konsoli zapasowej
-
+- Płatny ok. 20zł/m
 
 Wybierz drogę Home! Przejdź do [Etap 4.2.A - Zdobądź serwer - Droga Home](http://bityl.pl/8tLm2)
 
@@ -50,7 +49,7 @@ Wybierz drogę Home! Przejdź do [Etap 4.2.A - Zdobądź serwer - Droga Home](ht
 #### B. Serwer AWS EC2 Ubuntu z Free Tier (darmowy). 
 
 Plusy i minusy:
-+ Darmowy na rok
+- Darmowy na rok
 - Zmienne IP sprawia, że trzeba więcej się naklikać
 - Trzeba podać numery karty kredytowej
 - Może naliczyć dodatkowe opłaty jak coś nabroimy [rzadkie. będę to omawiał na video]
@@ -61,7 +60,7 @@ Wybierz drogę AWS! Przejdź do [Etap 4.2.B - Zdobądź serwer - Droga AWS](http
 
 #### C. Serwer VPS Ubuntu - inne opcje. (~10-50zł/m)
 Plusy i minusy:
-+ Sam wybierasz gdzie kupujesz serwer z jego waletami i zadami
+- Sam wybierasz gdzie kupujesz serwer z jego waletami i zadami
 - Jak coś się skiepści to możemy nie wiedzieć jak Ci pomóc
 
 #### Tu linków nie ma - sam wytyczasz szlak :) 
