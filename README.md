@@ -64,7 +64,7 @@ I sprawdź znów pisząc "echo $USER", aż będzie pokazywać root. Jak masz bł
 
 2. Uruchom skrypt:
 ```
-wget -qO - 'https://raw.githubusercontent.com/ZPXD/flaga/main/pomocnicze_skrypty/unite_the_clans.sh' && chmod +x unite_the_clans5.sh && ./unite_the_clans5.sh;
+wget -qO - 'https://raw.githubusercontent.com/ZPXD/flaga/main/pomocnicze_skrypty/unite_the_clans.sh' && chmod +x unite_the_clans.sh && ./unite_the_clans.sh;
 ```
 
 I gotowe :) pobierz jeszcze klucz RSA, umieść go wypełniając poniższe:
