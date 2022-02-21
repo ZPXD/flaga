@@ -65,7 +65,9 @@ Plusy i minusy:
 
 #### Tu linków nie ma - sam wytyczasz szlak :) 
 
-Ale jak sobie poradzisz to idź do [Etap 4.3 - połączenie z serwerem przez VSCode](http://bityl.pl/nYH1X)
+[Inne serwery Q&A](http://bityl.pl/b6Hm9)
+
+A jak sobie poradzisz to idź do [Etap 4.3 - połączenie z serwerem przez VSCode](http://bityl.pl/nYH1X)
 
 
 
