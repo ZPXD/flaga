@@ -10,12 +10,42 @@ Masz już VSCode, masz serwer, znasz jego login, adres ip, wiesz gdzie jest fold
 #### Cel:
 Wejdź na Twój serwer przez VSCode.
 
-
 #### Plan:
 
 #### 1. Otwórz VSCode i zainstaluj rozszeżenie Remote-SSH.
 
+
 #### 2. Połącz się.
+
+#### 3. Otwórz z .ssh plik config
+
+#### 4. Otwórz korzystając z VSCode plik config w katalogu .ssh i wklej tam:
+
+#### config dla Home:
+```
+Host xd_root
+  HostName 1.1.1.1
+  User root
+	
+Host xd
+  HostName 1.1.1.1
+  User xd
+  IdentityFile "~/.ssh/tu_wstaw_nazwe_klucza"
+```
+
+#### config dla AWS:
+
+```
+Host xd_ubuntu
+  HostName 1.1.1.1
+  User ubuntu
+  IdentityFile "~/.ssh/tu_wstaw_nazwe_klucza.pem"
+
+Host xd
+  HostName 1.1.1.1
+  User moja_nazwa_uzytkownika
+  IdentityFile "~/.ssh/tu_wstaw_nazwe_klucza"
+```
 
 #### 3. Upewnij się, że jesteś jako root na serwerze. ("administratorem").
 
@@ -36,21 +66,8 @@ apt update
 ```
 
 **Instrukcja:**
-yt : https://www.youtube.com/watch?v=upcSexk1UfU&t=1s
-txt: http://bityl.pl/6X3gF
 
-#### 5. Otwórz korzystając z VSCode plik config w katalogu .ssh i wklej tam:
 
-```
-Host xd_root
-  HostName 1.1.1.1
-  User root
-	
-Host xd
-  HostName 1.1.1.1
-  User 
-  IdentityFile "~/.ssh/tu_wstaw_nazwe_klucza"
-```
 
 #### 7. Krok dodatkowy: Spróbuj się połączyć z serwerem terminala/powershell ; )
 
@@ -65,6 +82,8 @@ ssh xd_root
 Działa? Super! :))) Możesz zacżąć bawić się swoim terminalem/powershellem.
 Nie działa? Spoko, pomówimy o tym w przyszłości. Narazie to nie takie ważne, idź dalej :)
 
+yt : https://www.youtube.com/watch?v=upcSexk1UfU&t=1s
+txt: http://bityl.pl/6X3gF
 
 **Serwer zdobyty!**
 
