@@ -11,9 +11,9 @@
 - Kto zna login i adres IP do swojego serwera - idźcie dalej.
 
 
-####	1. Zdobądź Server VPS Ubuntu 20 na home.pl.
+####	1. Zdobądź Server VPS Ubuntu 20 na home.pl (~20zł miesięcznie).
 
-[Link do serwera](http://bityl.pl/hhLNr)
+[Kliknij tutaj aby dostać się do serwera](http://bityl.pl/hhLNr)
 
 
 #### 2. Instrukcja przygotowania serwera.
