@@ -63,7 +63,7 @@ Plusy i minusy:
 - Sam wybierasz gdzie kupujesz serwer z jego waletami i zadami
 - Jak coś się skiepści to możemy nie wiedzieć jak Ci pomóc
 
-#### Tu linków nie ma - sam wytyczasz szlak :) 
+#### Tu instrukcji nie ma - sam wytyczasz szlak :) 
 
 [Inne serwery Q&A](http://bityl.pl/b6Hm9)
 
