@@ -95,6 +95,12 @@ Host xd
 
 #### config dla AWS:
 
+Wklej poniższe linie. Edytuj tam narazie tylko:
+a) W linii 4 "IdentityFile "~/.ssh/tu_wstaw_nazwe_klucza.pem" edytuj nazwę klucza .pem
+b) W linii 2 i 7 edytuj HostName - podaj prawidłowy adres IP Twojego serwera
+c) Reszty narazie nie ruszaj.
+d) Upewnij się, że Twój klucz .pem jest w folderze .ssh. Jeżeli nie, niech będzie tam :)
+
 ```
 Host xd_ubuntu
   HostName 1.1.1.1
