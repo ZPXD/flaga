@@ -12,7 +12,9 @@
 - uzupełnimy plik z danymi o nazwę przygotowanej domeny
 - automatycznie "poprozkładamy" pliki konfigurujące nginx i gunicorn we właściwych miejscach
 
-**3. Uruchomisz "usługę" aplikacji strony www ** tak aby była wystawiona w internecie i zobaczysz swoją stronę www sieci pod linkiem domeny. 
+**3. Uruchomisz "usługę" aplikacji strony www** 
+
+tak aby była wystawiona w internecie i zobaczysz swoją stronę www sieci pod linkiem domeny. 
 
 [Obejrzyj film jaks przygotować serwer, postawić stronę i powiesić flagę w wersji ASAP (w 5 minut)]()
 
