@@ -20,20 +20,93 @@ Extensions (5 ikonka po lewej od góry)
 
 ![002.png](foty_do_instrukcji/002.png)
 
-3. W search wpisz: SSH i kliknij w najwyższą pozycję: Remote-SSH i kliknij Install.
+3. W search wpisz: SSH i kliknij w najwyższą pozycję: Remote-SSH i kliknij w niebieski przycisk: Install. Gdy się zainstaluje kliknij w zaznaczony na czerwono przycisk z połączeniami.
 
 ![4](foty_do_instrukcji/4.png)
+
+4. Kliknij plusika aby utworzyć nowe połączenie.
 ![5](foty_do_instrukcji/5.png)
+
+5. Wpisz w połączenie cokolwiek i naciśnij enter.
+
+Tu się normalnie wpisuje coś w stylu:
+```
+ssh root@1.2.3.4
+```
+lub
+```
+ssh -i klucz.pem ubuntu@1.2.3.4
+```
+Ale Ty wpisz narazie cokolwiek.
+
+6. Spyta się Ciebie o plik config. Wybierz ten który kończy się na .ssh\config. Ten jest zawsze na samej górze listy na niebiesko. Kliknij go.
+
 ![6](foty_do_instrukcji/6.png)
+
+7. Na dole pojawi się okno, kliknij na zaznoczony na czerwono przycisk aby zobaczyć plik config w folderze .ssh
 ![7](foty_do_instrukcji/7.png)
+
+8. Wyświetli Ci się plik config. Jeżeli jest pusty, będzie wyglądał jak poniżej. Jeżeli jest pełny i nie wiesz czy są to prawidłowe dane, to skopiuj je, zapisz obok a z tego pliku wykasuj i zaraz uzupełnimy je od nowa.
+
 ![8](foty_do_instrukcji/8.png)
+
+9. Wklej do pliku config poniższe dane:
+
+
+Tu będzie też kilka słów więcej o pliku config i folderze .ssh.
+
+
+#### config dla Home:
+```
+Host xd_root
+  HostName 1.1.1.1
+  User root
+	
+Host xd
+  HostName 1.1.1.1
+  User xd
+  IdentityFile "~/.ssh/tu_wstaw_nazwe_klucza"
+```
+
+#### config dla AWS:
+
+```
+Host xd_ubuntu
+  HostName 1.1.1.1
+  User ubuntu
+  IdentityFile "~/.ssh/tu_wstaw_nazwe_klucza.pem"
+
+Host xd
+  HostName 1.1.1.1
+  User moja_nazwa_uzytkownika
+  IdentityFile "~/.ssh/tu_wstaw_nazwe_klucza"
+```
+
+Będzie to wyglądało np. w ten sposób jak w screenie z punktu 9. (tutaj opcja z serwerami w Home). 
+
+**I zapisz plik (ctrl+s).**
+
+9. Teraz najtrudniejsze. Po lewej stronie, pod "SSH TARGETS" pojawią się 2 pola, po jednym dla każdego "Host" które zdefiniowałeś krok wcześniej. Najedź na jeden z nich. Wtedy ok. 3cm od niego po prawej stronie pojawi się malutka ikonka. Gdzieś w okolicach miejsca zaznaczonego na czerwono w poniższym obrazku. Najedź tam i kliknij.
+
 ![9](foty_do_instrukcji/9.png)
+
+10. Otworzy się nowe okno z połączeniem z serwerem. 
+
+Spyta się czy chcesz kontynuować. Daj opcję na górze, że tak.
+
+Czasem spyta jeszcze, z jakim systemem się łączysz. Wybierz wtedy Linux (bo taki jest system Twojego serwera) - to zwykle też opcja na samej górze - i klikni w nią także - o ile się pojawiła. Obie wyglądają podobnie jak ta na screenie na dole:
+
 ![10](foty_do_instrukcji/10.png)
+
+11. Dalej, jeżeli wybrałeś drogę Home, spyta się Ciebie o hasło. Podaj je. Możesz je zawsze zmienić w panelu home. Jeżeli wybrałeś drogę AWS i poprawnie podałeś klucz w kroku 9, to tego kroku nie będzie ale odrazu połączysz się z serwerem.
+
 ![11](foty_do_instrukcji/11.png)
+
+
 ![12](foty_do_instrukcji/12.png)
-![13](foty_do_instrukcji/l3.png)
-![14](foty_do_instrukcji/l4.png)
-![15](foty_do_instrukcji/l5.png)
+![13](foty_do_instrukcji/13.png)
+![14](foty_do_instrukcji/14.png)
+![15](foty_do_instrukcji/15.png)
 
 4. Kliknij w Remote Explorer (6 ikonka po lewej od góry)
 
