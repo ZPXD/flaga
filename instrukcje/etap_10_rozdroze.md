@@ -1,5 +1,8 @@
 ## Etap 10 - Rozdroże
 
+- [Etap 10 - Rozdroże - Discord](https://discord.gg/TBS8ZN3cYa)
+
+
 	- zaproszenie na zajecia
 
 	- droga na zamek
