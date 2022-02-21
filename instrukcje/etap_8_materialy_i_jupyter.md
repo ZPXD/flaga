@@ -11,9 +11,6 @@
 - instalacja kernela
 - przykład zabawy klockami
 
-**Przyjdź o 18:00 i zaprezentuj flagę:** 
-[Zajęcia Programowania xD - Discord (Tu jesteśmy na żywo)](https://discord.gg/9rc3KJdJCa)
-
 **Pomogłeś komuś? Nie przestawaj. Jak zechcesz przejść dalej, daj znać:**
 
 **Przejdź dalej:** [Etap 9 - Pomoc - Instrukcje](http://bityl.pl/QKsi4)
