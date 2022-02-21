@@ -27,8 +27,7 @@ b. załóż anonimowego gmaila i anonimowe konto na discordzie
 - np. gmail:   lubie.brokuly@gmail.com
 - np. discord: LubieBrokulyxD
 
-**Instrukcja: **
-http://bityl.pl/PS2mA
+Instrukcja: http://bityl.pl/PS2mA
 
 
 #### Wsparcie:
