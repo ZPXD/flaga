@@ -7,8 +7,10 @@ W tym repozytorium znajduje się tutaj cały kod do zainstalowania na serwerze a
 
 
 
-### Cel:
-Zdobyć serwer i powiesić flagę. Pomóc innym.
+### Cel
+Przygotuj wszystko czego trzeba aby rozpocząć naukę programowania na Zajęciach Programowania xD. 
+Zdoądź serwer, postaw stronę www i powieś flagę. Pomóż innym.
+Poznaj świetnych ludzi i zobacz jak u nas jest :)
  
 ### Wygrana: 
 Dodstęp do rocznych darmowych Zajęć Programowania xD
