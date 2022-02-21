@@ -1,6 +1,9 @@
 ## Etap 1 - Przygotowania.
 
-### Cel:
+[Zobacz film otwierający przygodę: Etap 1 - Wprowadzenie i przygotowania](http://bityl.pl/yhIm9)
+
+
+#### Cel:
 - Zapoznaj się z planem Szturmu
 - Przygotuj folder xD na notatki inne przydatne rzeczy.
 - Przygotuj w zakładkach katalog xD na ważne linki.
@@ -8,8 +11,7 @@
 - Poznaj kilka skrótów klawiszowych
 
 #### Wsparcie:
-- [Etap 1 - Film](http://bityl.pl/yhIm9)
-- [Etap 1 - Pomoc na discordzie](https://discord.gg/dEyZ5S7pzM)
+[Pomoc na discordzie dla Etapu 1](https://discord.gg/dEyZ5S7pzM)
 
 #### Potrzebny czas: 
 60-180 min + ile chcesz.
