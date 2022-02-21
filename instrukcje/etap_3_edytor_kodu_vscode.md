@@ -46,10 +46,12 @@ Poznaj podstawy VSCode. Zobacz jak:
 
 
 #### Wsparcie:
+
 [Pomoc na discordzie dla problemów związanych z Etapem 3](https://discord.gg/4aXe72bg4h)
 
 
 
 
 **Przejdź dalej:** 
+
 [Etap 4.1 - Zdobądź serwer - Instrukcje](http://bityl.pl/jNbnY)
