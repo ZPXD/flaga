@@ -9,8 +9,7 @@
 - Przygotuj folder xD na notatki inne przydatne rzeczy.
 - Przygotuj w zakładkach katalog xD na ważne linki.
 - Spróbuj odnaleźć folder .ssh
-
-- 
+- Poznaj kilka skrótów klawiszowych
 
 #### Potrzebny czas: 
 60-180 min + ile chcesz.
