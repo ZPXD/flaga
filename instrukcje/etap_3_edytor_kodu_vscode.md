@@ -12,10 +12,10 @@ Zdobycie edytora kodu VSCode :)
 
 #### 1. Pobierz VSCode:
 
-Windows & MACOS & Linux:
+A. Windows & MACOS & Linux:
 https://code.visualstudio.com/download
-	   
-Download & Install (Linux):
+
+B. Download & Install (Linux):
 ```
 snap install code --classic
 ```
