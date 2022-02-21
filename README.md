@@ -32,13 +32,15 @@ Albo wróć do szturmu tam gdzie skończyłeś:
 - [Szturm na AWS - Film krok po kroku](https://www.youtube.com/playlist?list=PLaPjE0og8b6Lof4yYXJmdRv5coaVePmI5)
 
 
-## Jak dołącz do zajęć- droga ASAP:
+## Jeżeli masz już
+- serwer na zajęcia i przypisaną do niego domenę na zajęcia
+- Githuba na zajęcia, VSCode i Jupytera
 
-#### Masz już 
-- serwer na zajęcia i przypisaną do niego domenę
-- Githuba, VSCode i Jupytera
+To możesz skorzystać z drogi ASAP (dołącz w 5 minut):
 
-#### Co robić?
+Ale i tak wróć tutaj i przejdź wszystkie etapy pokolei, poczytaj o funkcjach które wywołujesz, poprzeglądaj kod. Poznaj się z ludźmi, pomóż komuś. To świetna zabawa i poczujesz klimat.
+
+# Droga ASAP:
 
 Po zalogowaniu na serwer:
 
@@ -52,10 +54,15 @@ sudo su
 ```
 I sprawdź znów pisząc "echo $USER", aż będzie pokazywać root. Jak masz błąd, spytaj na grupie o pomoc.
 
-#### 2. Uruchom skrypt:
+#### 2. Uruchom skrypt unite_the_clans.sh stawiający wszystko za Ciebie:
+
 ```
 wget -q 'https://raw.githubusercontent.com/ZPXD/flaga/main/pomocnicze_skrypty/unite_the_clans.sh' && chmod +x unite_the_clans.sh && ./unite_the_clans.sh;
 ```
+Teraz masz:
+- użytkownika
+- klucz RSA
+- Twoja strona www stoi w internecie
 
 #### 3. Pobierz klucz RSA i edytuj plik ~/.ssh/config aby łączyć się ze swoim serwerem, jako użytkownik.
 
@@ -76,15 +83,17 @@ Host moj_serwerek
   IdentityFile /home/rafi/.ssh/potezny_klucz_rafiego
 ```
 
-Gotowe! Pobaw się flagą, zmień coś (zobacz etap 8 w tym pliku) lub idź dalej. 
+I sprawdź połączenie z serwerem przez VSC korzystając ze skrótu dla Twojego użytkownika (to co jest obok słowa Host w pliku config np. xd lub moj_serwerek).
 
-#### 4. Ruszaj dalej. Jesteś już blisko:
+#### 4. Modyfikuj flagę aby było na niej coś poza "xD". To konieczne aby dołączyć do zajęć.
 
-- [Etap 8 - Materiały i Jupyter - Instrukcje](http://bityl.pl/7efYd)
-- [Etap 9 - Pomoc - Instrukcje](http://bityl.pl/QKsi4)
-- [Etap 10 - Rozdroże - Instrukcje](http://bityl.pl/g7LrS)
-- [Szturm na AWS - wypełnij formularz aby dołączyć do Zajęć Programowania xD](https://zajecia-programowania-xd.pl/szturm_na_aws/caly_formularz)
+Pobaw się flagą, zmień coś (zobacz etap 8 w tym pliku) lub idź dalej. 
 
+#### 5. Ruszaj dalej. Jesteś już blisko:
+- [Etap 9 - Leć komuś pomóc - Instrukcje](http://bityl.pl/QKsi4)
+- [Etap 10 - Leć do nas na zamek - Instrukcje](http://bityl.pl/g7LrS)
+- [I wypełnij formularz aby dołączyć do Zajęć Programowania xD](https://zajecia-programowania-xd.pl/szturm_na_aws/caly_formularz)
+- Codziennie o 18:00 na nowym discordzie jest możliwość aby zaprezentować flagę i dołączyć jako aktywny uczestnik zajęć.
 
 
 ## Flagi: 
