@@ -7,7 +7,7 @@ W tym repozytorium znajduje się tutaj cały kod do zainstalowania na serwerze a
 
 To przygoda otwierająca zajęcia programowania xD
 
-Czas trwania: ok 120-180 minut, chociaz można tu spędzić wiele czasu i często wracać, ciągle ucząc się nowych rzeczy i poznając świetnych ludzi. Jak masz już trochę doświadczenia i wiesz co robisz, to uda Ci się powiesić flagę w 30 minut.
+Czas trwania: ok 120-180 minut, chociaz można tu spędzić wiele czasu i często wracać, ciągle ucząc się nowych rzeczy i poznając świetnych ludzi. Jak masz już trochę doświadczenia i wiesz co robisz, to uda Ci się powiesić flagę w ok. 30 minut.
 
 ### Cel
 Przygotuj wszystko czego trzeba aby rozpocząć naukę programowania na Zajęciach Programowania xD. 
