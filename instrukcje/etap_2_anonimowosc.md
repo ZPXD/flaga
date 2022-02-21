@@ -20,14 +20,13 @@ Opcjonalnie: założenie nowego gmaila i konta discord i rozpoczęcie szturmu od
 
 #### Plan:
 
-a. ruszaj dalej
+a. ruszaj dalej: [Etap 3 - Edytor kodu VSCode - Instrukcje](http://bityl.pl/7yKAX)
 
-b. załóż anonimowego gmaila i anonimowe konto na discordzie
+b. załóż anonimowego gmaila i anonimowe konto na discordzie: [Instrukcja](http://bityl.pl/PS2mA)
 
 - np. gmail:   lubie.brokuly@gmail.com
 - np. discord: LubieBrokulyxD
 
-Instrukcja: http://bityl.pl/PS2mA
 
 
 #### Wsparcie:
