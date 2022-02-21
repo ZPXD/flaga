@@ -23,7 +23,7 @@ Albo wróć do szturmu tam gdzie skończyłeś:
 - [Etap 1 - Wprowadzenie i przygotowania - Instrukcje](http://bityl.pl/4TWc5)
 - [Etap 2 - Anonimowość - Instrukcje](http://bityl.pl/irUcO)
 - [Etap 3 - Edytor kodu VSCode - Instrukcje](http://bityl.pl/7yKAX)
-- [Etap 4.1 - Zdobądź serwer - Instrukcje](http://bityl.pl/g7LrS)
+- [Etap 4.1 - Zdobądź serwer - Instrukcje](https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_4_1_zdobadz_serwer.md)
 - [Etap 4.2.A - Zdobądź serwer - Droga Home - Instrukcje](http://bityl.pl/8tLm2)
 - [Etap 4.2.B - Zdobądź serwer - Droga AWS - Instrukcje](http://bityl.pl/i3YCE)
 - [Etap 4.3 - Zdobądź serwer: połączenie z serwerem przez VSCode](vfC2s)
