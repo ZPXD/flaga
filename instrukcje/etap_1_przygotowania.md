@@ -23,7 +23,7 @@ Trudno oszacować czas który będzie Ci potrzebny aby ukończyć przygodę. Je�
 
 ## Zaczynamy Szturm na AWS 
 
-#### 1. Plan Szturmu w kolejnych etapach:
+#### 1. Poznaj plan Szturmu:
 - jeżeli zechcesz, zadbasz o anonimowość - nowy gmail (lub nie)
 - przygotujesz edytor kodu VSCode
 - zdobędziesz serwer i połączysz się z nim 
