@@ -1,22 +1,16 @@
+# Szturm na AWS
+
 ## Etap 5 - Domena i przypisanie jej do serwera
 
-- [Etap 5 - Domena - Discord](https://discord.gg/2hybu9EADx)
-- [Etap 5 - Domena - Film](http://bityl.pl/okM6J)
+[Obejrzyj film jak zdobyć domenę i przypiąć ją do serwera](http://bityl.pl/okM6J)
 
-### Cel:
+
+#### Cel:
 - zdobądź domenę na zajęcia
 - przypisz ją do adresu swojego serwera (Utworzony 2 x rekord A z 'www' i bez 'www' powiązany z adresem IP)
 
-**Pytacie czemu domena.** 
-- Domena będzie służyć do zajęć. Kupując domenę wybierzcie coś co być może wam się w przyszłości przyda.
-- Domenę kupcie z myślą o zajęciach :) będziemy na niej ćwiczyć, w przyszłości może się do czegoś przydać
-- Będziecie znajomym linkować swoje rzeczy się pochwalić to wybierzcie taka żeby fajnie się z tym czuć.
-- Będziemy na nich tworzyć wszystko do zajęć. Jak trochę ogarniecie co i jak to będzie wasze królestwo. Wszystko tam postawicie.
 
-Karatecy mają kimona, bokserzy rękawice, baletnice mają treningowe pantofle a my mamy na zajęcia domeny i serwery.
-
-
-### Plan:
+#### Plan:
 
 #### 1. Zdobądź domenę
 
@@ -41,7 +35,9 @@ Domeny można zamówić np. w https://home.pl/ bo tam jest support 24/7 po polsk
 
 Z waszą domeną i serwerem (i jego adresem ip) to trochę tak jak byście założyli firmę z zarejestrowaną nazwą xD a mieli lokal na ulicy Skłodowskiej Curie 30. Teraz trzeba te dwie informacje ze sobą skojarzyć.
 
+#### Wsparcie:
 
+[Pomoc na discordzie dla problemów związanych z Etapem 5](https://discord.gg/2hybu9EADx)
 
 
 **Przejdź dalej:** [Etap 6 - GitHub - Instrukcje](http://bityl.pl/wwI8j)
