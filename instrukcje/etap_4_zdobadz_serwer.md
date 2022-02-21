@@ -1,5 +1,7 @@
 ## Etap 4 - Zdobądź serwer
 
+
+
 	Filmy Szturmowe 4:
 
 	Etap 4.1 - Zdobądź serwer: wybór
@@ -73,3 +75,46 @@
       User 
       IdentityFile "~/.ssh/tu_wstaw_nazwe_klucza"
 	
+
+	6. Spróbuj się połączyć z terminala/powershell ; )
+
+	ssh xd_root
+
+	Działa? Super! :)))
+	Nie działa? Spoko, zaraz to zrobimy z VSC :)
+	Idź dalej :)
+
+
+
+	
+	Etap 4.3 - Zdobądź serwer: Połączenie z serwerem przez VSCode
+
+
+	Cel: 
+	Wejdź na Twój serwer przez VSCode.
+
+
+	Plan:
+
+	1. Otwórz VSCode i zainstaluj rozszeżenie Remote-SSH.
+
+	2. Połącz się.
+
+	
+	3. Upewnij się, że jesteś jako root na serwerze. ("administratorem").
+
+	echo $USER
+
+
+	4. Update paczek.
+
+	apt update
+
+
+
+	AWS
+	- założenie konta AWS i zapisanie klucza w folderze .ssh
+	- elastic IP
+	- http rules, inbound
+	- zapisanie ip i ubuntu do pliku config
+
