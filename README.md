@@ -5,9 +5,16 @@ W tym repozytorium znajduje się tutaj cały kod do zainstalowania na serwerze a
 
 ## Szturm na AWS:
 
+
+
+### Cel:
+Zdobyć serwer i powiesić flagę. Pomóc innym.
+ 
+### Wygrana: 
+Dodstęp do rocznych darmowych Zajęć Programowania xD
+
 Rozpocznij szturm, zdobądź serwer, postaw stronę www i zawieś flagę. 
 Albo wróć do szturmu tam gdzie skończyłeś:
-
 
 - [Etap 1 - Wprowadzenie i przygotowania - Instrukcje](http://bityl.pl/4TWc5)
 - [Etap 2 - Anonimowość - Instrukcje](http://bityl.pl/irUcO)
