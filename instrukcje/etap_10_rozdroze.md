@@ -1,6 +1,12 @@
 ## Etap 10 - Rozdroże
 
-- [Etap 10 - Rozdroże - Discord](https://discord.gg/TBS8ZN3cYa)
+[Pomoc na discordzie dla problemów związanych z Etapem 9](https://discord.gg/TBS8ZN3cYa)
+
+
+### Ten etap jest w przebudowie. Będzie niedługo aktywny (do wtorku)
+
+
+
 
 
 	- zaproszenie na zajecia
