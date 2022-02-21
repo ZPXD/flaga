@@ -15,11 +15,13 @@ Wejdź na Twój serwer przez VSCode.
 #### 1. Otwórz VSCode i zainstaluj rozszeżenie Remote-SSH.
 
 
-#### 2. Połącz się.
+#### 2. Połącz się z serwerem aby sprowokować otworzenie pliku config w folderze .ssh
 
-#### 3. Otwórz z .ssh plik config
 
-#### 4. Otwórz korzystając z VSCode plik config w katalogu .ssh i wklej tam:
+#### 3. Otwórz z .ssh plik config i wklej tam w zalezności od tego czy masz server w Home czy w AWS:
+
+Tu będzie też kilka słów więcej o pliku config i folderze .ssh.
+
 
 #### config dla Home:
 ```
@@ -49,10 +51,11 @@ Host xd
 
 #### 3. Upewnij się, że jesteś jako root na serwerze. ("administratorem").
 
+Zobacz czy jesteś na serwerze jako **root**. Poniższa komenda pokaże Ci root, ubuntu albo inną nazwę.
 ```
 echo $USER
-```
-Jeżeli jesteś na ubuntu, ustaw *root*
+``` 
+Jeżeli nie jesteś root, to bądź :) Jeżeli jesteś na np. ubuntu, ustaw **root**.
 ```
 sudo passwd
 su
@@ -61,11 +64,12 @@ echo $USER
 
 #### 4. Update paczek.
 
+Uaktualnij paczki :) 
+
 ```
 apt update
 ```
 
-**Instrukcja:**
 
 
 
