@@ -1,9 +1,18 @@
+# Szturm na AWS 
+
 ## Etap 4 - Zdobądź serwer
 
-[](http://bityl.pl/hrFwi)
+[Zobacz film o zdobywaniu serwera](http://bityl.pl/hrFwi)
 
 
-[Pomoc na discordzie dla problemów związanych z Etapem 4](https://discord.gg/8YQAaBHh3u)
+**Pytacie czemu serwer.** 
+- Serwer będzie służyć do zajęć.
+- Ale możecie tam stawiać też swoje rzeczy.
+- Będziecie się uczyć w realnym środowisku linuxowym i sieciowym.
+- Wszyscy będziemy na tym samym środowisku, na tym samym sprzęcie i systemie co uprości rozwiązywanie problemów i tworzenie rozwiązań grupowych. 
+- Serwer przyda się do wielu różnych rzeczy :) nauczycie się nim posługiwać i będziecie przez ten rok o niego dbać i budować tam wszystko :) Będziemy na nich tworzyć wszystko do zajęć. Jak trochę ogarniecie co i jak to będzie wasze królestwo. Wszystko tam postawicie.
+
+Karatecy mają kimona, bokserzy rękawice, baletnice mają treningowe pantofle a my mamy na zajęcia domeny i serwery.
 
 
 
@@ -59,5 +68,10 @@ Plusy i minusy:
 - Jak coś się skiepści to możemy nie wiedzieć jak Ci pomóc
 
 #### Tu linków nie ma - sam wytyczasz szlak :) 
+
+
+##### Wsparcie:
+
+[Pomoc na discordzie dla problemów związanych z Etapem 4](https://discord.gg/8YQAaBHh3u)
 
 
