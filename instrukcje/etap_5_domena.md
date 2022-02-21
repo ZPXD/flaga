@@ -34,10 +34,10 @@ Domeny można zamówić np. w https://home.pl/ bo tam jest support 24/7 po polsk
 - PS: domeny z dłuższymi nazwami i dziwnymi końcówkami czasem są tańsze a nieraz darmowe.
 
 #### 3. Przypisanie domeny w panelu do serwera.
+[Instrukcja do rejestracji domeny](http://bityl.pl/C4xbH)
 - Dodanie rekordu A dla domeny
 - Dodanie rekordu A dla domeny z www
 
-[Instrukcja do rejestracji domeny](http://bityl.pl/C4xbH)
 
 Z waszą domeną i serwerem (i jego adresem ip) to trochę tak jak byście założyli firmę z zarejestrowaną nazwą xD a mieli lokal na ulicy Skłodowskiej Curie 30. Teraz trzeba te dwie informacje ze sobą skojarzyć.
 
