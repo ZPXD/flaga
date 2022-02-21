@@ -48,4 +48,4 @@ Poznaj podstawy VSCode. Zobacz jak:
 
 
 
-**Przejdź dalej:** [Etap 4.1 - Zdobądź serwer - Instrukcje](http://bityl.pl/jNbnY
+**Przejdź dalej:** [Etap 4.1 - Zdobądź serwer - Instrukcje](http://bityl.pl/jNbnY)
