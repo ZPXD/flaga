@@ -27,12 +27,15 @@ snap install code --classic
 
 1. Na górze jest listwa szara, na niej jest Terminal. 1 ikonka go otwiera na dole.
 2. Jak jesteś u siebie na serwerze, to możesz tu robić rzeczy tak jak na serwerze ze swojego użytkownika.
-3. Sprawdź gdzie jesteś, kim jesteś.
+3. Sprawdź w jakim folderze jesteś
 ```
 pwd
+```
+4. Zobacz jakim użytkownikiem kim jesteś.
+```
 echo $USER
 ```
-Jak się zgadza, to idziemy dalej. Jak coś nie działa to napisz na kanale pomocy, ale idź dalej. Wrócimy do tego potem.
+Jak działa, to idziemy dalej. Jak coś nie działa to napisz na kanale pomocy, ale idź dalej. Wrócimy do tego potem.
 
 #### 5. Mobilność
 Poznaj podstawy VSCode. Zobacz jak:
