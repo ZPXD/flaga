@@ -4,16 +4,17 @@ Jesteś na **GitHub**'ie i czytasz właśnie plik **README.md** który znajduje 
 
 ## Szturm na AWS:
 
-[Etap 1 - Rozdroże](https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_1_przygotowania.md)
-[Etap 2 - Anonimowość](https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_2_anonimowosc.md)
-[Etap 3 - Edytor kodu VSCode](https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_3_edytor_kodu_vscode.md)
-[Etap 4 - Zdobądź serwer](https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_4_zdobadz_serwer.md)
-[Etap 5 - Domena](https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_5_domena.md)
-[Etap 6 - GitHub](https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_6_github.md)
-[Etap 7 - Strona www i Flaga](https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_7_strona_www_i_flaga.md)
-[Etap 8 - Materiały i Jupyter](https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_8_materialy_i_jupyter.md)
-[Etap 9 - Pomoc](https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_9_pomoc.md)
-[Etap 10 - Rozdroże](https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_10_rozdroze.md)
+- [Etap 1 - Rozdroże](https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_1_przygotowania.md)
+- [Etap 2 - Anonimowość](https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_2_anonimowosc.md)
+- [Etap 3 - Edytor kodu VSCode](https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_3_edytor_kodu_vscode.md)
+- [Etap 4 - Zdobądź serwer](https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_4_zdobadz_serwer.md)
+- [Etap 5 - Domena](https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_5_domena.md)
+- [Etap 6 - GitHub](https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_6_github.md)
+- [Etap 7 - Strona www i Flaga](https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_7_strona_www_i_flaga.md)
+- [Etap 8 - Materiały i Jupyter](https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_8_materialy_i_jupyter.md)
+- [Etap 9 - Pomoc](https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_9_pomoc.md)
+- [Etap 10 - Rozdroże](https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_10_rozdroze.md)
+
 
 
 #### Z pomocą tego skryptu:
