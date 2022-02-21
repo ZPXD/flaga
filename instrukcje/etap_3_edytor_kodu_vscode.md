@@ -5,8 +5,6 @@
 [Zobacz film o edytorze kodu VSCode](http://bityl.pl/RwrVO)
 
 
-[Pomoc na discordzie dla problemów związanych z Etapem 3](https://discord.gg/4aXe72bg4h)
-
 #### Cel:
 Zdobycie edytora kodu VSCode :)
 
