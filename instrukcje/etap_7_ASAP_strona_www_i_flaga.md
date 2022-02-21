@@ -78,9 +78,6 @@ Zobacz w przeglądarce, Twoja strona już powinna być w internecie :)
 ![foto](foty_do_instrukcji/dk_12.png)
 ![foto](foty_do_instrukcji/dk_13.png)
 ![foto](foty_do_instrukcji/dk_14.png)
-![foto](foty_do_instrukcji/dk_15.png)
-![foto](foty_do_instrukcji/dk_16.png)
-![foto](foty_do_instrukcji/dk_17.png)
 
 Jak masz serwer w AWS - uzupełnij: 
 - NAZWA_KLUCZA_PEM.pem - nazwa Twojego klucza .pem z AWS.
