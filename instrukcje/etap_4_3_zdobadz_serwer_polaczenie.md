@@ -82,6 +82,9 @@ Jeżeli jest pusty, będzie wyglądał jak poniżej. Jeżeli jest pełny i nie w
 
 
 #### config dla Home:
+
+Podmień wartość po prawej stronie HostName w 2 i 7 linii na adres IP do Twojego serwera. Reszty narazie nie ruszaj.
+
 ```
 Host xd_root
   HostName 1.1.1.1
