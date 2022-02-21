@@ -30,9 +30,12 @@ b. załóż anonimowego gmaila i anonimowe konto na discordzie: [Instrukcja](htt
 
 
 #### Wsparcie:
+
 [Pomoc na discordzie dla problemów związanych z Etapem 2](https://discord.gg/ZtJ2tq2vbd)
 
 
 
 
-**Przejdź dalej:** [Etap 3 - Edytor kodu VSCode - Instrukcje](http://bityl.pl/7yKAX)
+**Przejdź dalej:** 
+
+[Etap 3 - Edytor kodu VSCode - Instrukcje](http://bityl.pl/7yKAX)
