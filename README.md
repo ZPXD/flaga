@@ -32,15 +32,16 @@ Albo wróć do szturmu tam gdzie skończyłeś:
 - [Szturm na AWS - Film krok po kroku](https://www.youtube.com/playlist?list=PLaPjE0og8b6Lof4yYXJmdRv5coaVePmI5)
 
 
+
+# Droga ASAP (dołącz w 5 minut):
+
 ## Jeżeli masz już
 - serwer na zajęcia i przypisaną do niego domenę na zajęcia
 - Githuba na zajęcia, VSCode i Jupytera
 
-To możesz skorzystać z drogi ASAP (dołącz w 5 minut):
+To możesz skorzystać z drogi ASAP 
 
 Ale i tak wróć tutaj i przejdź wszystkie etapy pokolei, poczytaj o funkcjach które wywołujesz, poprzeglądaj kod. Poznaj się z ludźmi, pomóż komuś. To świetna zabawa i poczujesz klimat.
-
-# Droga ASAP:
 
 Po zalogowaniu na serwer:
 
