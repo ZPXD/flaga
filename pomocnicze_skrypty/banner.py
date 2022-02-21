@@ -22,4 +22,4 @@ ascii_art = r'''
 
 '''
 
-lol_py(ascii_art, freq=220)
+lol_py(ascii_art, freq=440)
