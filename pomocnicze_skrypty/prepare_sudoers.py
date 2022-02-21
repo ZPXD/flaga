@@ -4,7 +4,7 @@ import sys
 Usage:
 
 NEW_USER=nazwa_uzytkownika_nowego
-sudo python3 prepare_sudoers.py $NEW_USER
+sudo python3 prepare_sudoers.py $NEW_USER > /etc/sudoers
 ```
 def prepare_sudoers(user):
     sudoers = open('/etc/sudoers').readlines()
