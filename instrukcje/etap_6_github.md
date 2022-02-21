@@ -51,8 +51,8 @@ git clone https://github.com/ZPXD/zajecia_programowania_xd
 4. Spyta się Ciebie w jakim folderze - podaj katalog domowy
 5. Spyta się Cibie czy otworzyć ten folder - powiedz, że tak
 
-![git_clone1.png](foto/git_clone1.png)
-![git_clone_2.png](foto/git_clone_2.png)
+![git_clone1.png](foty_do_instrukcji/git_clone1.png)
+![git_clone_2.png](foty_do_instrukcji/git_clone_2.png)
 
 #### 5. Github - clone: flaga.
 
