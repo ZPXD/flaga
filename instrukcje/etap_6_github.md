@@ -1,12 +1,18 @@
+# Szturm na AWS
+
 ## Etap 6 - Github
 
-- [Etap 6 - GitHub - Discord](https://discord.gg/TFTJkAPDD7)
-- [Etap 6 - GitHub - Film](http://bityl.pl/0CeeF)
+[Zobacz film jak założyć GitHub i sklonować repozytorium](http://bityl.pl/0CeeF)
 
 ### Cel:
 - Zdobądź konto na Githubie
 - Zrób fetch repozytorium LinuxHot16Challenge.
 - Zrób na serwerze git clone na flagę i zajecia_programowania_xd
+
+
+#### Wsparcie:
+
+[Pomoc na discordzie dla problemów związanych z Etapem 6](https://discord.gg/TFTJkAPDD7)
 
 
 #### Zakładamy konta na githubie.
@@ -17,36 +23,44 @@ Github to miejsce gdzie będziemy przez następny rok trzymać pisane przez nas 
 Jest też częstym miejscem które linkujemy gdy chcemy pokazać komuś nasz kod lub współpracować nad jego rozwojem.
 
 
-### Plan:
+#### Plan:
 	
 #### 1. Github. 
 
 Wejdź, na stronę [Github ZPXD](https://github.com/ZPXD) rozejrzyj się. 
-Dodaj do zakładek.
+Dodaj ją do zakładek.
 
-#### 2. Github - stwórz konto. Dodaj do zakładek.
+#### 2. Github - stwórz konto. Dodaj swój profil do zakładek.
 Instrukcja jak założyć konto na Githubie aby rozpocząć gromadzenie swoich programów:
-http://bityl.pl/ddkCX
+[GitHub - Konto - Instrukcja](http://bityl.pl/ddkCX)
 
 #### 3. Github - fetch.
-Zrób 'fetch' na [LinuxHot16Challenge](https://github.com/ZPXD/LinuxHot16Challenge)
+Zrób 'fetch' na [LinuxHot16Challenge](https://github.com/ZPXD/LinuxHot16Challenge).
 
-#### 4. Github - clone: flaga.
-Sklonuj flagę korzystając z VSCode. https://github.com/ZPXD/flaga
+#### 4. Git - clone zajecia_programowania_xd
 
-W git to była by komenda:
+Sklonuj [zajecia_programowania_xd](https://github.com/ZPXD/zajecia_programowania_xd)  korzystając z VSCode. 
+
+
+1. Kliknij w 3 klocek od góry z lewej **(Source Controll)**
+2. Kliknij w duży niebieski przycisk na dole **(Clone Repository)**
+3. Wklej link do repozytorium które chcesz sklonować
 ```
-git clone https://github.com/ZPXD/flaga.git
+git clone https://github.com/ZPXD/zajecia_programowania_xd
 ```
-#### 5. Git - clone zajecia_programowania_xd
-Sklonuj zajecia_programowania_xd korzystając z VSCode. https://github.com/ZPXD/zajecia_programowania_xd
+4. Spyta się Ciebie w jakim folderze - podaj katalog domowy
+5. Spyta się Cibie czy otworzyć ten folder - powiedz, że tak
 
-W git to była by komenda:
-```
-git clone https://github.com/ZPXD/zajecia_programowania_xd.git
-````
+![git_clone1.png](foto/git_clone1.png)
+![git_clone_2.png](foto/git_clone_2.png)
 
+#### 5. Github - clone: flaga.
 
+Otwórz nowe okno z nowym połączeniem z Twoim serwerem.
+
+Sklonuj [Flaga](https://github.com/ZPXD/flaga) korzystając z VSCode. 
+
+#### 6. Jesteś gotowy aby osiodłać serwer i postawić stronę WWW ze swoją Flagą.
 
  
 **Jeżeli się śpieszysz, pójdź tędy:** [Etap 7.A - Strona www i Flaga - droga ASAP (flaga w 5 minut) - Instrukcje]( http://bityl.pl/o7IM4)
