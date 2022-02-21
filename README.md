@@ -27,10 +27,9 @@ Albo wróć do szturmu tam gdzie skończyłeś:
 
 Ważne linki:
 
-[Szturm na AWS - Formularz](https://zajecia-programowania-xd.pl/szturm_na_aws/caly_formularz)
-[Szturm na AWS - Discord (Tu jesteśmy na żywo)](https://discord.gg/46JVvHgzqz)
-[Zajęcia Programowania xD - Discord (Tu jesteśmy na żywo)](https://discord.gg/9rc3KJdJCa)
-[Szturm na AWS - Film krok po kroku (Tu jesteśmy na żywo)](https://www.youtube.com/playlist?list=PLaPjE0og8b6Lof4yYXJmdRv5coaVePmI5)
+- [Szturm na AWS - Formularz](https://zajecia-programowania-xd.pl/szturm_na_aws/caly_formularz)
+- [Szturm na AWS - Discord (Tu jesteśmy na żywo)](https://discord.gg/46JVvHgzqz)
+- [Szturm na AWS - Film krok po kroku](https://www.youtube.com/playlist?list=PLaPjE0og8b6Lof4yYXJmdRv5coaVePmI5)
 
 
 #### Aha, jeszcze jedno. Zadbajmy o szybkość, bądź szybki jak wiatr dzięki 4 rzeczom:
