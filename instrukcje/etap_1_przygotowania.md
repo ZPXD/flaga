@@ -1,6 +1,5 @@
 ## Etap 1 - Przygotowania.
 
-- [Etap 1 - Wprowadzenie i przygotowania - Instrukcje](http://bityl.pl/4TWc5)
 - [Etap 1 - Wprowadzenie i przygotowania - Discord](https://discord.gg/dEyZ5S7pzM)
 - [Etap 1 - Wprowadzenie i przygotowania - Film](http://bityl.pl/yhIm9)
 
