@@ -24,7 +24,16 @@ Powershell/terminal: Windows: kliknij ścieżkę w folderze xD
 ![alt text](https://i.imgur.com/6mxKsAY.gif "Powershell gif")
 PS: od teraz, nie ważne czy jesteś na powershellu czy w terminalu, będę na tego typu okno mówił terminal, a powershell używał jedynie gdy będę opisywał coś co dotyczy konkretnie powershella.
 
-# Droga A. turbo
+
+#### Są 2 drogi.
+
+Tu parę słów o obu drogach.
+
+#### A. Droga ASAP
+#### B.Droga Klasyczna.
+
+
+# Droga A: ASAP
 
 Po zalogowaniu na serwer:
 
@@ -38,26 +47,12 @@ sudo su
 ```
 I sprawdź znów pisząc "echo $USER", aż będzie pokazywać root. Jak masz błąd, spytaj na grupie o pomoc.
 
-2. Uaktualnij paczki.
+2. Uruchom skrypt:
 ```
-apt update --yes
-```
-3. Pobierz git'a i repozytorium
-```
-apt install git --yes
-git clone https://github.com/ZPXD/flaga.git
-```
-4. Podaj domenę swojej strony na zajęcia i nazwę użytkownika po prawej stronie znaku równa-się zamiast wartości wstawionych przezemnie:
-```
-NEW_USER=ja_xd
-DOMENA=TU_WSTAW_NAZWE_SWOJEJ_DOMENY
-```
-5. Uruchom skrypt:
-```
-source flaga/pomocnicze_skrypty/unite_the_clans.sh $NEW_USER $DOMENA
+wget -qO - 'https://raw.githubusercontent.com/ZPXD/flaga/main/pomocnicze_skrypty/unite_the_clans.sh' | bash -s $NEW_USER $DOMENA
 ```
 
-I gotowe :) pobierz jeszcze klucz RSA, wypełniając poniższe:
+I gotowe :) pobierz jeszcze klucz RSA, umieść go wypełniając poniższe:
 
 Jak masz serwer w AWS: 
 ```
@@ -78,7 +73,7 @@ Host moj_serwerek
 
 Gotowe! Pobaw się flagą, zmień coś (zobacz etap 8 w tym pliku) lub idź dalej. 
 
-# Droga B. klasyczna
+# Droga B: Klasyczna
 
 Normalnie przechodzimy etapy 5, 6, 7, 8
 
