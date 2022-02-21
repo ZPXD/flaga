@@ -60,7 +60,6 @@ W tym kroku dowiesz się jak zatrzymać na jakiś czas pracę serwera.
 Jeżeli serwer jest zdobyty i masz te wszystkie 3 informacje zapisane w notatniku, 
 możesz ruszać dalej. Czas połączyć się z Twoim serwerem. 
 
-
 #### Wsparcie:
 
 [Pomoc na discordzie dla problemów związanych z Etapem 4](https://discord.gg/8YQAaBHh3u)
