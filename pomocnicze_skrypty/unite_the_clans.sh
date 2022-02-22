@@ -127,7 +127,7 @@ else
 
 fi
 
-klucz=klucz_$1
+klucz=klucz_xd
 #uninstall apache
 systemctl stop apache
 apt remove apache2 --yes
@@ -291,7 +291,7 @@ echo "Jest tam też plik config. Dodaj w nim konfigurację z poprawną nazwą no
 echo "Host $domena"
 echo "  HostName $server_ip"
 echo "  User $the_user"
-echo "  IdentityFile ~/.ssh/$klucz"
+echo "  IdentityFile ~/.ssh/klucz_xd"
 echo " "
 echo "Sprawdź połączenie nowym użytkownikiem w Visual Studio Code."
 
