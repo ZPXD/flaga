@@ -33,6 +33,11 @@ if [[ -e $swapfile ]]; then
 ## queue)                                                                    #
 ## TODO: function check_free_disk_size() to determine free size on disk and  #
 #          stop creating swapfile (or modify swapfile filesize)              #
+#                                                                            #
+# use something like:                                                        #
+#                    df --output=avail /                                     #
+#                                                                            #
+#                                                                            #
 ##############################################################################
 elif [[ $do_the_job == $arg1 ]]; then
 	echo "Tworzę swapfile w pliku $swapfile"
