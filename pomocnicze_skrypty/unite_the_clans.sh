@@ -3,19 +3,6 @@
 # Warcraft 2 code - win scenario instantly.
 
 
-
-
-
-
-# Wersja w przebudowie
-
-
-
-
-
-
-
-
 # Ten code to cheat-mode: wygrana przygody jedną komendą :)
 
 # Na świeżym serwerze:
@@ -23,19 +10,20 @@
 # 1. Odpal skrypt
 # 
 #    sudo su 
-#    wget -q 'https://raw.githubusercontent.com/Cryst/flaga-1/main/pomocnicze_skrypty/unite_the_clans4.sh' && chmod +x unite_the_clans4.sh && ./unite_the_clans4.sh;
+#    wget -q 'https://raw.githubusercontent.com/ZPXD/flaga/main/pomocnicze_skrypty/unite_the_clans.sh' && chmod +x unite_the_clans.sh && ./unite_the_clans5.sh && rm unite_the_clans.sh;
 #
 #    Skrypt zapyta o zmienne takie jak nazwa użytkownika i domena.
 
 
 the_user=$1
 domena=$2
+
 flaga_start=`pwd`/flaga
 
 if [ $USER == "root"  ] ; then
     echo "USER to root - OK"
-    echo "Użytkownik to: $the_user"   
-    echo "Domena to: $domena"
+#    echo "Użytkownik to: $the_user"   
+#    echo "Domena to: $domena"
 else
     echo "/!\/!\/!\ "
     echo "PRZELOGUJ SIE NA ROOTa, wpisz:"
@@ -72,17 +60,23 @@ if [ $# == "2"  ] ; then
     fi
 
 else
-    #echo "/!\/!\/!\ "
-    #echo "PODAJ NAZWE UŻYTKOWNIKA ORAZ DOMENY, a następnie uruchom polecenie ponownie"
-    #echo "/!\/!\/!\ "
-    #exit
     echo "PODAJ NAZWE NOWEGO UŻYTKOWNIKA"
     read the_user
     while true; do
     echo "Czy zatwierdzić nazwę użytkownika \"$the_user\" "
     read -p "(tak - jest OK / nie - popraw / wyjdz - ewakuacja)" choice
         case "$choice" in 
-            tak|t|T|yes|y|Y ) echo "ZATWIEDZONO UŻYTKOWNIKA"; break;;
+            tak|t|T|yes|y|Y ) 
+                echo "WERYFIKACJA UŻYTKOWNIKA" 
+                if [ ${#the_user} -le 1 ] ; then
+                    echo "ODRZUCONO NAZWĘ UŻYTKOWNIKA - jest za krótka"
+                    echo "PODAJ NOWĄ NAZWĘ UŻYTKOWNIKA:"
+                    read the_user 
+                else 
+                    echo "ZATWIEDZONO UŻYTKOWNIKA" 
+                    break 
+                fi
+            ;;
             nie|n|N|no|p|popraw ) echo "PODAJ NAZWE UŻYTKOWNIKA:"; read the_user ;;
             w|wyjdz|e|exit|ewakuacja ) echo "KONCZE DZIALANIE PROGRAMU"; exit ;;
             * ) echo "dokonaj wyboru jeszcze raz";;
@@ -93,41 +87,42 @@ else
     read domena
     while true; do
     echo "Czy zatwierdzić nazwę domeny \"$domena\" "
-    read -p "(tak - jest OK / nie - popraw / wyjdz - ewakuacja)" choice
+    read -p "(tak - jest OK / nie - popraw / pomin - ignoruje test domeny / wyjdz - ewakuacja)" choice
         case "$choice" in 
-            tak|t|T|yes|y|Y ) echo "ZATWIEDZONO NAZWE DOMENY"; break;;
+            tak|t|T|yes|y|Y ) 
+                echo "WERYFIKACJA DOMENY" 
+
+                #test IP domeny
+                server_ip=`curl -s http://checkip.amazonaws.com`
+                dns_ip=$(host $domena | grep address | awk 'NR==1{ print $4 }')
+                if [ "$server_ip" = "$dns_ip" ]
+                then
+                    echo "Wpisana domena jest OK"
+                    break
+                else
+                    echo "/!\/!\/!\ "
+                    echo "WPISANO ZŁĄ DOMENE!"
+                    echo "podana domena: $domena"    
+                    echo "TWOJ ADRES SERWERA to:"
+                    echo "$server_ip"      
+                    echo "TWOJA KONFIGURACJA DNS to:"
+                    echo "$(host $domena)"
+                    echo "Poczekaj na aktualizację DNS"
+                    echo "WPISZ NAZWĘ TWOJEJ DOMENY JESZCZE RAZ:"
+                    read domena
+                fi
+            ;;
+            i|ignoruj|p|pomin|s|skip ) echo "Pomijam sprawdzanie domeny"; break ;;
             nie|n|N|no|p|popraw ) echo "PODAJ NAZWE DOMENY:"; read domena ;;
             w|wyjdz|e|exit|ewakuacja ) echo "KONCZE DZIALANIE PROGRAMU"; exit ;;
             * ) echo "dokonaj wyboru jeszcze raz";;
         esac
     done
 
-    echo "Weryfikowanie danych"
-    #test IP domeny
-    server_ip=`curl -s http://checkip.amazonaws.com`
-    dns_ip=$(host $domena | awk '{ print $4 }')
-
-    if [ "$server_ip" = "$dns_ip" ]
-    then
-        echo "Wpisana domena jest OK"
-    else
-        echo "/!\/!\/!\ "
-        echo "WPISANA ZLA DOMENE!"
-        echo "podana domena: $domena"    
-        echo "TWOJ ADRES SERWERA to:"
-        echo "$server_ip"      
-        echo "TWOJA KONFIGURACJA DNS:"
-        echo "$(host $domena)"
-        echo "jeśli chcesz zmienić domenę to wpisz:"
-        echo "DOMENA=twoja.domena.pl"
-        echo "/!\/!\/!\ "
-        exit
-    fi
-
+    echo "Zweryfikowano dane"
 
 fi
 
-klucz=klucz_xd
 #uninstall apache
 systemctl stop apache
 apt remove apache2 --yes
@@ -138,30 +133,21 @@ if [ $? -ne 0 ]; then
     echo "BRAK STRONY WWW, kontynuuje instalację "
 else
     echo "/!\/!\/!\ "
-    echo "STRONA ODPOWIADA NA HTTP, MASZ JUZ FLAGE"
+    echo "PRZERWANO INSTALACJĘ, SERWER ODPOWIADA NA PORCIE HTTP - MASZ JUZ STRONE WWW!"
     echo "/!\/!\/!\ "
+    echo "Jeśli pomimo tego chcesz uruchomić skrypt, wyłącz stronę WWW komendą: "
+    echo "systemctl stop nginx "
     exit
 fi
 
-# Update paczek.
-# apt -qq update --yes
-# mv /etc/ssh/sshd_config /etc/ssh/sshd_config.bak
-# apt --yes remove openssh-server
-# apt --yes install openssh-server
-# apt upgrade --yes
-# apt-get --yes -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" dist-upgrade
-# mv /etc/ssh/sshd_config.bak /etc/ssh/sshd_config
-
+klucz=klucz_$the_user
 
 # SCRIPT:
 apt install git --yes
 git clone https://github.com/ZPXD/flaga.git
 
-# Clash
-#source flaga/pomocnicze_skrypty/unite_the_clans3.sh $the_user $domena
-
 # Użytkownicy.
-adduser $the_user --gecos GECOS --disabled-password
+adduser $the_user --gecos GECOS --disabled-password --force-badname
 adduser $the_user sudo
 adduser $the_user www-data
 echo "$the_user ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
@@ -192,10 +178,13 @@ chown -R $the_user:$the_user /home/$the_user/.ssh
 
 # IF UBUNTU IN HOME:
 if [ $(getent passwd ubuntu) ] ; then
-    echo "UBUNTU. COPYING KEY:"
-    cp /home/$the_user/.ssh/$klucz /home/ubuntu/$klucz
+    echo "KOPIOWANIE KLUCZA DO KATALOGU UBUNTU:"
+    cp -f /home/$the_user/.ssh/$klucz /home/ubuntu/$klucz
     chown ubuntu:ubuntu /home/ubuntu/$klucz
 fi
+
+echo "KOPIOWANIE KLUCZA DO KATALOGU ROOT:"
+cp -f /home/$the_user/.ssh/$klucz /root/$klucz
 
 # var/www
 mkdir /var/www
@@ -204,7 +193,7 @@ chmod -R 775 /var/www
 
 # Flaga
 cd /
-mv $flaga_start /var/www
+mv -f $flaga_start /var/www
 
 # Dogranie paczek.
 python3 /var/www/flaga/pomocnicze_skrypty/xD.py
@@ -239,38 +228,7 @@ else
 fi
 
 
-# STARE INFO
-# STARE INFO
-if [ $(getent passwd ubuntu) ] ; then
-    #gdy mamy aws
-    echo "Edytuj poniższą komendę i wklej u siebie w terminalu/powershellu na komputerze."
-    echo "Pobierze się plik. Przenieś go do swojego folderu ssh."
-    echo " "
-    echo "scp -i [NAZWA_KLUCZA_AWS].pem ubuntu@$server_ip:/home/ubuntu/$klucz $klucz"
-    echo " "
-    echo "Jest tam też plik config. Dodaj w nim konfigurację z poprawną nazwą nowego klucza"
-    echo "Host $domena"
-    echo "  HostName $server_ip"
-    echo "  User $the_user"
-    echo "  IdentityFile ~/.ssh/$klucz"
-else
-    #gdy mamy home.pl lub micr.us
-    echo "Edytuj poniższą komendę i wklej u siebie w terminalu/powershellu na komputerze."
-    echo "Pobierze się plik. Przenieś go do swojego folderu ssh."
-    echo " "
-    echo "scp root@$server_ip:/root/.ssh/$klucz $klucz"
-    echo " "
-    echo "Jest tam też plik config. Dodaj w nim konfigurację z poprawną nazwą nowego klucza"
-    echo "Host $domena"
-    echo "  HostName $server_ip"
-    echo "  User $the_user"
-    echo "  IdentityFile ~/.ssh/$klucz"
-fi
-# STARE INFO
-# STARE INFO
-
-
-# NOWE INFO:
+# INFO:
 clear
 
 python3 /var/www/flaga/pomocnicze_skrypty/banner.py
@@ -287,14 +245,20 @@ echo "Zapisz plik w katalogu .ssh :"
 echo "Na Windows jest to katalog: \"%USERPROFILE%/.ssh/ \""
 echo "Na Linux jest to katalog: \"~.ssh\ \""
 echo " "
-echo "Jest tam też plik config. Dodaj w nim konfigurację z poprawną nazwą nowego klucza i użytkownikiem"
+echo "Jest tam też plik config. Dodaj w nim konfigurację z poprawną nazwą nowego klucza i użytkownikiem:"
+echo " "
 echo "Host $domena"
 echo "  HostName $server_ip"
 echo "  User $the_user"
-echo "  IdentityFile ~/.ssh/klucz_xd"
+echo "  IdentityFile ~/.ssh/$klucz"
 echo " "
-echo "Sprawdź połączenie nowym użytkownikiem w Visual Studio Code."
+echo "Sprawdź połączenie użytkownikiem $the_user w Visual Studio Code."
 
 su $the_user
 #cd /var/www
 #pwd
+
+
+
+#Cryst was here
+#GetCrysted
