@@ -24,7 +24,7 @@ I postaw cały serwer ręcznie, komenda po komendzie ucząc się po drodze Linux
 **Słowem wstępu: Gdyby coś poszło nie tak, to można zrestartować serwer do ustawień początkowych:**
 [Restart](http://bityl.pl/Bmvwu). Zaczynajmy:
 
-Po zalogowaniu na serwer:
+Po zalogowaniu na serwer przy użyciu VSCode:
 
 #### 1. wejdź na root (utwórz go jeżeli jeszcze nie robiłeś).
 Powinieneś być już root. Robiliśmy to w [Etap 4 w kroku 6](https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_4_3_zdobadz_serwer_polaczenie.md). Sprawdź to:
