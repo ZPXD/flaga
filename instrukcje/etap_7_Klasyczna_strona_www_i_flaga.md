@@ -271,12 +271,14 @@ scp root@$TU_WSTAW_IP_SERWERA:/home/TU_WSTAW_NAZWE_UZYTKOWNIKA/.ssh/$klucz $kluc
 ```
 
 Dla serwerów na AWS: 
+
+Najpierw skopiuj klucz do katalogu domowego ubuntu:
 ```
 cp /home/$USER/.ssh/$klucz /home/ubuntu/$klucz
 chown ubuntu:ubuntu /home/ubuntu/$klucz
 ```
 
-(zamień nazwę klucza 'klucz_xd.pem' na inna, jeżeli inaczej nazwałeś swój klucz do serwera na AWS):
+A następnie pobierz go (zamień nazwę klucza 'klucz_xd.pem' na inna, jeżeli inaczej nazwałeś swój klucz do serwera na AWS):
 ```
 scp -i klucz_xd.pem ubuntu@$TU_WSTAW_IP_SERWERA:/home/ubuntu/.ssh/$klucz $klucz
 ```
