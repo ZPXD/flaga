@@ -97,6 +97,14 @@ groups $NEW_USER
 ```
 Wyświetli się: $NEW_USER : $NEW_USER www-data sudo. Jak nie ma sudo i www-data, to pominąłeś krok wyżej.
 
+
+#### Pozwólmy działać naszemu użytkownikowi bez hasła na serwerze (i tak będziesz łączyć się przez klucz).
+
+Komendą echo "wrzucamy" jedną linię która to robi do pliku konfiguracyjnego sudoers.
+```
+echo "$NEW_USER ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
+```
+
 #### Katalog domowy.
 
 Od teraz też masz swój nowy domowy katalog. Narazie nic tam nie ma. Gdy będziesz się logował na swojego użytkownika, tutaj będziesz się pojawiał
