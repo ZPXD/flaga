@@ -119,7 +119,7 @@ Sprawdź teraz połączenie przez SSH-TARGETS. Kliknij plusik i napisz "ssh xd" 
 a) Twój plik known_hosts w folderze .ssh jest zawalony - skasuj go.
 b) Twój klucz ma zbyt słabe uprawnienia z uwagi na to, że pobieraliśmy go przez VSCode. Wtedy użyj scp.
 
-Wejdź do swojego folderu .ssh na komputerze u siebie i otwórz terminal/powershell (w  windowsie: kliknij w zakładkę z adresem i wpisz powershell, nacisnij enter.
+Wejdź do swojego folderu .ssh na komputerze u siebie i otwórz terminal/powershell (w  windowsie: kliknij w zakładkę z adresem i wpisz powershell, nacisnij enter).
 
 W terminalu/powershellu wpisz komendę:
 
