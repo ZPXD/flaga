@@ -174,7 +174,7 @@ chmod 700 /home/$the_user/.ssh
 ssh-keygen -t rsa -b 4096 -f /home/$the_user/.ssh/$klucz -C $the_user -N ''
 cat /home/$the_user/.ssh/$klucz.pub > /home/$the_user/.ssh/authorized_keys
 chmod 600 /home/$the_user/.ssh/authorized_keys
-chmod 600 /home/$the_user/.ssh/klucz
+chmod 600 /home/$the_user/.ssh/$klucz
 chown -R $the_user:$the_user /home/$the_user/.ssh
 
 # IF UBUNTU IN HOME:
