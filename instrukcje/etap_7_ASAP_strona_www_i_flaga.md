@@ -130,7 +130,7 @@ scp root@$server_ip:/home/$the_user/.ssh/$klucz $klucz
 
 Dla serwerów na AWS: (zamień nazwę klucza 'klucz_xd.pem' na inna, jeżeli inaczej nazwałeś swój klucz do serwera na AWS):
 ```
-scp -i klucz_xd.pem ubuntu@$server_ip:/home/$the_user/.ssh/$klucz $klucz"
+scp -i klucz_xd.pem ubuntu@$server_ip:/home/$the_user/.ssh/$klucz $klucz
 ```
 
 I spróbuj połączyć się przez VSCode znowu (cofnij się do instrukcji wyżej, jeżeli nie pamiętasz jak to zrobić). Jeżeli masz problem, napisz na discordzie.
