@@ -97,7 +97,7 @@ Jeżeli jesteś w Home i wkleiłeś to o co prosiłem wcześniej, to zobaczysz c
 
 ![foto](foty_do_instrukcji/dk_11.png)
 
-#### 10. Sprawdź swój terminal po odpaleniu skryptu,  postawieniu strony www i powieszeniu flagi.
+#### 10. Kliknij aby przejść dalej w terminalu instalacji ASAP.
 
 Będzie tam fragment pliku Host do wklejenia. Będzie wyglądał podobnie do:
 
@@ -108,26 +108,32 @@ Host xd
   IdentityFile "~/.ssh/tu_wstaw_nazwe_klucza"
 ```
 
-#### 11. Edytuj plik wstawiając swoje adresy IP, popraw nazwę klucza i zmień nazwę użytkownika w 2gim Hoście. Zapisz plik.
+#### 11. Edytuj plik config na swoim komputerze wstawiając swoje adresy IP, popraw nazwę klucza i zmień nazwę użytkownika w 2gim Hoście. Zapisz plik.
 
 ![foto](foty_do_instrukcji/dk_12.png)
 
 ![foto](foty_do_instrukcji/dk_13.png)
 
 
-#### config dla AWS:
+Sprawdź teraz połączenie przez SSH-TARGETS. Kliknij plusik i napisz "ssh xd" Jeżeli się połączysz to znaczy, że wszystko działa i przejdź do kroku 12. W przeciwnym razie, możliwe, że:
+a) Twój plik known_hosts w folderze .ssh jest zawalony - skasuj go.
+b) Twój klucz ma zbyt słabe uprawnienia z uwagi na to, że pobieraliśmy go przez VSCode. Wtedy użyj scp.
 
-Wklej poniższe linie. Edytuj tam narazie tylko:
-a) W linii 4 "IdentityFile "~/.ssh/tu_wstaw_nazwe_klucza.pem" edytuj nazwę klucza .pem
-b) W linii 2 i 7 edytuj HostName - podaj prawidłowy adres IP Twojego serwera
-c) Reszty narazie nie ruszaj.
-d) Upewnij się, że Twój klucz .pem jest w folderze .ssh. Jeżeli nie, niech będzie tam :)
+Wejdź do swojego folderu .ssh na komputerze u siebie i otwórz terminal/powershell (w  windowsie: kliknij w zakładkę z adresem i wpisz powershell, nacisnij enter.
 
+W terminalu/powershellu wpisz komendę:
 
+Dla serwerów na home:
+```
+scp root@$server_ip:/home/$the_user/.ssh/$klucz $klucz
+```
 
-Gotowe! Pobaw się flagą, zmień coś (zobacz etap 8 w tym pliku) lub idź dalej. 
+Dla serwerów na AWS: (zamień nazwę klucza 'klucz_xd.pem' na inna, jeżeli inaczej nazwałeś swój klucz do serwera na AWS):
+```
+scp -i klucz_xd.pem ubuntu@$server_ip:/home/$the_user/.ssh/$klucz $klucz"
+```
 
-
+I spróbuj połączyć się przez VSCode znowu (cofnij się do instrukcji wyżej, jeżeli nie pamiętasz jak to zrobić). Jeżeli masz problem, napisz na discordzie.
 
 #### 12. Flaga.
 
