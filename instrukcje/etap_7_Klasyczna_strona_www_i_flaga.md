@@ -27,44 +27,12 @@ tak aby była wystawiona w internecie i zobaczysz swoją stronę www sieci pod l
 I postaw cały serwer automatycznie, nie pisząc ani jednej komendy po komendzie ręcznie.
 
 
-
-# Droga ASAP (Flaga w 5 minut):
- 
-#### Cel:
-- Postaw stronę www: niech będzie widoczna w internecie pod adresem Twojej domeny.
-- Przygotuj serwer: załóż użytkownika i stwórz klucz RSA, pobierz go i zaloguj się nim ponownie.
-- Modyfikuj zakładkę /xd swojej flagi.
-
 #### Wsparcie:
 
 [Pomoc na discordzie dla problemów związanych z Etapem 7](https://discord.gg/S5bN7TCAYq)
 
 
-#### Z pomocą tych skryptów:
-- wejdziesz na zdobyty serwer
-- przygotujesz go
-- pobierzesz repozytorium z flagą,
-- utworzysz nowe środowisko programistyczne
-- w którym uruchomisz i udostępnisz w sieci stronę www napisaną w pythonie
-- i jeżeli wszystko zadziała, przejdziesz dalej i powiesisz flagę. 
-
-Zaczynajmy!
-
-
 # Droga B: Klasyczna
-
-
-## ETAP 5 - serwer
-
-Czas połączyć się z Twoim serwerem i przygotować go. W tym etapie:
-- połączenie z serwerem
-- awaryjnie: restart
-- root 
-- użytkownik
-- sudo i uaktualniamy paczki (packages).
-- tworzymy klucz RSA
-- pobieramy z serwera klucz RSA
-- łaczymy się z serwerem
 
 ### 1. Połącz się ze swoim serwerem:
 
@@ -82,6 +50,7 @@ echo $USER
 ```
 Jak pokazuje root to idź do kroku 2. Jeżeli nie, utwórz hasło dla root wpisując:
 ```
+sudo passwd
 sudo su
 ```
 I sprawdź znów pisząc "echo $USER", aż będzie pokazywać root. Jak masz błąd, wróć do etapu 4.3 lub spytaj na grupie o pomoc.
@@ -136,26 +105,6 @@ cd /home/$NEW_USER
 pwd
 ```
 
-#### Chodzenie pomiędzy użytkownikami:
-
-Jak przełączać użytkowników? Wejście na Twojego użytkownika: su + nazwa Twojego użytkownika.
-```
-su $NEW_USER
-```
-
-Tego nie wpisuj: Wejście spowrotem na **root**:
-```
-su root
-```
-Tego nie wpisuj: Gdybyś miał jeszcze innego użytkownia, wszedł byś na niego pisząc (nie zadziała):
-```
-su inny_uzytkownik
-```
-
-I spowrotem na nowo utworzonego użytkownika:
-```
-su tak_jak_sie_nazwales
-```
 ### 5. Sudo i uaktualniamy paczki (packages).
 
 Jako użytkownik, pewnych rzeczy robić nie możesz. Np. wchodzić na niektóre foldery, modyfikować pewnych plików czy ich w pewnych miejscach tworzyć. Ani nie możesz instalować nowych paczek. 
@@ -164,7 +113,6 @@ Upewnij się, że jesteś
 ```
 su $NEW_USER
 ```
-
 
 #### Pytanie [Y/n]
 
@@ -177,10 +125,6 @@ apt update
 Nie działa. A spróbuj z sudo:
 ```
 sudo apt update 
-```
-Działa. Podnieś wersję paczek:
-```
-sudo apt upgrade
 ```
 Teraz upewniliśmy się, że paczki na naszym serwerze są zaktualizowane. Czasem wchodząc na nowy serwer mamy doczynienia z niezłym skansenem i zawsze warto to zrobić przed całą resztą.
 
@@ -224,19 +168,19 @@ Stwórz parę kluczy RSA: prywatny i publiczny. Zapisz publiczny do authorized_k
 ssh-keygen -f /home/$USER/.ssh/$klucz -C $USER -N ''
 cat /home/$USER/.ssh/$klucz.pub > /home/$USER/.ssh/authorized_keys
 chmod 600 /home/$USER/.ssh/authorized_keys
+chmod 600 /home/$USER/.ssh/$klucz
 ```
 
 Sprawdź, czy klucz został stworzony. 
 ```
 ls
 ```
-Pojawią się 2 klucze o nazwie xd_$USER. W przeciwnym razie powtórz te kroki albo daj znać, 
+Pojawią się 2 klucze. W przeciwnym razie powtórz te kroki albo daj znać, 
 że potrzebujesz pomocy.
 
-### 7. Pobieranie z serwera KLUCZA rsa .pub
+### 7. Pobieranie z serwera KLUCZA rsa .pub 
 
-
-#### 3. I gotowe :) teraz, aby logować się bez hasła krótką komendą, 
+I gotowe :) teraz, aby logować się bez hasła krótką komendą, 
 
 pobierz jeszcze klucz RSA, umieść go wypełniając poniższe:
 
@@ -286,6 +230,18 @@ Jeżeli jesteś w Home i wkleiłeś to o co prosiłem wcześniej, to zobaczysz c
 
 ![foto](foty_do_instrukcji/dk_11.png)
 
+
+#### 10. Kliknij aby przejść dalej w terminalu instalacji ASAP.
+
+Będzie tam fragment pliku Host do wklejenia. Będzie wyglądał podobnie do:
+
+```
+Host xd
+  HostName 1.1.1.1
+  User moja_nazwa_uzytkownika
+  IdentityFile "~/.ssh/tu_wstaw_nazwe_klucza"
+```
+
 #### 11. Edytuj plik wstawiając swoje adresy IP, popraw nazwę klucza i zmień nazwę użytkownika w 2gim Hoście. Zapisz plik.
 
 ![foto](foty_do_instrukcji/dk_12.png)
@@ -293,17 +249,29 @@ Jeżeli jesteś w Home i wkleiłeś to o co prosiłem wcześniej, to zobaczysz c
 ![foto](foty_do_instrukcji/dk_13.png)
 
 
-#### Jeżeli u kogoś wysŧąpił w tych powyższych krokach błąd, prawdopodobnie w AWS spróbujcie najpierw przenieść klucz do folderu ubuntu.
-Trzeba przygotować klucz do pobrania. Narazie nie możemy zrobić tego tutaj, bo nasz użytkownik główny to ubuntu. Trzeba skopiować klucz i nadać mu właściwe uprawnienia, pobrać go przez ubuntu i dopiero będzie można go używać na naszym nowym użytkowniku i dać mu jego uprawnienia. W tym celu dwie linie:
-```
-sudo cp $klucz /home/ubuntu/$klucz
-sudo chown ubuntu:ubuntu /home/ubuntu/$klucz
-```
-Gotowe. 
+Sprawdź teraz połączenie przez SSH-TARGETS. Kliknij plusik i napisz "ssh xd" Jeżeli się połączysz to znaczy, że wszystko działa i przejdź do kroku 12. W przeciwnym razie, możliwe, że:
+a) Twój plik known_hosts w folderze .ssh jest zawalony - skasuj go.
+b) Twój klucz ma zbyt słabe uprawnienia z uwagi na to, że pobieraliśmy go przez VSCode. Wtedy użyj scp.
 
+Wejdź do swojego folderu .ssh na komputerze u siebie i otwórz terminal/powershell (w  windowsie: kliknij w zakładkę z adresem i wpisz powershell, nacisnij enter).
+
+W terminalu/powershellu wpisz komendę:
+
+Dla serwerów na home:
+```
+scp root@$TU_WSTAW_IP_SERWERA:/home/TU_WSTAW_NAZWE_UZYTKOWNIKA/.ssh/$klucz $klucz
+```
+
+Dla serwerów na AWS: (zamień nazwę klucza 'klucz_xd.pem' na inna, jeżeli inaczej nazwałeś swój klucz do serwera na AWS):
+```
+scp -i klucz_xd.pem ubuntu@$TU_WSTAW_IP_SERWERA:/home/ubuntu/.ssh/$klucz $klucz
+```
+
+I spróbuj połączyć się przez VSCode znowu (cofnij się do instrukcji wyżej, jeżeli nie pamiętasz jak to zrobić). Jeżeli masz problem, napisz na discordzie.
 
 
 ## Kontynuuj dalej już Twój użytkownik.
+
 
 Postaw stronę www tak, abyśmy widzieli ją w sieci.
 
@@ -366,8 +334,6 @@ echo 'Moja domena to:' $domena
 
 Domena się nie zgadza? Popraw powyższe. Zgadza? Chodźmy dalej.
 
-
-
 Chcesz dowiedzieć się trochę co się dzieje pod maską, samemu to poczuć i przeklikać? Świetny wybór, czegoś się nauczysz albo chociaż nabierzesz obycia i doświadczenia. Do dzieła.
 
 #### Instalacja paczek systemowych wymaganych do postawienia strony.
@@ -409,17 +375,8 @@ pip3 install -r requirements.txt
 ```
 
 #### 6. Dodanie domeny.
-Napisz:
-```
-nano settings.ini
-```
-po spacji wpisz nazwę swojej domeny np (bez "www") wg wzoru:
-```
-domena = nazwa_domeny.pl
-```
-Aby zapisać wciśnij ctrl+s Aby zamknąć wciśnij ctrl+x
 
-PS: możesz też zrobić to definiując zmienną w bashu np:
+Zefiniuj zmienną w bashu np:
 ```
 domena=nazwa_domeny.pl
 echo $domena
@@ -427,10 +384,6 @@ echo $domena
 
 #### 7. Stworzenie plików z informacjami dla serwera aby wystawił stronę (nginx i gunicorn).
 Uruchom skrypt przygotowujący hosting na serwerze (1 raz).
-```
-sudo python3 pomocnicze_skrypty/xd.py 
-```
-lub, jeżeli zdefiniowałeś zmienną, napisz:
 ```
 sudo python3 pomocnicze_skrypty/xd.py $domena
 ```
@@ -475,10 +428,9 @@ Działa? Wyślij komuś, pochwal się komuś.
 
 #### Edytuj plik tekstowy którego treść widać na Twojej stronie.
 
-Urządź się tu :) Będąc dalej na serwerze, w folderze /var/www/flaga edytuj zawartość pliku xd.txt. Dodaj tam coś od siebie.
+Urządź się tu :) Będąc dalej na serwerze, w folderze /var/www/flaga edytuj zawartość pliku xd.txt. Dodaj tam coś od siebie. Modyfikuj plik:
 ```
-cd /var/www/flaga
-nano dane/xd.txt
+/var/www/flaga/dane/xd.txt
 ```
 
 #### Zobaczy czy na stronie jest nowa treść!
@@ -496,19 +448,15 @@ Ostatnie co zostało, to edycja zakładki /xd flagi. Twoja flaga aby przejść d
 
 Wejdź w przeglądarce na adres swojej strony www i dopisz **/xd** - to Twoja zakładka /xd.
 
-Bedąc dalej w folderze /var/www/flaga edytuj plik templates/xd.html. Zobacz, jest tam w 12 linii "xDDD". Zostaw xD (z dowolną ilością "D") i: dodaj coś od siebie. Dzięki temu będzie można sprawdzić czy ukończyłeś ten etap. Zrób to tak:
+Bedąc dalej w folderze /var/www/flaga edytuj plik templates/xd.html. Zobacz, jest tam w 12 linii "xDDD". Zostaw xD (z dowolną ilością "D") i: dodaj coś od siebie. Dzięki temu będzie można sprawdzić czy ukończyłeś ten etap. Otwórz:
 ```
-nano templates/xd.html
+/var/www/flaga/templates/xd.html
 ```
 To plik html. Dodaj coś w 12 linii pomiędzy znakami ">" a "</h1>".
 ```
 <h1 style="text-align:center">xDDD TUTAJ OD SIEBIE DOPISZ :) </h1>
 ```
 Przeładuj:
-```
-sudo systemctl restart flaga.service
-```
-lub
 ```
 sudo python3 pomocnicze_skrypty/reload.py
 ```
