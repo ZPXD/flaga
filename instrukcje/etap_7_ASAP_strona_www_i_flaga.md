@@ -2,31 +2,15 @@
 
 ## Etap 7 - przygotuj serwer, postaw stronę www i powieś Flagę - wersja ASAP
 
-**1. Przygotujesz serwer.** Zupdatujemy i poinstalujemy trochę programów, w tym:
-- git'a
-- nginx'a
-- nano
-- program do tworzenia środowisk programistycznych venv
-
-**2. Pobierzesz kod z repozytorium [Flaga](https://github.com/ZPXD/flaga)**
-- uzupełnimy plik z danymi o nazwę przygotowanej domeny
-- automatycznie "poprozkładamy" pliki konfigurujące nginx i gunicorn we właściwych miejscach
-
-**3. Uruchomisz "usługę" aplikacji strony www** 
-
-tak aby była wystawiona w internecie i zobaczysz swoją stronę www sieci pod linkiem domeny. 
-
 [Obejrzyj film jaks przygotować serwer, postawić stronę i powiesić flagę w wersji ASAP (w 5 minut)]()
 
-
-
-#### PS: Jeżeli uznasz, że potrzebujesz bardziej wyczerpujących wyjaśnień i mocniejszych doświadczeń, wybierz:
+#### Jeżeli uznasz, że potrzebujesz bardziej wyczerpujących wyjaśnień i mocniejszych doświadczeń, wybierz:
 
 [Etap 7 - droga Klasyczna - Instrukcje]( http://bityl.pl/BcfxJ)
 
 I postaw cały serwer ręcznie, komenda po komendzie ucząc się po drodze Linuxa, a to na Linuxowych serwerach będą śmigały nasze skrypty, więc jest to absolutny fundament.
 
-#### Do dzieła.
+# Droga ASAP (Flaga w 5 minut):
 
 #### Cel:
 - Postaw stronę www: niech będzie widoczna w internecie pod adresem Twojej domeny.
@@ -36,14 +20,9 @@ I postaw cały serwer ręcznie, komenda po komendzie ucząc się po drodze Linux
 #### Wsparcie:
 
 [Pomoc na discordzie dla problemów związanych z Etapem 7](https://discord.gg/S5bN7TCAYq)
-
-
-# Droga ASAP (Flaga w 5 minut):
- 
  
 **Słowem wstępu: Gdyby coś poszło nie tak, to można zrestartować serwer do ustawień początkowych:**
 [Restart](http://bityl.pl/Bmvwu). Zaczynajmy:
-
 
 Po zalogowaniu na serwer:
 
