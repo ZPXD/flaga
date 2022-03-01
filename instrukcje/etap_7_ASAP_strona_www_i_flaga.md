@@ -125,12 +125,12 @@ W terminalu/powershellu wpisz komendę:
 
 Dla serwerów na home:
 ```
-scp root@$server_ip:/home/$the_user/.ssh/$klucz $klucz
+scp root@$TU_WSTAW_IP_SERWERA:/home/TU_WSTAW_NAZWE_UZYTKOWNIKA/.ssh/$klucz $klucz
 ```
 
 Dla serwerów na AWS: (zamień nazwę klucza 'klucz_xd.pem' na inna, jeżeli inaczej nazwałeś swój klucz do serwera na AWS):
 ```
-scp -i klucz_xd.pem ubuntu@$server_ip:/home/$the_user/.ssh/$klucz $klucz
+scp -i klucz_xd.pem ubuntu@$TU_WSTAW_IP_SERWERA:/home/ubuntu/.ssh/$klucz $klucz
 ```
 
 I spróbuj połączyć się przez VSCode znowu (cofnij się do instrukcji wyżej, jeżeli nie pamiętasz jak to zrobić). Jeżeli masz problem, napisz na discordzie.
@@ -182,10 +182,6 @@ To plik html. Dodaj coś w 12 linii pomiędzy znakami ">" a "</h1>".
 <h1 style="text-align:center">xDDD TUTAJ OD SIEBIE DOPISZ :) </h1>
 ```
 Przeładuj:
-```
-sudo systemctl restart flaga.service
-```
-lub korzystając z gotowego skryptu:
 ```
 sudo python3 pomocnicze_skrypty/reload.py
 ```
