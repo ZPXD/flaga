@@ -266,7 +266,7 @@ echo "Klucz użytkownika jest w katalogu .ssh pod ścieżką:" /home/$the_user/.
 echo " "
 echo "Zapisz plik klucza z serwera do swojego komputera do katalogu .ssh."
 echo " "
-echo "Uzupełniając plik config o nowe informacje - wklej do niego poniższe:
+echo "Uzupełniając plik config o nowe informacje - wklej do niego poniższe:"
 echo " "
 echo "Host xd"
 echo "  HostName $server_ip"
