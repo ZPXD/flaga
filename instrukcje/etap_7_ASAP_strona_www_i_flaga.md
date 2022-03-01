@@ -149,14 +149,13 @@ I spróbuj połączyć się przez VSCode znowu (cofnij się do instrukcji wyżej
 
 #### 1. Edytuj plik tekstowy którego treść widać na Twojej stronie.
 
-Otwórz folder z kodem Flagi na serwerze w nowym oknie i otwórz Terminal.
-
+Otwórz folder z kodem Flagi na serwerze w nowym oknie i otwórz plik z tekstem flagi. Edytuj go, zapisz i zobacz co się stanie na stronie www.
+```
+/var/www/flaga/dane/xd.txt
+```
 
 Urządź się tu :) Będąc dalej na serwerze, w folderze /var/www/flaga edytuj zawartość pliku xd.txt. Dodaj tam coś od siebie.
-```
-cd /var/www/flaga
-nano dane/xd.txt
-```
+
 
 #### 2. Zobaczy czy na stronie jest nowa treść!
 
@@ -173,9 +172,9 @@ Ostatnie co zostało, to edycja zakładki /xd flagi. Twoja flaga aby przejść d
 
 Wejdź w przeglądarce na adres swojej strony www i dopisz **/xd** - to Twoja zakładka /xd.
 
-Bedąc dalej w folderze /var/www/flaga edytuj plik templates/xd.html. Zobacz, jest tam w 12 linii "xDDD". Zostaw xD (z dowolną ilością "D") i: dodaj coś od siebie. Dzięki temu będzie można sprawdzić czy ukończyłeś ten etap. Zrób to tak:
+Bedąc dalej w folderze /var/www/flaga edytuj plik templates/xd.html. Zobacz, jest tam w 12 linii "xDDD". Zostaw xD (z dowolną ilością "D") i: dodaj coś od siebie. Dzięki temu będzie można sprawdzić czy ukończyłeś ten etap. Otwórz:
 ```
-nano templates/xd.html
+/var/www/flaga/templates/xd.html
 ```
 To plik html. Dodaj coś w 12 linii pomiędzy znakami ">" a "</h1>".
 ```
