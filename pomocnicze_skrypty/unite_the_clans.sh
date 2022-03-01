@@ -10,7 +10,7 @@
 # 1. Odpal skrypt
 # 
 #    sudo su 
-#    wget -q 'https://raw.githubusercontent.com/ZPXD/flaga/main/pomocnicze_skrypty/unite_the_clans.sh' && chmod +x unite_the_clans.sh && ./unite_the_clans5.sh && rm unite_the_clans.sh;
+#    wget -q 'https://raw.githubusercontent.com/ZPXD/flaga/main/pomocnicze_skrypty/unite_the_clans.sh' && chmod +x unite_the_clans.sh && ./unite_the_clans.sh && rm unite_the_clans.sh;
 #
 #    Skrypt zapyta o zmienne takie jak nazwa użytkownika i domena.
 
@@ -229,30 +229,67 @@ fi
 
 
 # INFO:
-clear
 
 python3 /var/www/flaga/pomocnicze_skrypty/banner.py
 
+echo " "
+echo " "
+echo "Udało się! "
+echo "Stworzono stronę www."
+echo "Sprawdź swoją stronę w przeglądarce: " $domena
+echo " "
+read -p "(Aby kontynuować wciśnij dowolny przycisk i naciśnij enter)"
+echo " "
+echo " "
+echo " "
+echo " "
+echo " "
+echo " "
+echo " "
+echo " "
+echo " "
+echo " "
+echo " "
+echo " "
+echo " "
+echo " "
+echo " "
+echo " "
+echo " "
+echo " "
+echo " "
+
 echo "Stworzono użytkownika:" $the_user
-echo "Stworzono stronę na domenie:" $domena
-echo "Klucz do pobrania nosi nazwę:" $klucz
+echo "Klucz użytkownika nosi nazwę:" $klucz
+echo "Klucz użytkownika jest w katalogu .ssh pod ścieżką:" /home/$the_user/.ssh/$klucz
 echo " "
-echo "Sprawdź swoją stronę w przeglądarce."
+echo "Zapisz plik klucza z serwera do swojego komputera do katalogu .ssh."
 echo " "
-echo "W programie Visual Studio Code połącz się z serwerem i otwórz folder aktualnego użytkownika:"
-echo "Kliknij prawym na $klucz na liście i wybierz opcję \"Pobierz...\" lub \"Download...\""
-echo "Zapisz plik w katalogu .ssh :"
-echo "Na Windows jest to katalog: \"%USERPROFILE%/.ssh/ \""
-echo "Na Linux jest to katalog: \"~.ssh\ \""
+echo "1. Najpierw otwierając w VSCode folder .ssh w którym znajdują się klucze. Folder .ssh znajduje się zawsze w folderze użytkownika."
+echo "To tu:" /home/$the_user/.ssh/$klucz
+read -p "Masz? Aby kontynuować wciśnij dowolny przycisk i naciśnij enter."
 echo " "
-echo "Jest tam też plik config. Dodaj w nim konfigurację z poprawną nazwą nowego klucza i użytkownikiem:"
 echo " "
-echo "Host $domena"
+echo " "
+echo "2. Kliknij w lewym górnym roku - zapisz jako / save as i zapisz plik u siebie na komputerze w katalogu .ssh"
+read -p "Masz? Świetnie - aby kontynuować wciśnij dowolny przycisk i naciśnij enter."
+echo " "
+echo " "
+echo " "
+echo "3. Uzupełniając plik config o nowe informacje - wklej do niego poniższe:
+echo " "
+echo "Host xd"
 echo "  HostName $server_ip"
 echo "  User $the_user"
 echo "  IdentityFile ~/.ssh/$klucz"
 echo " "
-echo "Sprawdź połączenie użytkownikiem $the_user w Visual Studio Code."
+echo "W razie dowolnych problemów: patrz - film etapu 7 lub napisz na discordzie Szturmu na AWS"
+echo " "
+read -p "Masz? Super :) Aby kontynuować wciśnij dowolny przycisk i naciśnij enter."
+echo " "
+echo " "
+echo " "
+echo "Zapisz plik, odśwież SSH-Targets i sprawdź połączenie użytkownikiem $the_user w Visual Studio Code wybierając w Remote Explorerze w SSH-Targets opcję 'xd'."
 
 su $the_user
 #cd /var/www
