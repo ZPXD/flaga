@@ -257,8 +257,3 @@ echo "Sprawdź połączenie użytkownikiem $the_user w Visual Studio Code."
 su $the_user
 #cd /var/www
 #pwd
-
-
-
-#Cryst was here
-#GetCrysted
