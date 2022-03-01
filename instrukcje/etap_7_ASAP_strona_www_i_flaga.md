@@ -118,11 +118,31 @@ Jeżeli jesteś w Home i wkleiłeś to o co prosiłem wcześniej, to zobaczysz c
 
 ![foto](foty_do_instrukcji/dk_11.png)
 
+#### 10. Sprawdź swój terminal po odpaleniu skryptu,  postawieniu strony www i powieszeniu flagi.
+
+Będzie tam fragment pliku Host do wklejenia. Będzie wyglądał podobnie do:
+
+```
+Host xd
+  HostName 1.1.1.1
+  User moja_nazwa_uzytkownika
+  IdentityFile "~/.ssh/tu_wstaw_nazwe_klucza"
+```
+
 #### 11. Edytuj plik wstawiając swoje adresy IP, popraw nazwę klucza i zmień nazwę użytkownika w 2gim Hoście. Zapisz plik.
 
 ![foto](foty_do_instrukcji/dk_12.png)
 
 ![foto](foty_do_instrukcji/dk_13.png)
+
+
+#### config dla AWS:
+
+Wklej poniższe linie. Edytuj tam narazie tylko:
+a) W linii 4 "IdentityFile "~/.ssh/tu_wstaw_nazwe_klucza.pem" edytuj nazwę klucza .pem
+b) W linii 2 i 7 edytuj HostName - podaj prawidłowy adres IP Twojego serwera
+c) Reszty narazie nie ruszaj.
+d) Upewnij się, że Twój klucz .pem jest w folderze .ssh. Jeżeli nie, niech będzie tam :)
 
 
 
