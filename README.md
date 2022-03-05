@@ -5,7 +5,7 @@ W tym repozytorium znajduje się tutaj cały kod do zainstalowania na serwerze a
 
 ## Szturm na AWS:
 
-To przygoda otwierająca zajęcia programowania xD
+To przygoda otwierająca zajęcia programowania xD.
 
 Czas trwania: ok 120-180 minut, chociaz można tu spędzić wiele czasu i często wracać, ciągle ucząc się nowych rzeczy i poznając świetnych ludzi. Jak masz już trochę doświadczenia i wiesz co robisz, to uda Ci się powiesić flagę w ok. 30 minut.
 
@@ -15,7 +15,7 @@ Zdobądź serwer, postaw stronę www i powieś flagę. Pomóż innym.
 Poznaj niesamowitych ludzi i zobacz jak u nas jest :)
  
 ### Wygrana: 
-Daje dodstęp do aktywnego uczestnictwa w rocznych darmowych Zajęć Programowania xD
+Daje dodstęp do aktywnego uczestnictwa w rocznych darmowych Zajęć Programowania xD.
 
 Rozpocznij szturm, zdobądź serwer, postaw stronę www i zawieś flagę. 
 Albo wróć do szturmu tam, gdzie skończyłeś:
@@ -49,7 +49,7 @@ Albo wróć do szturmu tam, gdzie skończyłeś:
 - serwer na zajęcia i przypisaną do niego domenę na zajęcia;
 - Githuba na zajęcia, VSCode i Jupytera;
 
-to możesz skorzystać z drogi ASAP 
+to możesz skorzystać z drogi ASAP. 
 
 Ale i tak wróć tutaj i przejdź wszystkie etapy po kolei, poczytaj o funkcjach, które wywołujesz, poprzeglądaj kod. Poznaj się z ludźmi, pomóż komuś. To świetna zabawa i poczujesz klimat.
 
@@ -59,11 +59,11 @@ Po zalogowaniu na serwer:
 ```
 echo $USER
 ```
-Jak pokazuje root to idź do kroku 2. Jeżeli nie, utwórz hasło dla root wpisując:
+Jeżeli wyświetlił się „root”, to idź do kroku 2. Jeżeli nie, przejdź na konto root wpisując:
 ```
 sudo su
 ```
-I sprawdź znów pisząc "echo $USER", aż będzie pokazywać root. Jak masz błąd, spytaj na grupie o pomoc.
+I sprawdź znów pisząc "echo $USER", aż będzie pokazywać root. Jeżeli masz błąd, to spytaj na grupie o pomoc.
 
 #### 2. Uruchom skrypt unite_the_clans.sh stawiający wszystko za Ciebie:
 
@@ -96,7 +96,9 @@ Host moj_serwerek
 
 I sprawdź połączenie z serwerem przez VSC korzystając ze skrótu dla Twojego użytkownika (to co jest obok słowa Host w konfiguracji ssh, czyli w pliku config np. xd lub moj_serwerek).
 
-#### 4. Modyfikuj flagę, aby było na niej coś poza "xD". To konieczne, aby dołączyć do zajęć.
+#### 4. Zmodyfikuj flagę, aby było na niej coś poza "xD". To konieczne, aby dołączyć do zajęć.
+
+Jako „flagę” rozumiemy podstronę "xd" Twojej strony WWW. Przykładowy adres Twojej flagi, to http(s)://TWOJA_NAZWA_SERWERA/xd - zawartość podstrony o podobnym adresie jest weryfikowana, czy zawiera ciąg tekstu „xD” oraz jakiś dopisek od Ciebie. 
 
 Pobaw się flagą, zmień coś (zobacz etap 8 w tym pliku) lub idź dalej. 
 
