@@ -1,0 +1,3 @@
+[console_scripts]
+lolpython = lolpython.main:main
+
