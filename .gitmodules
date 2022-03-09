@@ -1,0 +1,3 @@
+[submodule "python_projects"]
+	path = python_projects
+	url = https://github.com/wiktorszewczyk/python_projects.git
