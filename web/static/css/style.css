@@ -1,0 +1,150 @@
+/* font-family: 'Dancing Script', cursive;
+font-family: 'Itim', cursive;
+font-family: 'Sriracha', cursive; */
+body
+    {
+        font-family: 'Sriracha', cursive;
+        font-size: 20px;
+    }
+
+#container
+    {
+        width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+#logo
+    {
+        font-family: 'Itim', cursive;
+        background-color: #BD88CF;
+        color: #200B52;
+        text-align: center;
+        padding: 5px;
+        font-size: 30px;
+    }
+#nav
+    {
+        font-family: 'Sriracha', cursive;
+        background-color: #200B52;
+        width: 980px;
+        max-height: 40px;
+        min-height: 40px;
+        text-align: center;
+        padding: 10px;
+        font-size: 20px;
+        color: white;
+    }
+#content
+    {
+        font-size: 20px;
+        float: left;
+        background-color: #EEB2F0;
+        color: #200B52;
+        width: 780px; 
+        padding: 20px;
+        min-height: 620px;
+        text-align: justify;
+    }
+#ad
+    {
+        float: left;
+        width: 160px;
+        min-height: 640px;
+        padding: 10px;
+        background-color: #422D74;
+    }
+#footer
+    {
+        clear: both;
+        background-color: #200B52;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        font-size: 17px;
+    }
+#blok1
+    {
+        background-color: #200B52;
+        width: 140px;
+        max-height: 300px;
+        min-height: 200px;
+        padding: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+#blok2
+    {
+        background-color: #200B52;
+        width: 140px;
+        max-height: 300px;
+        min-height: 200px;
+        padding: 10px;
+        text-align: center;
+    }
+#yt
+    {
+        float: left;
+        margin: 10px;
+        background-color: #d94348;
+        width: 60px;
+        max-height: 47px;
+        min-height: 47px;
+        text-align: center;
+    }
+#fb
+    {
+        float: right;
+        margin: 10px;
+        background-color: #4668b3;
+        width: 60px;
+        max-height: 47px;
+        min-height: 47px;
+        text-align: center;
+    }
+#blok1:hover
+    {
+       background-color: #100A41;
+    }
+#blok2:hover
+    {
+       background-color: #100A41;
+    }
+#yt:hover
+    {
+        background-color: #c72126;
+    }
+#fb:hover
+    {
+        background-color: #2446a1;
+    }
+a.sociallink
+    {
+        color: white;
+        text-decoration: none;
+        display: block;
+        width: 60px;
+        max-height: 50px;
+        min-height: 50px;        
+    }
+a.navlink
+    {
+        text-decoration: none;
+        color: white;
+    }
+a.stronylink
+    {
+        color: white;
+        text-decoration: none;
+        display: block;
+        width: 140px;
+        max-height: 300px;
+        min-height: 200px;        
+    }
+a.polecanelink
+    {
+        color: #200B52;
+        text-decoration: none;
+    }
+
+
+
