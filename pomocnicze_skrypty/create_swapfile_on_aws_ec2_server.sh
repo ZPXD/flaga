@@ -35,14 +35,15 @@ if [[ -e $swapfile ]]; then
 #          stop creating swapfile (or modify swapfile filesize)              #
 #                                                                            #
 # use something like:                                                        #
-#                    df --output=avail /                                     #
+#                    df --output=avail / | tail -n 1                         #
 #                                                                            #
 #                                                                            #
 ##############################################################################
 elif [[ $do_the_job == $arg1 ]]; then
 	echo "Tworzę swapfile w pliku $swapfile"
  	if [[ -z $(swapon --show=NAME) ]]; then
-     		fallocate -l $size /swapfile && 
+     		fallocate -l $size /swapfile && # when fallocate is not installed,
+		# use: sudo dd if=/dev/zero of=/swapfile bs=1024 count=1048576
  		chmod 600 $swapfile &&
  		mkswap $swapfile
  		swapon $swapfile
