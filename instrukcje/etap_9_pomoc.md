@@ -4,8 +4,7 @@
 
 
 
-### Ten etap jest w przebudowie. Będzie niedługo aktywny (do wtorku)
-
+### Wyrusz ze wsparciem dla innych którzy też chcą przejść Szturm na AWS
 
 
 Udało się. Zdobyłeś serwer i flaga została powieszona.
