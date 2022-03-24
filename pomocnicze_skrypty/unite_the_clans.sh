@@ -167,20 +167,18 @@ else
     fi
 fi
 
-
-echo "CZY CHCESZ UTWORZYĆ NOWĄ PARĘ KLUCZY DO SERWERA? "
-read want_new_key
+want_new_key=0
 while true; do
-read -p "(tak - potrzebuję je / nie - zostaw aktualne / wyjdz - ewakuacja)" choice
+    echo "CZY CHCESZ UTWORZYĆ NOWĄ PARĘ KLUCZY DO SERWERA? "
+    read -p "(tak - potrzebuję nowe klucze / nie - zostaw aktualne / wyjdz - ewakuacja)" choice
     case "$choice" in 
-        tak|t|T|yes|y|Y ) 
+        nie|n|N|no|p|popraw )
             echo "AKTUALNE KLUCZE POZOSTANĄ BEZ ZMIAN"
-            want_new_key = 0
             break
         ;;
-        nie|n|N|no|p|popraw ) 
+        tak|t|T|yes|y|Y )  
+            want_new_key=1
 
-            want_new_key = 1
             # Klucze RSA.
             mkdir /home/$the_user/.ssh
             chmod 700 /home/$the_user/.ssh
@@ -201,6 +199,8 @@ read -p "(tak - potrzebuję je / nie - zostaw aktualne / wyjdz - ewakuacja)" cho
             echo "KOPIOWANIE KLUCZA DO KATALOGU ROOT:"
             cp -f /home/$the_user/.ssh/$klucz /root/$klucz
 
+            break
+        ;;
         w|wyjdz|e|exit|ewakuacja ) echo "KONCZE DZIALANIE PROGRAMU"; exit ;;
         * ) echo "dokonaj wyboru jeszcze raz";;
     esac
