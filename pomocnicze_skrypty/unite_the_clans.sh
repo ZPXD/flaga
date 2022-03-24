@@ -282,7 +282,7 @@ echo " "
 echo " "
 
 echo "Stworzono użytkownika:" $the_user
-if [want_new_key eq 0] ; then
+if [ $want_new_key -eq 0 ] ; then
     echo "Klucze pozostały niezmienione"
 else
     echo "Klucz użytkownika nosi nazwę:" $klucz
