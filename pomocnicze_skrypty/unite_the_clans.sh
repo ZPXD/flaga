@@ -169,7 +169,8 @@ fi
 
 want_new_key=0
 while true; do
-    echo "CZY CHCESZ UTWORZYĆ NOWĄ PARĘ KLUCZY DO SERWERA? \n (tak - potrzebuję nowe klucze / nie - zostaw aktualne / wyjdz - ewakuacja)"
+    echo "CZY CHCESZ UTWORZYĆ NOWĄ PARĘ KLUCZY DO SERWERA? "
+    echo " (tak - potrzebuję nowe klucze / nie - zostaw aktualne / wyjdz - ewakuacja)"
     #read -p "(tak - potrzebuję nowe klucze / nie - zostaw aktualne / wyjdz - ewakuacja)" choice
     read -p " " choice
     case "$choice" in 
