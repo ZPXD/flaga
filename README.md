@@ -20,20 +20,20 @@ Daje dodstęp do aktywnego uczestnictwa w rocznych darmowych Zajęć Programowan
 Rozpocznij szturm, zdobądź serwer, postaw stronę www i zawieś flagę. 
 Albo wróć do szturmu tam gdzie skończyłeś:
 
-- [Etap 1 - Wprowadzenie i przygotowania - Instrukcje](http://bityl.pl/4TWc5)
-- [Etap 2 - Anonimowość - Instrukcje](http://bityl.pl/irUcO)
-- [Etap 3 - Edytor kodu VSCode - Instrukcje](http://bityl.pl/7yKAX)
+- [Etap 1 - Wprowadzenie i przygotowania - Instrukcje](https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_1_przygotowania.md)
+- [Etap 2 - Anonimowość - Instrukcje](https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_2_anonimowosc.md)
+- [Etap 3 - Edytor kodu VSCode - Instrukcje](https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_3_edytor_kodu_vscode.md)
 - [Etap 4.1 - Zdobądź serwer - Instrukcje](https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_4_1_zdobadz_serwer.md)
-- [Etap 4.2.A - Zdobądź serwer - Droga Home - Instrukcje](http://bityl.pl/8tLm2)
-- [Etap 4.2.B - Zdobądź serwer - Droga AWS - Instrukcje](http://bityl.pl/i3YCE)
+- [Etap 4.2.A - Zdobądź serwer - Droga Home - Instrukcje](https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_4_2_A_zdobadz_serwer_home.md)
+- [Etap 4.2.B - Zdobądź serwer - Droga AWS - Instrukcje](https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_4_2_B_zdobadz_serwer_aws.md)
 - [Etap 4.3 - Zdobądź serwer: połączenie z serwerem przez VSCode](https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_4_3_zdobadz_serwer_polaczenie.md)
 - [Etap 5 - Domena - Instrukcje](https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_5_domena.md)
-- [Etap 6 - GitHub - Instrukcje](http://bityl.pl/wwI8j)
-- [Etap 7.A - Strona www i Flaga - droga ASAP - Instrukcje]( http://bityl.pl/o7IM4)
-- [Etap 7.B - Strona www i Flaga - droga klasyczna - Instrukcje]( http://bityl.pl/BcfxJ)
-- [Etap 8 - Materiały i Jupyter - Instrukcje](http://bityl.pl/7efYd)
-- [Etap 9 - Pomoc - Instrukcje](http://bityl.pl/QKsi4)
-- [Etap 10 - Rozdroże - Instrukcje](http://bityl.pl/g7LrS)
+- [Etap 6 - GitHub - Instrukcje](https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_6_github.md)
+- [Etap 7.A - Strona www i Flaga - droga ASAP - Instrukcje]( https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_7_ASAP_strona_www_i_flaga.md)
+- [Etap 7.B - Strona www i Flaga - droga klasyczna - Instrukcje]( https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_7_Klasyczna_strona_www_i_flaga.md)
+- [Etap 8 - Materiały i Jupyter - Instrukcje](https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_8_materialy_i_jupyter.md)
+- [Etap 9 - Pomoc - Instrukcje](https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_9_pomoc.md)
+- [Etap 10 - Rozdroże - Instrukcje](https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_10_rozdroze.md)
 
 
 #### Ważne linki:
