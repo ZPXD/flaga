@@ -2,7 +2,7 @@
 
 ## Etap 1 - Wprowadzenie i przygotowania.
 
-[Zobacz film otwierający przygodę: Etap 1 - Wprowadzenie i przygotowania](http://bityl.pl/yhIm9)
+[Zobacz film otwierający przygodę: Etap 1 - Wprowadzenie i przygotowania](https://www.youtube.com/watch?v=jp0c1nNtSQ8&t=1s)
 
 
 #### Cel:
@@ -70,5 +70,5 @@ Gdybyście jednak potrzebowali pomocy, piszcie PW, pomogę wam.
 
 
 
-**Przejdź dalej:** [Etap 2 - Anonimowość - Instrukcje](http://bityl.pl/irUcO)
+**Przejdź dalej:** [Etap 2 - Anonimowość - Instrukcje](https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_2_anonimowosc.md)
 
