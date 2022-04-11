@@ -4,7 +4,7 @@
 
 Masz już VSCode, masz serwer, znasz jego login, adres ip, wiesz gdzie jest folder .ssh.
 
-[Zobacz jak połączyć się z serwerem przez VSCode](http://bityl.pl/nYH1X)
+[Zobacz jak połączyć się z serwerem przez VSCode](https://www.youtube.com/watch?v=xaxgBrDQeck)
 
 
 
@@ -256,5 +256,5 @@ Teraz połącz się aby zacząć na nim tworzyć. Będziesz pisać tu programy, 
 [Pomoc na discordzie dla problemów związanych z Etapem 4](https://discord.gg/8YQAaBHh3u)
 
 
-**Przejdź dalej:** [Etap 5 - Domena - Instrukcje](http://bityl.pl/Q86MW)
+**Przejdź dalej:** [Etap 5 - Domena - Instrukcje](https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_5_domena.md)
 
