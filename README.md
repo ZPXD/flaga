@@ -101,8 +101,8 @@ I sprawdź połączenie z serwerem przez VSC korzystając ze skrótu dla Twojego
 Pobaw się flagą, zmień coś (zobacz etap 8 w tym pliku) lub idź dalej. 
 
 #### 5. Ruszaj dalej. Jesteś już blisko:
-- [Etap 9 - Leć komuś pomóc - Instrukcje](http://bityl.pl/QKsi4)
-- [Etap 10 - Leć do nas na zamek - Instrukcje](http://bityl.pl/g7LrS)
+- [Etap 9 - Leć komuś pomóc - Instrukcje](https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_10_rozdroze.md)
+- [Etap 10 - Leć do nas na zamek - Instrukcje](https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_9_pomoc.md)
 - [I wypełnij formularz aby dołączyć do Zajęć Programowania xD](https://zajecia-programowania-xd.pl/szturm_na_aws/caly_formularz)
 
 #### Gotowe?
