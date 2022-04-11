@@ -2,7 +2,7 @@
 
 ## Etap 3 - Edytor kodu: VSCode
 
-[Zobacz film o edytorze kodu VSCode](http://bityl.pl/RwrVO)
+[Zobacz film o edytorze kodu VSCode](https://www.youtube.com/watch?v=EB_ihBj6a60&t=1s)
 
 
 #### Cel:
@@ -54,4 +54,4 @@ Poznaj podstawy VSCode. Zobacz jak:
 
 **Przejdź dalej:** 
 
-[Etap 4.1 - Zdobądź serwer - Instrukcje](http://bityl.pl/jNbnY)
+[Etap 4.1 - Zdobądź serwer - Instrukcje](https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_4_1_zdobadz_serwer.md)
