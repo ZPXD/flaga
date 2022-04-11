@@ -2,7 +2,7 @@
 
 ## Etap 4.2.A - Zdobądź serwer- droga Home serwer VPS Linux Ubuntu 20 
 
-[Zobacz film jak zdobyć serwer drogą Home](http://bityl.pl/NheyZ)
+[Zobacz film jak zdobyć serwer drogą Home](https://www.youtube.com/watch?v=tPJtGVnHAVM)
 
 
 
@@ -32,4 +32,4 @@
 
 
 
-**Przejdź dalej:** [Etap 4.3 - Zdobądź serwer: połączenie z serwerem przez VSCode](http://bityl.pl/nYH1X)
+**Przejdź dalej:** [Etap 4.3 - Zdobądź serwer: połączenie z serwerem przez VSCode](https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_4_3_zdobadz_serwer_polaczenie.md)
