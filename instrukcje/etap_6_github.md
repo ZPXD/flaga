@@ -2,7 +2,7 @@
 
 ## Etap 6 - Github
 
-[Zobacz film jak założyć GitHub i sklonować repozytorium](http://bityl.pl/0CeeF)
+[Zobacz film jak założyć GitHub i sklonować repozytorium](https://www.youtube.com/watch?v=11CAq2Qm7IY)
 
 ### Cel:
 - Zdobądź konto na Githubie
@@ -74,6 +74,6 @@ Sklonuj [Flaga](https://github.com/ZPXD/flaga) korzystając z VSCode.
 #### 6. Jesteś gotowy aby przygotować serwer i postawić stronę WWW ze swoją Flagą.
 
  
-**Jeżeli się śpieszysz, pójdź tędy:** [Etap 7.A - Strona www i Flaga - droga ASAP (flaga w 5 minut) - Instrukcje]( http://bityl.pl/o7IM4)
+**Jeżeli się śpieszysz, pójdź tędy:** [Etap 7.A - Strona www i Flaga - droga ASAP (flaga w 5 minut) - Instrukcje](https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_7_ASAP_strona_www_i_flaga.md)
 
-**Jeżeli nic się nie pali, wybierz tę drogę:** [Etap 7.B - Strona www i Flaga - droga klasyczna - Instrukcje]( http://bityl.pl/BcfxJ)
+**Jeżeli nic się nie pali, wybierz tę drogę:** [Etap 7.B - Strona www i Flaga - droga klasyczna - Instrukcje](https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_7_Klasyczna_strona_www_i_flaga.md)
