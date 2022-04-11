@@ -2,7 +2,7 @@
 
 ## Etap 2 - Anonimowość i poczta
 
-[Zobacz film omawiający kwestie anonimowości na zajęciach i Szturmie](http://bityl.pl/VkxmB)
+[Zobacz film omawiający kwestie anonimowości na zajęciach i Szturmie](https://www.youtube.com/watch?v=L8tUMM4TZAs&t=20s)
 
 
 **Poczta i konto Google**
@@ -20,9 +20,9 @@ Opcjonalnie: założenie nowego gmaila i konta discord i rozpoczęcie szturmu od
 
 #### Plan:
 
-a. ruszaj dalej: [Etap 3 - Edytor kodu VSCode - Instrukcje](http://bityl.pl/7yKAX)
+a. ruszaj dalej: [Etap 3 - Edytor kodu VSCode - Instrukcje](https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_3_edytor_kodu_vscode.md)
 
-b. załóż anonimowego gmaila i anonimowe konto na discordzie: [Instrukcja](http://bityl.pl/PS2mA)
+b. załóż anonimowego gmaila i anonimowe konto na discordzie
 
 - np. gmail:   lubie.brokuly@gmail.com
 - np. discord: LubieBrokulyxD
@@ -38,4 +38,4 @@ b. załóż anonimowego gmaila i anonimowe konto na discordzie: [Instrukcja](htt
 
 **Przejdź dalej:** 
 
-[Etap 3 - Edytor kodu VSCode - Instrukcje](http://bityl.pl/7yKAX)
+[Etap 3 - Edytor kodu VSCode - Instrukcje](https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_3_edytor_kodu_vscode.md)
