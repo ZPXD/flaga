@@ -68,4 +68,4 @@ możesz ruszać dalej. Czas połączyć się z Twoim serwerem.
 
 **Przejdź dalej:** 
 
-[Etap 4.3 - Zdobądź serwer: połączenie z serwerem przez VSCode](http://bityl.pl/nYH1X)
+[Etap 4.3 - Zdobądź serwer: połączenie z serwerem przez VSCode](https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_4_3_zdobadz_serwer_polaczenie.md)
