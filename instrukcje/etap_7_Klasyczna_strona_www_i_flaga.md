@@ -496,4 +496,4 @@ exit
 A strona nadal będzie stała w internecie.
 
 
-**Przejdź dalej:** [Etap 8 - Materiały i Jupyter - Instrukcje](http://bityl.pl/7efYd)
+**Przejdź dalej:** [Etap 8 - Materiały i Jupyter - Instrukcje](https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_8_materialy_i_jupyter.md)
