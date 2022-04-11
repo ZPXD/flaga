@@ -2,7 +2,7 @@
 
 ## Etap 5 - Domena i przypisanie jej do serwera
 
-[Obejrzyj film jak zdobyć domenę i przypiąć ją do serwera](http://bityl.pl/okM6J)
+[Obejrzyj film jak zdobyć domenę i przypiąć ją do serwera](https://www.youtube.com/watch?v=puZ-EcbGnVQ)
 
 
 #### Cel:
@@ -40,4 +40,4 @@ Z waszą domeną i serwerem (i jego adresem ip) to trochę tak jak byście zało
 [Pomoc na discordzie dla problemów związanych z Etapem 5](https://discord.gg/2hybu9EADx)
 
 
-**Przejdź dalej:** [Etap 6 - GitHub - Instrukcje](http://bityl.pl/wwI8j)
+**Przejdź dalej:** [Etap 6 - GitHub - Instrukcje](https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_6_github.md)
