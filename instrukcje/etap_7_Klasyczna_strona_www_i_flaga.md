@@ -16,7 +16,7 @@
 
 tak aby była wystawiona w internecie i zobaczysz swoją stronę www sieci pod linkiem domeny. 
 
-[Obejrzyj film jaks przygotować serwer, postawić stronę i powiesić flagę w wersji ASAP (w 5 minut)]()
+[Obejrzyj film jaks przygotować serwer, postawić stronę i powiesić flagę w wersji ASAP (w 12 minut)](https://www.youtube.com/watch?v=8druPxZBwew&t=166s)
 
 
 
