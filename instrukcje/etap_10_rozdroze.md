@@ -1,6 +1,6 @@
 ## Etap 10 - Rozdroże
 
-[Pomoc na discordzie dla problemów związanych z Etapem 9](https://discord.gg/TBS8ZN3cYa)
+[Pomoc na discordzie dla problemów związanych z Etapem 10](https://discord.gg/TBS8ZN3cYa)
 
 
 #### Udało się?
