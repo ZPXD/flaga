@@ -2,7 +2,7 @@
 
 ## Etap 4 - Zdobądź serwer
 
-[Zobacz film o zdobywaniu serwera](http://bityl.pl/hrFwi)
+[Zobacz film o zdobywaniu serwera](https://www.youtube.com/watch?v=cxUatOjhQao)
 
 
 #### Pytacie czemu serwer:
@@ -43,7 +43,7 @@ Proponuję tę drogę dla świętego spokoju - mamy support po Polsku, w miarę 
 - Pomocny panel do reinstalacji systemu, restartu, konsoli zapasowej
 - Płatny ok. 20zł/m
 
-Wybierz drogę Home! Przejdź do [Etap 4.2.A - Zdobądź serwer - Droga Home](http://bityl.pl/8tLm2)
+Wybierz drogę Home! Przejdź do [Etap 4.2.A - Zdobądź serwer - Droga Home](https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_4_2_A_zdobadz_serwer_home.md)
 
 
 #### B. Serwer AWS EC2 Ubuntu z Free Tier (darmowy). 
@@ -56,7 +56,7 @@ Plusy i minusy:
 - Obsługa dosyć powolna (nawet kilka dni) po angielsku
 
 
-Wybierz drogę AWS! Przejdź do [Etap 4.2.B - Zdobądź serwer - Droga AWS](http://bityl.pl/i3YCE)
+Wybierz drogę AWS! Przejdź do [Etap 4.2.B - Zdobądź serwer - Droga AWS](https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_4_2_B_zdobadz_serwer_aws.md)
 
 #### C. Serwer VPS Ubuntu - inne opcje. (~10-50zł/m)
 Plusy i minusy:
@@ -67,7 +67,7 @@ Plusy i minusy:
 
 [Inne serwery Q&A](http://bityl.pl/b6Hm9)
 
-A jak sobie poradzisz to idź do [Etap 4.3 - połączenie z serwerem przez VSCode](http://bityl.pl/nYH1X)
+A jak sobie poradzisz to idź do [Etap 4.3 - połączenie z serwerem przez VSCode](https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_4_3_zdobadz_serwer_polaczenie.md)
 
 
 
