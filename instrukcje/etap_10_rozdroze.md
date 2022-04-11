@@ -3,7 +3,7 @@
 [Pomoc na discordzie dla problemów związanych z Etapem 9](https://discord.gg/TBS8ZN3cYa)
 
 
-**Udało się? **
+#### Udało się?
 
 Poza tym, zanim przybyłeś dotarliśmy tu wcześniej. Zczęliśmy się rozkładać i robić małe porządki. Zobacz co tu się dzieje na#zakladamy-bastion 
 
