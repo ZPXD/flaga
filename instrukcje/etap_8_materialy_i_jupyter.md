@@ -19,4 +19,4 @@ Przydadzą się do:
 - Pozwala poruszać się po komputerze używając normalnych terminalowych komend.
 - Robienia materiałów gdzie wykorzystamy łączenie działających programów, ich kodu z tekstem i grafiką.
 
-**Przejdź dalej:** [Etap 9 - Pomoc - Instrukcje](http://bityl.pl/QKsi4)
+**Przejdź dalej:** [Etap 9 - Pomoc - Instrukcje](https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_9_pomoc.md)
