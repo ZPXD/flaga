@@ -2,11 +2,11 @@
 
 ## Etap 7 - przygotuj serwer, postaw stronę www i powieś Flagę - wersja ASAP
 
-[Obejrzyj film jaks przygotować serwer, postawić stronę i powiesić flagę w wersji ASAP (w 5 minut)]()
+[Obejrzyj film jaks przygotować serwer, postawić stronę i powiesić flagę w wersji ASAP (w 15 minut)](https://www.youtube.com/watch?v=8druPxZBwew)
 
 #### Jeżeli uznasz, że potrzebujesz bardziej wyczerpujących wyjaśnień i mocniejszych doświadczeń, wybierz:
 
-[Etap 7 - droga Klasyczna - Instrukcje]( http://bityl.pl/BcfxJ)
+[Etap 7 - droga Klasyczna - Instrukcje]( https://github.com/ZPXD/flaga/blob/main/instrukcje/etap_7_Klasyczna_strona_www_i_flaga.md)
 
 I postaw cały serwer ręcznie, komenda po komendzie ucząc się po drodze Linuxa, a to na Linuxowych serwerach będą śmigały nasze skrypty, więc jest to absolutny fundament.
 
