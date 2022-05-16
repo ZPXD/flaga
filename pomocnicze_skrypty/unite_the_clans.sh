@@ -167,25 +167,46 @@ else
     fi
 fi
 
-# Klucze RSA.
-mkdir /home/$the_user/.ssh
-chmod 700 /home/$the_user/.ssh
-#cd /home/$the_user/.ssh
-ssh-keygen -t rsa -b 4096 -f /home/$the_user/.ssh/$klucz -C $the_user -N ''
-cat /home/$the_user/.ssh/$klucz.pub > /home/$the_user/.ssh/authorized_keys
-chmod 600 /home/$the_user/.ssh/authorized_keys
-chmod 600 /home/$the_user/.ssh/$klucz
-chown -R $the_user:$the_user /home/$the_user/.ssh
+want_new_key=0
+while true; do
+    echo "CZY CHCESZ UTWORZYĆ NOWĄ PARĘ KLUCZY DO SERWERA? "
+    echo " (tak - potrzebuję nowe klucze / nie - zostaw aktualne / wyjdz - ewakuacja)"
+    #read -p "(tak - potrzebuję nowe klucze / nie - zostaw aktualne / wyjdz - ewakuacja)" choice
+    read -p " " choice
+    case "$choice" in 
+        nie|n|N|no|p|popraw )
+            echo "AKTUALNE KLUCZE POZOSTANĄ BEZ ZMIAN"
+            break
+        ;;
+        tak|t|T|yes|y|Y )  
+            want_new_key=1
 
-# IF UBUNTU IN HOME:
-if [ $(getent passwd ubuntu) ] ; then
-    echo "KOPIOWANIE KLUCZA DO KATALOGU UBUNTU:"
-    cp -f /home/$the_user/.ssh/$klucz /home/ubuntu/$klucz
-    chown ubuntu:ubuntu /home/ubuntu/$klucz
-fi
+            # Klucze RSA.
+            mkdir /home/$the_user/.ssh
+            chmod 700 /home/$the_user/.ssh
+            #cd /home/$the_user/.ssh
+            ssh-keygen -t rsa -b 4096 -f /home/$the_user/.ssh/$klucz -C $the_user -N ''
+            cat /home/$the_user/.ssh/$klucz.pub > /home/$the_user/.ssh/authorized_keys
+            chmod 600 /home/$the_user/.ssh/authorized_keys
+            chmod 600 /home/$the_user/.ssh/$klucz
+            chown -R $the_user:$the_user /home/$the_user/.ssh
 
-echo "KOPIOWANIE KLUCZA DO KATALOGU ROOT:"
-cp -f /home/$the_user/.ssh/$klucz /root/$klucz
+            # IF UBUNTU IN HOME:
+            if [ $(getent passwd ubuntu) ] ; then
+                echo "KOPIOWANIE KLUCZA DO KATALOGU UBUNTU:"
+                cp -f /home/$the_user/.ssh/$klucz /home/ubuntu/$klucz
+                chown ubuntu:ubuntu /home/ubuntu/$klucz
+            fi
+
+            echo "KOPIOWANIE KLUCZA DO KATALOGU ROOT:"
+            cp -f /home/$the_user/.ssh/$klucz /root/$klucz
+
+            break
+        ;;
+        w|wyjdz|e|exit|ewakuacja ) echo "KONCZE DZIALANIE PROGRAMU"; exit ;;
+        * ) echo "dokonaj wyboru jeszcze raz";;
+    esac
+done
 
 # var/www
 mkdir /var/www
@@ -261,29 +282,33 @@ echo " "
 echo " "
 
 echo "Stworzono użytkownika:" $the_user
-echo "Klucz użytkownika nosi nazwę:" $klucz
-echo "Klucz użytkownika jest w katalogu .ssh pod ścieżką:" /home/$the_user/.ssh/$klucz
-echo " "
-echo "Zapisz plik klucza z serwera do swojego komputera do katalogu .ssh."
-echo " "
-echo "Uzupełniając plik config o nowe informacje - wklej do niego poniższe:"
-echo " "
-echo "Host xd"
-echo "  HostName $server_ip"
-echo "  User $the_user"
-echo "  IdentityFile ~/.ssh/$klucz"
-echo " "
-echo "W razie dowolnych problemów:"
-echo "a. skasuj zawartość albo w ogóle cały plik known_hosts w katalogu .ssh u siebie na komputerze"
-echo "b. usuń pobrany klucz i pobierz go ponownie przez scp:"
-echo " "
-echo "Dla serwerów na home:"
-echo "scp root@$server_ip:/home/$the_user/.ssh/$klucz $klucz"
-echo " "
-echo "Dla serwerów na AWS: (zamień nazwę klucza 'klucz_xd.pem' na inna, jeżeli inaczej nazwałeś swój klucz serwera na AWS)"
-echo "scp -i klucz_xd.pem ubuntu@$server_ip:/home/$the_user/.ssh/$klucz $klucz"
-echo " "
-echo "Spróbuj się połączyć.A by kontynuować wciśnij dowolny przycisk i naciśnij enter."
+if [ $want_new_key -eq 0 ] ; then
+    echo "Klucze pozostały niezmienione"
+else
+    echo "Klucz użytkownika nosi nazwę:" $klucz
+    echo "Klucz użytkownika jest w katalogu .ssh pod ścieżką:" /home/$the_user/.ssh/$klucz
+    echo " "
+    echo "Zapisz plik klucza z serwera do swojego komputera do katalogu .ssh."
+    echo " "
+    echo "Uzupełniając plik config o nowe informacje - wklej do niego poniższe:"
+    echo " "
+    echo "Host xd"
+    echo "  HostName $server_ip"
+    echo "  User $the_user"
+    echo "  IdentityFile ~/.ssh/$klucz"
+    echo " "
+    echo "W razie dowolnych problemów:"
+    echo "a. skasuj zawartość albo w ogóle cały plik known_hosts w katalogu .ssh u siebie na komputerze"
+    echo "b. usuń pobrany klucz i pobierz go ponownie przez scp:"
+    echo " "
+    echo "Dla serwerów na home:"
+    echo "scp root@$server_ip:/home/$the_user/.ssh/$klucz $klucz"
+    echo " "
+    echo "Dla serwerów na AWS: (zamień nazwę klucza 'klucz_xd.pem' na inna, jeżeli inaczej nazwałeś swój klucz serwera na AWS)"
+    echo "scp -i klucz_xd.pem ubuntu@$server_ip:/home/$the_user/.ssh/$klucz $klucz"
+    echo " "
+    echo "Spróbuj się połączyć. Aby kontynuować wciśnij dowolny przycisk i naciśnij enter."
+fi
 echo " "
 echo " "
 echo "Jeżeli coś jest nie tak, napisz na naszym discordzie. Jeżeli wszystko działa, zmodyfikuj flagę. Dodaj w 12 linii pliku /var/www/flaga/templates/xd.html oprócz xD coś od siebie."
